@@ -21,7 +21,7 @@
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 <link rel='stylesheet' href='/stylesheets/style.css'>
-<link rel='stylesheet' href='/stylesheets/main.css'>
+<!-- <link rel='stylesheet' href='/stylesheets/main.css'> -->
 <link rel='stylesheet' href='/stylesheets/homepage.css'>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,8 +45,8 @@
 </script>
 
 <script src="angularjs/home.js"></script>
-<script src="angularjs/wow.min.js"></script>
-<script src="angularjs/main.js"></script>
+<!-- <script src="angularjs/wow.min.js"></script>
+<script src="angularjs/main.js"></script> -->
 
 </head>
 <body ng-app="airbnb">
@@ -75,7 +75,7 @@
 		</div>
 	</nav>
 
-	<div class="bgimg jumbotron text-center" >
+	<div class="bgimg jumbotron text-center">
 		<h1>Airbnb, Inc.</h1>
 		<p>A Travel and Accomodation Marketplace!</p>
 		<form class="form-inline">
@@ -147,18 +147,26 @@
 		<br>
 		<div class="row slideanim">
 			<div class="col-sm-6">
-				<span class="glyphicon glyphicon-off logo-small"></span>
+				<a href="#login"><span
+					class="glyphicon glyphicon-off logo-small"></span></a>
 				<h4>LOGIN</h4>
 				<p>Login to access our system..</p>
 			</div>
 			<div class="col-sm-6">
-				<span class="glyphicon glyphicon-user logo-small"></span>
+				<a href="#register"><span
+					class="glyphicon glyphicon-user logo-small"></span></a>
+
 				<h4>REGISTER</h4>
 				<p>NEW USER? REGISTER FIRST!</p>
 			</div>
 
 		</div>
 		<br> <br>
+		<div id="main">
+
+			<div ng-view></div>
+
+		</div>
 		<div class="row slideanim">
 			<div class="col-sm-6">
 				<span class="glyphicon glyphicon-eye-open logo-small"></span>
@@ -185,7 +193,7 @@
 					<p>
 						<strong>Paris</strong>
 					</p>
-					<p>Yes, we built Paris</p>
+					<p>EXOTIC LANDS OF PARIS</p>
 				</div>
 			</div>
 			<div class="col-sm-4">
@@ -193,9 +201,9 @@
 					<img src="/images/newyork.jpg" alt="New York" width="400"
 						height="300">
 					<p>
-						<strong>New York</strong>
+						<strong>NEY YORK</strong>
 					</p>
-					<p>We built New York</p>
+					<p>EMPIRE STATE AND MUCH MORE!</p>
 				</div>
 			</div>
 			<div class="col-sm-4">
@@ -203,9 +211,9 @@
 					<img src="/images/sanfran.jpg" alt="San Francisco" width="400"
 						height="300">
 					<p>
-						<strong>San Francisco</strong>
+						<strong>SAN FRANSCISCO</strong>
 					</p>
-					<p>Yes, San Fran is ours</p>
+					<p>BAY AREA, SEA FOOD AND BLISS!</p>
 				</div>
 			</div>
 		</div>
@@ -270,8 +278,7 @@
 					<span class="glyphicon glyphicon-phone"></span> +00 12341234123
 				</p>
 				<p>
-					<span class="glyphicon glyphicon-envelope"></span>
-					team10@sjsu.edu
+					<span class="glyphicon glyphicon-envelope"></span> team10@sjsu.edu
 				</p>
 			</div>
 		</div>
