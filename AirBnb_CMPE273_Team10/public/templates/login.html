@@ -1,0 +1,51 @@
+<div class="container" ng-controller="airbnb">
+
+	<div class="row centered-form">
+		<div
+			class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="form-group">AIRBNB USER PORTAL</h3>
+				</div>
+				<div
+					style="background-image: url(/images/airbnblogo.png); height: 100px; width: 350px;">
+				</div>
+
+
+				<div class="panel-body">
+
+					<form role="form">
+
+						<div class="form-group">
+							<input type="email" ng-model="inputUsername" name="email"
+								id="email" class="form-control input-sm"
+								placeholder="Email Address">
+						</div>
+						<div class="form-group">
+							<input type="email" ng-model="inputPassword" name="password"
+								id="password" class="form-control input-sm"
+								placeholder="Password">
+						</div>
+
+
+
+						<input type="submit" ng-click="login()" value="LOGIN"
+							class="btn btn-info btn-block">
+
+					</form>
+
+				</div>
+				<!-- 				<div class="alert alert-danger" ng-hide="invalid_login">
+					<strong>Passwards do not match</strong>
+				</div>
+				<div class="alert alert-danger" ng-hide="valid_login">
+					<strong>Account Has Been Created Please Proceed To LOGIN!</strong>
+				</div>
+				<div class="alert alert-danger" ng-hide="already_exists">
+					<strong>This user already exists!</strong>
+				</div> -->
+			</div>
+		</div>
+	</div>
+</div>
