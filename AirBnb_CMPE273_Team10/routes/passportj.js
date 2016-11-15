@@ -5,7 +5,7 @@ var passport = require("passport");
 var LocalStrategy = require("passport-local").Strategy;
 var loginDatabase = "mongodb://localhost:27017/AirbnbDatabaseMongoDB";
 var mongo = require('./mongo');
-var bcrypt = require('bcrypt');
+var bcrypt = require('bcrypt-nodejs');
 
 module.exports = function(passport) {
 	console.log("PASSPORT CONNECTION ESTABLISHED!");

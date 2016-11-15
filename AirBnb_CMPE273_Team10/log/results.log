@@ -9,3 +9,17 @@
 {"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-13T08:29:01.148Z"}
 {"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-13T08:29:12.752Z"}
 {"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-13T08:29:23.113Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-13T09:05:59.628Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-13T09:06:01.001Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-15T02:48:18.311Z"}
+{"saltRounds":10,"myPlaintextPassword":"1234","salt":"$2a$10$c1bbeTgVZPtiJZD99HISze","hash":"$2a$10$bGYhrl2c11r4rPYw3.2K6eoTV4ZU.S8x9AMSViBWsPUvSm3uI49P2","dt":"2016-11-15T02:48:18.218Z","first_name":"Sagar","last_name":"Mane","inputUsername":"sagar@gmail.com","inputPassword":"$2a$10$bGYhrl2c11r4rPYw3.2K6eoTV4ZU.S8x9AMSViBWsPUvSm3uI49P2","level":"info","message":"","timestamp":"2016-11-15T02:48:18.314Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-15T02:49:36.581Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-15T02:49:43.337Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-15T23:16:32.519Z"}
+{"saltRounds":10,"myPlaintextPassword":"1234","salt":"$2a$10$2jOhNL/5KAoHIPe6ajfM2O","hash":"$2a$10$wDrwBWqokowTL1TCkfdyCumDSRdpv3zb0xcLc5PIp.Kyd98JRcvMq","dt":"2016-11-15T23:16:32.415Z","first_name":"Hiral","last_name":"Parikh","inputUsername":"hiral@gmail.com","inputPassword":"$2a$10$wDrwBWqokowTL1TCkfdyCumDSRdpv3zb0xcLc5PIp.Kyd98JRcvMq","level":"info","message":"","timestamp":"2016-11-15T23:16:32.520Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-15T23:16:55.941Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-15T23:17:02.238Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-15T23:42:20.615Z"}
+{"saltRounds":10,"myPlaintextPassword":"1234","salt":"$2a$10$syj.hQQD3EBCbQS48P2u4.","hash":"$2a$10$da1C44/OVHtmEA91ITE3mOpxNMenQhx/.fCh6G0ds15OMGYjByn12","dt":"2016-11-15T23:42:20.389Z","first_name":"test","last_name":"test","inputUsername":"test@gmail.com","inputPassword":"$2a$10$r4NDRtrOKFupMBlHYmkEmOHuz3SoLXGW/KGB02tT./JETt62qc37W","level":"info","message":"","timestamp":"2016-11-15T23:42:20.617Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-15T23:42:47.248Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-15T23:42:52.578Z"}

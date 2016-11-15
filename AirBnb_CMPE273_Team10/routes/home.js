@@ -1,7 +1,7 @@
 var ejs 		= require("ejs");
 //var mysql		= require('./mysql');
 //var bid 		= require('./bid');
-var bcrypt 		= require('bcrypt');
+var bcrypt 		= require('bcrypt-nodejs');
 var mongo 		= require("./mongo");
 var ObjectId 	= require('mongodb').ObjectID;
 var mq_client 	= require('../rpc/client');
@@ -43,8 +43,8 @@ exports.registerNewUser = function(req, res) {
 	
 	var saltRounds = 10;
 	var myPlaintextPassword = req.param("inputPassword");
-	var salt = bcrypt.genSaltSync(saltRounds);
-	var hash = bcrypt.hashSync(myPlaintextPassword, salt);
+	//var salt = bcrypt.genSaltSync(saltRounds);
+	var hash = bcrypt.hashSync(myPlaintextPassword);
 	var dt = new Date();
 	var first_name		= req.param("first_name");
 	var last_name		= req.param("last_name");
@@ -55,7 +55,7 @@ exports.registerNewUser = function(req, res) {
 			"saltRounds"			: saltRounds,
 			"myPlaintextPassword"	: req.param("inputPassword"),
 			"salt"					: bcrypt.genSaltSync(saltRounds),
-			"hash"					: bcrypt.hashSync(myPlaintextPassword, salt),
+			"hash"					: bcrypt.hashSync(myPlaintextPassword),
 			"dt"					: dt,
 			"first_name"			: req.param("first_name"),
 			"last_name"				: req.param("last_name"),
