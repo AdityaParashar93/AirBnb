@@ -102,3 +102,23 @@ exports.logout = function(req, res) {
 	req.session.destroy();
 	res.redirect('/');
 };
+exports.subscribe=function(req,res){
+	console.log("inside subscriptions");
+	var subscriber_email=req.param("subscriber_email");
+	console.log(subscriber_email);
+	mongo.connect(mongoURL, function() {
+		console.log('CONNECTED TO MONGO');
+		var subscriber={subscriber:subscriber_email};
+		var collection = mongo.collection('subcription');
+		collection.insert(subscriber,function(err,result){
+			if(err){
+				console.log(err);
+			}
+			else{
+				console.log("data inserted into the db");
+				response={'statusCode':200};
+				//res.send(response);
+			}
+		});
+	});
+};

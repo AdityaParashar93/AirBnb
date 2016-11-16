@@ -16,8 +16,7 @@ app.config(function($routeProvider) {
 	});
 });
 
-
-//login
+// login
 app.controller('airbnb', function($scope, $http) {
 
 	console.log("I AM IN AIRBNB CONTROLLER");
@@ -79,7 +78,8 @@ app
 						if (RegisterCredentials.inputPassword === RegisterCredentials.confirmPassword) {
 							console.log(RegisterCredentials.inputPassword);
 							console.log(RegisterCredentials.confirmPassword);
-							console.log("BOTH PASSWORDS ARE SIMILAR, RECORD CAN BE INSERTED IN DB");
+							console
+									.log("BOTH PASSWORDS ARE SIMILAR, RECORD CAN BE INSERTED IN DB");
 							$http({
 								method : "POST",
 								url : '/registerNewUser',
@@ -109,4 +109,16 @@ app
 					};
 
 				});
-
+// subscribe
+app.controller('subscribe', function($scope, $http) {
+	$scope.subscribe = function() {
+		console.log("inside subscribe");
+		console.log($scope.subscriber_email);
+		$http({
+			method : "POST",
+			url : '/subscribe',
+			data : {"subscriber_email":$scope.subscriber_email}
+		})
+		
+	};
+});

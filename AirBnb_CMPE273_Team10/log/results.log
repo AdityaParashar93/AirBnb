@@ -23,3 +23,12 @@
 {"saltRounds":10,"myPlaintextPassword":"1234","salt":"$2a$10$syj.hQQD3EBCbQS48P2u4.","hash":"$2a$10$da1C44/OVHtmEA91ITE3mOpxNMenQhx/.fCh6G0ds15OMGYjByn12","dt":"2016-11-15T23:42:20.389Z","first_name":"test","last_name":"test","inputUsername":"test@gmail.com","inputPassword":"$2a$10$r4NDRtrOKFupMBlHYmkEmOHuz3SoLXGW/KGB02tT./JETt62qc37W","level":"info","message":"","timestamp":"2016-11-15T23:42:20.617Z"}
 {"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-15T23:42:47.248Z"}
 {"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-15T23:42:52.578Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-16T00:03:00.297Z"}
+{"saltRounds":10,"myPlaintextPassword":"123","salt":"$2a$10$9Pa6bychBYEVB6ky4EEc6O","hash":"$2a$10$CywDD6OXRCMwvZMP4lACTu5Me0MEyYT7gD5pl9ssyXoXFFEwAHMCi","dt":"2016-11-16T00:02:59.984Z","first_name":"sagar","last_name":"mane","inputUsername":"sagar@gmail.com","inputPassword":"$2a$10$npn08rkR0rjTLm.IIeY8Re144knzRDnxaosvzWpFjN3eIXR.NXP3u","level":"info","message":"","timestamp":"2016-11-16T00:03:00.298Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-16T00:03:35.755Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-16T00:03:39.610Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-16T00:03:51.546Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-16T00:04:08.611Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-16T00:07:11.038Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-16T00:08:12.455Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-16T00:09:02.739Z"}

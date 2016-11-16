@@ -81,7 +81,7 @@ app.post('/signin', function(req, res, next) {
 	})(req, res, next);
 });
 app.post('/logout', home.logout);
-
+app.post('/subscribe', home.subscribe);
 //GET
 app.get('/', home.land);
 app.get('/successLogin', home.redirectToHomepage);
