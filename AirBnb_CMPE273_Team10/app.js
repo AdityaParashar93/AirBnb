@@ -13,6 +13,10 @@ var LocalStrategy = require("passport-local").Strategy;
 var passport = require('passport');
 require('./routes/passportj')(passport);
 
+//Routes files below
+var profile = require('./routes/profile');
+
+
 //URL for the sessions collections in mongoDB
 var mongoSessionConnectURL = "mongodb://localhost:27017/AirbnbDatabaseMongoDB";
 var expressSession = require("express-session");
@@ -85,7 +89,9 @@ app.post('/subscribe', home.subscribe);
 //GET
 app.get('/', home.land);
 app.get('/successLogin', home.redirectToHomepage);
+app.get('/Profile', profile.land);
 
+//POST
 
 
 mongo.connect(mongoSessionConnectURL, function() {

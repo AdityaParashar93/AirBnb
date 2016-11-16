@@ -50,6 +50,11 @@ app.controller('airbnb', function($scope, $http) {
 		});
 	};
 
+	$scope.Profile = function()
+	{
+		window.location.assign("/Profile");
+	}
+
 });
 
 // register
