@@ -25,7 +25,7 @@ var logger 		= new (winston.Logger)({
 
 exports.land = function(req, res) {
 
-	ejs.renderFile('./views/index.ejs', function(err, result) {
+	ejs.renderFile('./views/signin.ejs', function(err, result) {
 		// render on success
 		if (!err) {
 			res.end(result);
@@ -50,7 +50,7 @@ exports.registerNewUser = function(req, res) {
 	var last_name		= req.param("last_name");
 	var inputUsername	= req.param("inputUsername");
 	var inputPassword	= hash;
-	var dob = req.param("dob");
+	
 	var msg_payload = { 
 			"saltRounds"			: saltRounds,
 			"myPlaintextPassword"	: req.param("inputPassword"),
@@ -60,11 +60,10 @@ exports.registerNewUser = function(req, res) {
 			"first_name"			: req.param("first_name"),
 			"last_name"				: req.param("last_name"),
 			"inputUsername"			: req.param("inputUsername"),
-			"inputPassword"			: hash,
-			"dob"                   :dob
+			"inputPassword"			: hash
 	
 	};
-	console.log(dob);
+	
 	console.log("ADDING A POST REQUEST register_new_user_queue QUEUE WITH msg_payload as:");
 	console.log(msg_payload);
 	logger.info("ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:");
@@ -103,7 +102,6 @@ exports.logout = function(req, res) {
 	req.session.destroy();
 	res.redirect('/');
 };
-
 exports.subscribe=function(req,res){
 	console.log("inside subscriptions");
 	var subscriber_email=req.param("subscriber_email");

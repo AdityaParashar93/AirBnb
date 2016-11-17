@@ -13,6 +13,10 @@ var LocalStrategy = require("passport-local").Strategy;
 var passport = require('passport');
 require('./routes/passportj')(passport);
 
+//Routes files below
+var profile = require('./routes/profile');
+
+
 //URL for the sessions collections in mongoDB
 var mongoSessionConnectURL = "mongodb://localhost:27017/AirbnbDatabaseMongoDB";
 var expressSession = require("express-session");
@@ -25,7 +29,7 @@ var app = express();
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
-app.use(express.favicon("public/images/favicon.png"));
+app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.methodOverride());
 app.use(express.json());
@@ -81,11 +85,13 @@ app.post('/signin', function(req, res, next) {
 	})(req, res, next);
 });
 app.post('/logout', home.logout);
-
+app.post('/subscribe', home.subscribe);
 //GET
 app.get('/', home.land);
 app.get('/successLogin', home.redirectToHomepage);
+app.get('/Profile', profile.land);
 
+//POST
 
 
 mongo.connect(mongoSessionConnectURL, function() {
