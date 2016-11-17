@@ -49,8 +49,8 @@
 <script src="angularjs/main.js"></script> -->
 
 </head>
-<body >
-<body ng-app="airbnb" ng-controller="subscribe" id="myPage" data-spy="scroll" data-target=".navbar"
+<body ng-app="airbnb">
+<body id="myPage" data-spy="scroll" data-target=".navbar"
 	data-offset="60">
 
 	<nav class="navbar-default navbar-fixed-top">
@@ -79,9 +79,9 @@
 		<h1>Airbnb, Inc.</h1>
 		<p>A Travel and Accomodation Marketplace!</p>
 		<form class="form-inline">
-			<input type="email" ng-model="subscriber_email" class="form-control" size="50"
+			<input type="email" class="form-control" size="50"
 				placeholder="Email Address" required>
-			<button type="button" class="btn btn-danger" ng-click="subscribe()">Subscribe</button>
+			<button type="button" class="btn btn-danger">Subscribe</button>
 		</form>
 	</div>
 
