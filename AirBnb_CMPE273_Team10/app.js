@@ -15,6 +15,7 @@ require('./routes/passportj')(passport);
 
 //Routes files below
 var profile = require('./routes/profile');
+var index=require("./routes/index");
 
 
 //URL for the sessions collections in mongoDB
@@ -87,7 +88,8 @@ app.post('/signin', function(req, res, next) {
 app.post('/logout', home.logout);
 app.post('/subscribe', home.subscribe);
 //GET
-app.get('/', home.land);
+app.get('/', routes.index);
+//app.get('/', home.land);
 app.get('/successLogin', home.redirectToHomepage);
 app.get('/Profile', profile.land);
 

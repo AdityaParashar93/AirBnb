@@ -1,12 +1,12 @@
-var app = angular.module('airbnb', [ 'ngRoute' ]);
+var app = angular.module('airbnb', ['ui.router','ngRoute','ngResource']);
 
 console.log("I AM INSIDE THE ANGULARJS FILE home.js");
 
 // FOLLOEING PART WILL CONFIGURE ALL MY ROUTES
-app.config(function($routeProvider) {
+app.config(function($stateProvider, $urlRouterProvider, $locationProvider,$routeProvider) {
 	console.log("I AM INSIDE $ROUTEPROVIDER FUNCTION OF ANGULARJS");
+	$locationProvider.html5Mode(true);
 	$routeProvider
-
 	.when("/login", {
 		templateUrl : "templates/login.html"
 	})
@@ -14,7 +14,19 @@ app.config(function($routeProvider) {
 	.when("/register", {
 		templateUrl : "templates/register.html"
 	});
+	$stateProvider.state('landing', {	
+		url : '/',
+		views: {
+            'header': {
+                templateUrl : 'templates/header.html',
+            },
+            'content': {
+                templateUrl : 'templates/index.html',
+            },
+		}
+	});
 });
+
 
 // login
 app.controller('airbnb', function($scope, $http) {
