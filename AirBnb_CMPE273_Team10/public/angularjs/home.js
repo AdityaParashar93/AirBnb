@@ -28,13 +28,17 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider,$route
 });
 
 
-// login
+//login
 app.controller('airbnb', function($scope, $http) {
+	
+	
 
-	console.log("I AM IN AIRBNB CONTROLLER");
+	
 	$scope.invalid_login = true;
-
-	$scope.signin = function() {
+	
+	
+	console.log("I AM IN AIRBNB CONTROLLER");
+		$scope.signin = function() {
 
 		console.log("SIGN IN BUTTON CLICKED");
 
@@ -57,46 +61,46 @@ app.controller('airbnb', function($scope, $http) {
 			} else {
 				console.log("render the Invalid LogIn Message here");
 				$scope.invalid_login = false;
+				$scope.invalid_register = true;
+				$scope.valid_register = true;
+				$scope.already_exists = true;
 			}
 
 		});
 	};
-
+	
 	$scope.Profile = function()
 	{
 		window.location.assign("/Profile");
-	}
-
+	};
+	
 });
 
 // register
-app
-		.controller(
+app.controller(
 				'register',
 				function($scope, $http) {
-
-					console.log("I AM INSIDE register CONTROLLER");
-					$scope.invalid_login = true;
-					$scope.valid_login = true;
+					$scope.invalid_register = true;
+					$scope.valid_register = true;
 					$scope.already_exists = true;
+					
+					console.log("I AM INSIDE register CONTROLLER");
 
 					$scope.register = function() {
+						console.log($scope.dob);
 
 						console.log("REGISTER BUTTON CLICKED");
-
 						var RegisterCredentials = {
 							"first_name" : $scope.first_name,
 							"last_name" : $scope.last_name,
 							"inputUsername" : $scope.inputUsername,
 							"inputPassword" : $scope.inputPassword,
-							"confirmPassword" : $scope.confirmPassword
+							"dob" : $scope.dob
 						};
 
-						if (RegisterCredentials.inputPassword === RegisterCredentials.confirmPassword) {
-							console.log(RegisterCredentials.inputPassword);
-							console.log(RegisterCredentials.confirmPassword);
-							console
-									.log("BOTH PASSWORDS ARE SIMILAR, RECORD CAN BE INSERTED IN DB");
+					//		console.log(RegisterCredentials.inputPassword);
+					//		console.log(RegisterCredentials.confirmPassword);
+					//		console.log("BOTH PASSWORDS ARE SIMILAR, RECORD CAN BE INSERTED IN DB");
 							$http({
 								method : "POST",
 								url : '/registerNewUser',
@@ -105,28 +109,25 @@ app
 
 								if (data.statusCode === 200) {
 									console.log("USER INSERTED");
-									$scope.invalid_login = true;
+									$scope.invalid_register = true;
 									$scope.already_exists = true;
-									$scope.valid_login = false;
+									$scope.valid_register = false;
 								} else if (data.statusCode === 401) {
 									console.log("INVALID ENTRY RECEIVED");
-									$scope.valid_login = true;
+									$scope.valid_register = true;
 									$scope.already_exists = true;
-									$scope.invalid_login = false;
+									$scope.invalid_register = false;
 								} else {
 									console.log("USER ALREADY EXISTS");
 									$scope.already_exists = false;
-									$scope.invalid_login = true;
-									$scope.valid_login = true;
+									$scope.invalid_register = true;
+									$scope.valid_register = true;
 								}
-							});
-						} else {
-							$scope.invalid_login = false;
-						}
+							}); 
 					};
-
 				});
-// subscribe
+
+//subscribe
 app.controller('subscribe', function($scope, $http) {
 	$scope.subscribe = function() {
 		console.log("inside subscribe");
@@ -135,7 +136,6 @@ app.controller('subscribe', function($scope, $http) {
 			method : "POST",
 			url : '/subscribe',
 			data : {"subscriber_email":$scope.subscriber_email}
-		})
-		
+		});
 	};
 });

@@ -17,7 +17,7 @@ exports.handle_register_new_user_queue_request = function (msg, callback) {
 	var last_name 			= msg.last_name;
 	var inputUsername 		= msg.inputUsername;
 	var inputPassword 		= msg.inputPassword;
-
+	var dob                 = msg.dob;
 	console.log("LISTENING TO handle_register_new_user_queue_request WITH msg_payload AS: ");
 	console.log(msg);
 	
@@ -42,6 +42,7 @@ exports.handle_register_new_user_queue_request = function (msg, callback) {
 					user_id_ssn_format : "",
 					fname 	: first_name,
 					lname 	: last_name,
+					dob     : dob,
 					address : "",
 					city	: "",
 					state	: "",

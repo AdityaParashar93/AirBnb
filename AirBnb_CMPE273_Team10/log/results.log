@@ -32,3 +32,14 @@
 {"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-16T00:07:11.038Z"}
 {"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-16T00:08:12.455Z"}
 {"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-16T00:09:02.739Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-17T22:47:23.801Z"}
+{"saltRounds":10,"myPlaintextPassword":"asd","salt":"$2a$10$gRk0FIj4hlsyyPD51xxLF.","hash":"$2a$10$Ks2r0UApBPpvCt8mETGBOeHdRu5/QMs.40FcOF5R/zYuY369wjpi2","dt":"2016-11-17T22:47:23.502Z","first_name":"asdf","last_name":"erqdas","inputUsername":"asd@cc.com","inputPassword":"$2a$10$6SKaivL7HZgemmmr.GRioup01WsfSkKseI6Wu55Nju1ForvfCPCUy","dob":"2222-11-11","level":"info","message":"","timestamp":"2016-11-17T22:47:23.802Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-17T22:47:27.545Z"}
+{"saltRounds":10,"myPlaintextPassword":"asd","salt":"$2a$10$xG5u.rh4hYtTBhvoomTsJO","hash":"$2a$10$w.3qgG/rMiSfmMSL7zkNC.9vkIi59izyhDTfBR534l9VJRlK8IaES","dt":"2016-11-17T22:47:27.257Z","first_name":"asdf","last_name":"erqdas","inputUsername":"asd@cc.com","inputPassword":"$2a$10$srQFHv3W7dFLKFmUZg9j3.OY6lrgi6oJFZVKIE2lo2qJS.TtPhCaO","dob":"2222-11-11","level":"info","message":"","timestamp":"2016-11-17T22:47:27.545Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-17T22:47:37.403Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-17T22:47:43.606Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-17T22:47:45.403Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-17T22:50:25.007Z"}
+{"saltRounds":10,"myPlaintextPassword":"asdas","salt":"$2a$10$Rg/3ubgZ55.DUzQJnIslvO","hash":"$2a$10$qi/qvvRCZLJlTkCR8ObI2O/uceLt82CoWsvNdcMFfmyq5xiXqyKjG","dt":"2016-11-17T22:50:24.722Z","first_name":"asd","last_name":"asd","inputUsername":"asd@cc.com","inputPassword":"$2a$10$7S5e/cYbD/ZN.gWp1C9Os.pzF9j8UxMPbxepkeuLgyVB0GSsQ8iuq","dob":"0223-11-22","level":"info","message":"","timestamp":"2016-11-17T22:50:25.007Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-17T22:50:44.019Z"}
+{"saltRounds":10,"myPlaintextPassword":"123","salt":"$2a$10$7c12p1TFnYBXUzgXrVTOye","hash":"$2a$10$vUZCUSgh/p.kvqP9GcaHgO6VJiFl/DQDrXkW6SW07.yftStVfF2Ky","dt":"2016-11-17T22:50:43.726Z","first_name":"asd","last_name":"asd","inputUsername":"aasd@cc.com","inputPassword":"$2a$10$PZ3dQFqbEeT7Dp532SN55ell.LuVcsujSSWCzR5u91XuRcXISrYSe","dob":"0223-11-22","level":"info","message":"","timestamp":"2016-11-17T22:50:44.019Z"}
