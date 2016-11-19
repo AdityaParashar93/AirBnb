@@ -1,0 +1,254 @@
+<html>
+<head>
+<title>AirBNB</title>
+
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js">
+	
+</script>
+
+<script
+	src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js">
+	
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat"
+	rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato"
+	rel="stylesheet" type="text/css">
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<link rel='stylesheet' href='/stylesheets/style.css'>
+<!-- <link rel='stylesheet' href='/stylesheets/main.css'> -->
+<link rel='stylesheet' href='/stylesheets/homepage.css'>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link
+	href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700'
+	rel='stylesheet' type='text/css'>
+
+
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+	
+</script>
+
+<script src="angularjs/admin.js"></script>
+
+
+</head>
+
+
+<body ng-app="airbnb_admin" id="myPage" data-spy="scroll"
+	data-target=".navbar" data-offset="60">
+
+	<nav class="navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<img src="/images/logo.png" alt="Paris" width="50" height="50">
+				<a class="navbar-brand" href="#myPage">AIRBNB</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#services">ADMIN LOGIN</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="bgimg jumbotron text-center">
+		<h2>Airbnb, Inc. (ADMIN PANEL)</h2>
+		<p>A Travel and Accomodation Marketplace!</p>
+		<!-- 		<form class="form-inline">
+			<input type="email" ng-model="subscriber_email" class="form-control"
+				size="50" placeholder="Email Address" required>
+			<button type="button" class="btn btn-danger" ng-click="subscribe()">Subscribe</button>
+		</form> -->
+	</div>
+
+	<!-- Container (About Section) -->
+	<div id="about" class="container-fluid">
+		<div class="row">
+			<div class="col-sm-8">
+				<h2>What We Do!</h2>
+				<br>
+				<h4>Airbnb is a peer-to-peer online marketplace and homestay
+					network that enables people to list or rent short-term lodging in
+					residential properties, with the cost of such accommodation set by
+					the property owner.</h4>
+				<br>
+				<p>The company receives percentage service fees from both guests
+					and hosts in conjunction with every booking It has over 2,000,000
+					listings in 34,000 cities and 191 countries. Airbnb was founded in
+					August 2008, is headquartered in San Francisco, California, and is
+					privately owned and operated.</p>
+				<br>
+			</div>
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-signal logo"></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid bg-grey">
+		<div class="row">
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-globe logo slideanim"></span>
+			</div>
+			<div class="col-sm-8">
+				<h2>Our Values</h2>
+				<br>
+				<h4>
+					<strong>MISSION:</strong> Airbnb is a peer-to-peer accommodation
+					market place that connects hosts (vendors of rooms/accommodations)
+					and travelers via its website. Airbnb enables transactions between
+					these two entities by charging a 'service fee' without directly
+					owning any rooms by itself.
+				</h4>
+				<br>
+				<p>
+					<strong>VISION:</strong> This business model creates new sources of
+					supply and relies on management for developing quality and
+					self-attainment of maturity from the vendors, or the people
+					operating on behalf of vendors. Security and safety of the
+					accommodation is not always by Airbnb and are completely left to
+					travelers to choose based on published reviews. Unlike traditional
+					hotels, Airbnb scales not by scaling inventory but by increasing
+					the hosts and travelers and matching them with each other.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Container (Services Section) -->
+	<div id="services" class="container-fluid text-center">
+		<h2>SERVICES</h2>
+		<h4>THIS IS ADMIN PANEL</h4>
+		<br>
+		<div class="row slideanim">
+			<div class="col-sm-12">
+				<a href="#login"><span
+					class="glyphicon glyphicon-off logo-small"></span></a>
+				<h4>ADMIN LOGIN</h4>
+				<p>Login to access our system..</p>
+			</div>
+
+		</div>
+		<br> <br>
+		<div id="main">
+
+			<div ng-view></div>
+
+		</div>
+	</div>
+
+	<!-- Container (Portfolio Section) -->
+	<div id="portfolio" class="container-fluid text-center bg-grey">
+		<h2>What our customers say</h2>
+		<div id="myCarousel" class="carousel slide text-center"
+			data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<h4>
+						"AIRBNB ROCKS! I am so happy with the result! :)"<br> <span
+							style="font-style: normal;">Michael Scott, Regional
+							Manager</span>
+					</h4>
+				</div>
+				<div class="item">
+					<h4>
+						"AWESOME VENTURE!!"<br> <span style="font-style: normal;">
+							Pam Beesly, Dunder Mifflin Paper Company Rep</span>
+					</h4>
+				</div>
+				<div class="item">
+					<h4>
+						"CHEERS TO YOU GUYS!"<br> <span style="font-style: normal;">Dwight
+							K. Schrute, Salesman</span>
+					</h4>
+				</div>
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" role="button"
+				data-slide="prev"> <span
+				class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a> <a class="right carousel-control" href="#myCarousel" role="button"
+				data-slide="next"> <span
+				class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+
+	<footer class="container-fluid text-center">
+		<a href="#myPage" title="To Top"> <span
+			class="glyphicon glyphicon-chevron-up"></span>
+		</a>
+	</footer>
+
+	<script>
+		$(document).ready(
+				function() {
+					// Add smooth scrolling to all links in navbar + footer link
+					$(".navbar a, footer a[href='#myPage']").on('click',
+							function(event) {
+
+								// Prevent default anchor click behavior
+								event.preventDefault();
+
+								// Store hash
+								var hash = this.hash;
+
+								// Using jQuery's animate() method to add smooth page scroll
+								// The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+								$('html, body').animate({
+									scrollTop : $(hash).offset().top
+								}, 900, function() {
+
+									// Add hash (#) to URL when done scrolling (default click behavior)
+									window.location.hash = hash;
+								});
+							});
+
+					// Slide in elements on scroll
+					$(window).scroll(function() {
+						$(".slideanim").each(function() {
+							var pos = $(this).offset().top;
+
+							var winTop = $(window).scrollTop();
+							if (pos < winTop + 600) {
+								$(this).addClass("slide");
+							}
+						});
+					});
+				})
+	</script>
+</body>
+</html>

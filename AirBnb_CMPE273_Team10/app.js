@@ -2,27 +2,27 @@
 /**
  * Module dependencies.
  */
-
-var express = require('express');
-var routes = require('./routes');
-var user = require('./routes/user');
-var http = require('http');
-var path = require('path');
-var home = require('./routes/home');
+var express		= require('express');
+var routes		= require('./routes');
+var http		= require('http');
+var path		= require('path');
 var LocalStrategy = require("passport-local").Strategy;
-var passport = require('passport');
+var passport 	= require('passport');
 require('./routes/passportj')(passport);
 
 //Routes files below
-var profile = require('./routes/profile');
-var index=require("./routes/index");
+var user 		= require('./routes/user');
+var index 		= require('./routes/index');
+var home 		= require('./routes/home');
+var profile 	= require('./routes/profile');
+var admin 		= require('./routes/admin');
 
 
 //URL for the sessions collections in mongoDB
-var mongoSessionConnectURL = "mongodb://localhost:27017/AirbnbDatabaseMongoDB";
-var expressSession = require("express-session");
-var mongoStore = require("connect-mongo/es5")(expressSession);
-var mongo = require("./routes/mongo");
+var mongoSessionConnectURL 	= "mongodb://localhost:27017/AirbnbDatabaseMongoDB";
+var expressSession 			= require("express-session");
+var mongoStore 				= require("connect-mongo/es5")(expressSession);
+var mongo 					= require("./routes/mongo");
 
 var app = express();
 
@@ -51,7 +51,7 @@ app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
-if ('development' == app.get('env')) {
+if ('development' === app.get('env')) {
   app.use(express.errorHandler());
 }
 
@@ -61,9 +61,9 @@ app.use(passport.session());
 //POST
 app.post('/registerNewUser', home.registerNewUser);
 app.post('/signin', function(req, res, next) {
-	console.log("INSIDE POST METHOD signin");
+	console.log("INSIDE POST METHOD signin_user");
 	console.log(req.body);
-	passport.authenticate('signin', function(err, user) {
+	passport.authenticate('signin_user', function(err, user) {
 		if (err) {
 			console.log(err);
 		}
@@ -71,7 +71,7 @@ app.post('/signin', function(req, res, next) {
 			req.session.username = user.username;
 			console.log(req.session.username);
 			
-			console.log('BEFORE SENDING');
+			console.log('BEFORE SENDING USER');
 			console.log(user);
 			res.send({
 				'statusCode' : 200
@@ -82,19 +82,45 @@ app.post('/signin', function(req, res, next) {
 			});
 		}
 
-		console.log("SESSION STARTED IN PASSPORT");
+		console.log("USER SESSION STARTED IN PASSPORT");
 	})(req, res, next);
 });
+
+app.post('/afterAdminLogin', function(req, res, next) {
+	console.log("INSIDE POST METHOD signin_admin");
+	console.log(req.body);
+	passport.authenticate('signin_admin', function(err, user) {
+		if (err) {
+			console.log(err);
+		}
+		if (user) {
+			req.session.username = user.username;
+			console.log(req.session.username);
+			console.log('BEFORE SENDING ADMIN');
+			res.send({
+				'statusCode' : 200
+			});
+		} else {
+			res.send({
+				'statusCode' : 401
+			});
+		}
+
+		console.log("ADMIN SESSION STARTED IN PASSPORT");
+	})(req, res, next);
+});
+
 app.post('/logout', home.logout);
 app.post('/subscribe', home.subscribe);
+app.post('/adminApproveUser', admin.adminApproveUser);
+
 //GET
 app.get('/', routes.index);
-//app.get('/', home.land);
 app.get('/successLogin', home.redirectToHomepage);
 app.get('/Profile', profile.land);
-
-//POST
-
+app.get('/admin', admin.land);
+app.get('/successAdminLogin', admin.redirectToAdminHomepage);
+app.get('/adminApproveUserTasks', admin.adminApproveUserTasks);
 
 mongo.connect(mongoSessionConnectURL, function() {
 	console.log('Connected to mongo at: ' + mongoSessionConnectURL);

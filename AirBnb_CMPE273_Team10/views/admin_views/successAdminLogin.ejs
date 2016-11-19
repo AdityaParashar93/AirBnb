@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<!-- start: Mobile Specific -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- end: Mobile Specific -->
+	
+	<!-- start: CSS -->
+	<link id="bootstrap-style" href="stylesheets/bootstrap.min.css" rel="stylesheet">
+	<link href="stylesheets/bootstrap-responsive.min.css" rel="stylesheet">
+	<link id="base-style" href="stylesheets/style.css" rel="stylesheet">
+	<link id="base-style-responsive" href="stylesheets/style-responsive.css" rel="stylesheet">
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+	<!-- end: CSS -->
+		
+	<!-- start: Favicon -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<!-- end: Favicon -->	
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+		<script src="angularjs/admin.js"></script>
+</head>
+
+<body ng-app="airbnb_admin" ng-controller="airbnb_admin">
+		<!-- start: Header -->
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+
+				<a class="brand"><span>ADMIN PANEL</span></a>
+
+				<div class="nav-no-collapse header-nav">
+					<ul class="nav pull-right">
+						<li class="dropdown hidden-phone">
+							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+								<i class="icon-bar-chart"></i>
+							</a>
+						</li>
+
+						<li class="dropdown hidden-phone">
+							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+								<i class="icon-envelope"></i>
+							</a>
+						</li>
+
+						<li class="dropdown hidden-phone">
+							<a class="btn dropdown-toggle" data-toggle="dropdown" href="">
+								<i class="icon-tasks"></i>
+							</a>
+						</li>
+
+						<li>
+							<a class="btn" href="#">
+								<i class="icon-edit"></i>
+							</a>
+						</li>
+						<li>
+							<a class="btn" href="#">
+								<i class="icon-eye-open"></i>
+							</a>
+						</li>
+						
+						<li>
+							<form action="logout" method="post">
+								<button name="logout" ng-click="logout()" type="submit">
+								LOGOUT</button>
+							</form>
+						</li>
+
+						<li class="dropdown">
+							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+								<i class="halflings-icon white user"></i> TEST
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-menu-title">
+ 									<span>Account Settings</span>
+								</li>
+								<li><a href="#"><i class="halflings-icon user"></i> Profile</a></li>
+								<li><a href="#"><i class="halflings-icon wrench"></i> Setting</a></li>
+								<li><a href="#"><i class="halflings-icon off"></i> Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- start: Header -->
+	
+		<div class="container-fluid-full">
+			<div class="row-fluid">
+				
+			<!-- start: Main Menu -->
+			<div id="sidebar-left" class="span2">
+				<div class="nav-collapse sidebar-nav">
+					<ul class="nav nav-tabs nav-stacked main-menu">
+						<li><a href="#"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>	
+						<li><a href="#"><i class="icon-envelope"></i><span class="hidden-tablet"> Review</span></a></li>
+						<li><a href="#tasks"><i class="icon-tasks"></i><span class="hidden-tablet"> Tasks</span></a></li>
+						<li><a href="#"><i class="icon-edit"></i><span class="hidden-tablet"> Bill</span></a></li>
+						<li><a href="#"><i class="icon-eye-open"></i><span class="hidden-tablet"> Display</span></a></li>
+						<li>
+							<a class="dropmenu" href="#"><i class="icon-dashboard"></i><span class="hidden-tablet"> Analytics</span><span class="label label-important"> 3 </span></a>
+							<ul>
+								<li><a class="submenu" href="submenu.html"><i class="icon-file-alt"></i><span class="hidden-tablet"> Top 10 Properties</span></a></li>
+								<li><a class="submenu" href="submenu2.html"><i class="icon-file-alt"></i><span class="hidden-tablet"> City Wise Revenue</span></a></li>
+								<li><a class="submenu" href="submenu3.html"><i class="icon-file-alt"></i><span class="hidden-tablet"> Top 10 Hosts</span></a></li>
+							</ul>	
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- end: Main Menu -->
+			</div>
+			
+			<!-- start: Content -->
+			<div id="content" class="span10">
+				<ul class="breadcrumb">
+					<li>Dashboard</li>
+				</ul>
+				<!-- Page Content -->
+				<div id="page-content-wrapper">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-lg-12">
+								<div id="main">
+									<div ng-view></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /#page-content-wrapper -->
+			</div>
+
+		</div>
+		
+	<!-- start: JavaScript-->
+
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery-migrate-1.0.0.min.js"></script>
+		<script src="js/jquery-ui-1.10.0.custom.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src='js/fullcalendar.min.js'></script>
+		<script src='js/jquery.dataTables.min.js'></script>
+		<script src="js/jquery.chosen.min.js"></script>
+		<script src="js/jquery.uniform.min.js"></script>
+		<script src="js/jquery.cleditor.min.js"></script>
+		<script src="js/jquery.elfinder.min.js"></script>
+		<script src="js/jquery.raty.min.js"></script>
+		<script src="js/jquery.uploadify-3.1.min.js"></script>
+		<script src="js/jquery.masonry.min.js"></script>
+		<script src="js/jquery.sparkline.min.js"></script>
+		<script src="js/custom.js"></script>
+
+		
+	<!-- end: JavaScript-->
+	
+</body>
+</html>

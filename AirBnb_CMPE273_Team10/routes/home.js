@@ -49,8 +49,9 @@ exports.registerNewUser = function(req, res) {
 	var first_name		= req.param("first_name");
 	var last_name		= req.param("last_name");
 	var inputUsername	= req.param("inputUsername");
+	var dob 			= req.param("dob");
 	var inputPassword	= hash;
-	var dob = req.param("dob");
+	
 	var msg_payload = { 
 			"saltRounds"			: saltRounds,
 			"myPlaintextPassword"	: req.param("inputPassword"),
@@ -61,10 +62,11 @@ exports.registerNewUser = function(req, res) {
 			"last_name"				: req.param("last_name"),
 			"inputUsername"			: req.param("inputUsername"),
 			"inputPassword"			: hash,
-			"dob"                   :dob
+			"dob"                   : dob,
+			"approve_flag"			: "NO"
 	
 	};
-	console.log(dob);
+
 	console.log("ADDING A POST REQUEST register_new_user_queue QUEUE WITH msg_payload as:");
 	console.log(msg_payload);
 	logger.info("ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:");
@@ -105,8 +107,10 @@ exports.logout = function(req, res) {
 	req.session.destroy();
 	res.redirect('/');
 };
+
 exports.subscribe=function(req,res){
 	console.log("inside subscriptions");
+	var response;
 	var subscriber_email=req.param("subscriber_email");
 	console.log(subscriber_email);
 	mongo.connect(mongoURL, function() {

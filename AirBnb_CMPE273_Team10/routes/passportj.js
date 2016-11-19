@@ -8,43 +8,83 @@ var mongo = require('./mongo');
 var bcrypt = require('bcrypt-nodejs');
 
 module.exports = function(passport) {
-	console.log("PASSPORT CONNECTION ESTABLISHED!");
-	passport.use('signin', new LocalStrategy(
-			function(username, password, done) {
+	console.log("PASSPORT CONNECTION ESTABLISHED WITH USER!");
+	passport.use('signin_user', new LocalStrategy(function(username, password,
+			done) {
 
-				var dt = new Date();
-				var myPlaintextPassword = password;
+		var dt = new Date();
+		var myPlaintextPassword = password;
 
-				mongo.connect(loginDatabase, function() {
+		mongo.connect(loginDatabase, function() {
 
-					console.log('CONNECTED TO MONGO IN passportJS');
-					var collection_login = mongo.collection('login');
-					var json_responses;
+			console.log('CONNECTED TO MONGO IN passportJS');
+			var collection_login = mongo.collection('login');
+			var json_responses;
 
-					collection_login.findOne({
-						username : username
-					}, function(err, user) {
-						if (user) {
-							var password = user.password;
+			collection_login.findOne({
+				username : username
+			}, function(err, user) {
+				console.log("placees re");
+				console.log(user.approve_flag);
+				
+				if (user.approve_flag === "YES") {
+					var password = user.password;
 
-							console.log("The password is: " + password);
-							console.log("The username is: " + username);
-							console.log(user);
+					console.log("The password is: " + password);
+					console.log("The username is: " + username);
+					console.log(user);
 
-							if (bcrypt.compareSync(myPlaintextPassword,
-									password)) {
+					if (bcrypt.compareSync(myPlaintextPassword, password)) {
 
-								done(null, user);
-							} else {
-								done(null, false);
-							}
+						done(null, user);
+					} else {
+						done(null, false);
+					}
 
-						} else {
-							done(null, false);
-						}
-					});
+				} else {
+					done(null, false);
+				}
+			});
 
-				});
+		});
 
-			}));
+	}));
+	
+	passport.use('signin_admin', new LocalStrategy(function(username, password,
+			done) {
+
+		var dt = new Date();
+		var myPlaintextPassword = password;
+
+		mongo.connect(loginDatabase, function() {
+
+			console.log('CONNECTED TO MONGO IN passportJS');
+			var collection_login = mongo.collection('login_admin');
+			var json_responses;
+
+			collection_login.findOne({
+				username : username
+			}, function(err, user) {
+				if (user) {
+					var password = user.password;
+
+					console.log("The password is: " + password);
+					console.log("The username is: " + username);
+					console.log(user);
+
+					if (bcrypt.compareSync(myPlaintextPassword, password)) {
+
+						done(null, user);
+					} else {
+						done(null, false);
+					}
+
+				} else {
+					done(null, false);
+				}
+			});
+
+		});
+
+	}));
 };

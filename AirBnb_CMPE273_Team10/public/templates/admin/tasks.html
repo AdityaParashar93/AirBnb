@@ -1,0 +1,38 @@
+<div ng-controller="admin_approve">
+	<div>
+
+		<div class="table table-title">
+			<h2>APPROVE FOLLOWING USERS</h2>
+		</div>
+		<table class="table table-fill">
+			<tr>
+				<th>USER FIRST NAME</th>
+				<th>USER LAST NAME</th>
+				<th>USERNAME</th>
+				<th>APROVED FLAG</th>
+				<th>APROVED</th>
+			</tr>
+			<tr ng-repeat="user in results">
+				<td>{{user.fname}}</td>
+				<td>{{user.lname}}</td>
+				<td>{{user.username}}</td>
+				<td>{{user.approve_flag}}</td>
+				<td>
+					<div>
+						<form role="form">
+							<div class="form-group">
+								<input type="text" ng-model="user.new_approve_flag" name="approve_flag"
+									id="approve_flag" class="form-control input-sm"
+									placeholder="YES to approve USERE">
+							</div>
+
+							<input type="submit" ng-click="approveUser(user.new_approve_flag, user._id)"
+								value="APPROVE USER" class="btn btn-info btn-block">
+						</form>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+	</div>
+</div>
