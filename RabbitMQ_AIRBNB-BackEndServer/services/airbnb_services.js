@@ -17,7 +17,8 @@ exports.handle_register_new_user_queue_request = function (msg, callback) {
 	var last_name 			= msg.last_name;
 	var inputUsername 		= msg.inputUsername;
 	var inputPassword 		= msg.inputPassword;
-	var dob                 = msg.dob;
+	var approve_flag		= msg.approve_flag;
+
 	console.log("LISTENING TO handle_register_new_user_queue_request WITH msg_payload AS: ");
 	console.log(msg);
 	
@@ -42,7 +43,6 @@ exports.handle_register_new_user_queue_request = function (msg, callback) {
 					user_id_ssn_format : "",
 					fname 	: first_name,
 					lname 	: last_name,
-					dob     : dob,
 					address : "",
 					city	: "",
 					state	: "",
@@ -55,7 +55,8 @@ exports.handle_register_new_user_queue_request = function (msg, callback) {
 					currentlogintime: dt,
 					logintime 		: dt,
 					username : inputUsername,
-					password : hash
+					password : hash,
+					approve_flag : approve_flag
 				}, function(err, user) {
 					if (user) {
 						
@@ -76,6 +77,85 @@ exports.handle_register_new_user_queue_request = function (msg, callback) {
 
 			}
 
+		});
+
+	});
+
+};
+
+
+exports.handle_admin_list_user_request = function (msg, callback) {
+
+	console.log("IN handle_admin_approve_user_request:");
+	console.log(msg);
+	var json_responses = {};
+
+	var username 	= msg.username;
+
+	console.log("LISTENING TO A handle_admin_list_user_request WITH msg_payload AS: ");
+	console.log(msg);
+	
+	mongo.connect(mongoURL, function() {
+		console.log('CONNECTED TO MONGO IN handle_admin_list_user_request');
+		var collection_login = mongo.collection('login');
+		var json_response= {};
+		
+		collection_login.find({
+			approve_flag : {
+				$eq : "NO"
+			}
+		}).toArray(function(err, items) {
+
+			json_response = {
+				"users" : items
+			};
+			console.log(json_response);
+			callback(null, json_response);
+		});
+
+	});
+
+};
+
+exports.handle_admin_approve_user_queue_request = function (msg, callback) {
+
+	console.log("IN handle_admin_approve_user_queue_request:");
+	console.log(msg);
+	var json_responses = {};
+	var flag		= msg.flag;
+	var user_id		= msg.user_id;
+	var username 	= msg.username;
+
+	console.log("LISTENING TO A handle_admin_approve_user_queue_request WITH msg_payload AS: ");
+	console.log(msg);
+	
+	mongo.connect(mongoURL, function() {
+		console.log('CONNECTED TO MONGO IN handle_admin_approve_user_queue_request');
+		var collection_login = mongo.collection('login');
+		var json_response= {};
+		
+		collection_login.update({
+			_id	: ObjectId(user_id) 
+		}, {
+			$set : {
+				approve_flag : "YES"
+			}
+		},
+
+		function(err, user) {
+			if (user) {
+				json_responses = {
+					"statusCode" : 200
+				};
+				callback(null, json_responses);
+
+			} else {
+				console.log("returned false");
+				json_responses = {
+					"statusCode" : 401
+				};
+				callback(null, json_responses);
+			}
 		});
 
 	});
