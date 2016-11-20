@@ -16,12 +16,15 @@ var tsFormat 	= (new Date()).toLocaleTimeString();
 var logger 		= new (winston.Logger)({
 	transports: [
 	             new (winston.transports.File)({
-	            	 filename: 'log/results.log',
+	            	 filename: 'log/host.log',
 	            	 timestamp: tsFormat,
 	            	 level: env === 'development' ? 'debug' : 'info'
 	             })
 	             ]
 });
+
+logger.info("HOST LOG SESSION STARTS");
+logger.warn("THIS IS A SAMPLE WARNING LOG MESSAGE");
 
 exports.land = function(req, res) {
 
@@ -30,10 +33,12 @@ exports.land = function(req, res) {
 		if (!err) {
 			res.end(result);
 			console.log("successfully rendered the signin module");
+			logger.info("SUCCESSFULLY RENDERED THE SIGNIN MODULE");
 		}
 		// render or error
 		else {
 			res.end('An error occurred');
+			logger.warn("AN ERROR OCCURED");
 			console.log(err);
 		}
 	});
@@ -75,6 +80,7 @@ exports.registerNewUser = function(req, res) {
 	mq_client.make_request('register_new_user_queue', msg_payload, function(err, results){
 		console.log(results);
 		if(err){
+			logger.warn("AN ERROR OCCURED IN registerNewUser");
 			throw err;
 		}
 		else {
@@ -106,26 +112,4 @@ exports.logout = function(req, res) {
 	logger.info("IN DESTROY SESSION FUNCTION");
 	req.session.destroy();
 	res.redirect('/');
-};
-
-exports.subscribe=function(req,res){
-	console.log("inside subscriptions");
-	var response;
-	var subscriber_email=req.param("subscriber_email");
-	console.log(subscriber_email);
-	mongo.connect(mongoURL, function() {
-		console.log('CONNECTED TO MONGO');
-		var subscriber={subscriber:subscriber_email};
-		var collection = mongo.collection('subcription');
-		collection.insert(subscriber,function(err,result){
-			if(err){
-				console.log(err);
-			}
-			else{
-				console.log("data inserted into the db");
-				response={'statusCode':200};
-				//res.send(response);
-			}
-		});
-	});
 };

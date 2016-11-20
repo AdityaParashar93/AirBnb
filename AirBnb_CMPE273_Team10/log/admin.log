@@ -1,0 +1,15 @@
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-20T10:49:50.960Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG","timestamp":"2016-11-20T10:49:50.963Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-20T10:49:57.881Z"}
+{"level":"info","message":"MSG_PAYLOAD[object Object]","timestamp":"2016-11-20T10:49:57.881Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-20T10:51:08.369Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG","timestamp":"2016-11-20T10:51:08.373Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-20T10:51:12.146Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-20T10:51:12.146Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-20T10:56:11.807Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-20T10:56:11.807Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-20T10:56:16.548Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-20T10:56:16.549Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-20T10:58:29.302Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-20T10:58:42.504Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-20T10:58:42.504Z"}

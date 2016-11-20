@@ -13,6 +13,20 @@ var env 		= process.env.NODE_ENV || 'development';
 var mongoURL 	= "mongodb://localhost:27017/AdminAirbnbDatabaseMongoDB";
 
 
+var tsFormat = (new Date()).toLocaleTimeString();
+var logger = new (winston.Logger)({
+  transports: [
+    new (winston.transports.File)({
+      filename: 'log/admin.log',
+      timestamp: tsFormat,
+      level: env === 'development' ? 'debug' : 'info'
+    })
+  ]
+});
+
+logger.info("ADMIN LOG SESSION STARTS");
+logger.warn("THIS IS A SAMPLE WARNING LOG MESSAGE");
+
 exports.land = function(req, res) {
 
     ejs.renderFile('./views/admin_views/admin_signin.ejs', function(err, result) {
@@ -20,10 +34,12 @@ exports.land = function(req, res) {
         if (!err) {
             res.end(result);
             console.log("successfully rendered the signin module");
+            logger.info("SUCCESSFULLY RENDERED THE SIGNIN MODULE");
         }
         // render or error
         else {
             res.end('An error occurred');
+            logger.warn("AN ERROR OCCURED");
             console.log(err);
         }
     });
@@ -32,7 +48,6 @@ exports.land = function(req, res) {
 //Redirects to the homepage
 exports.redirectToAdminHomepage = function(req, res) {
 	
-	console.log("place");
 	if (req.session.username) {
 
 		res.header('Cache-Control',
@@ -52,12 +67,15 @@ exports.adminApproveUserTasks = function(req, res) {
 			"username": username
 	};
 	
-	console.log("ADDING A POST REQUEST ON admin_list_user WITH msg_payload AS: ");
+	console.log("ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload AS: ");
 	console.log(msg_payload);
+	logger.info("ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:");
+	logger.info(msg_payload);
 	
 	mq_client.make_request('admin_list_user', msg_payload, function(err, results){
 		console.log(results);
 		if(err){
+			logger.warn("AN ERROR OCCURED IN adminApproveUserTasks");
 			throw err;
 		}
 		else {
@@ -78,12 +96,13 @@ exports.adminApproveUser = function(req, res) {
 	
 	console.log("ADDING A POST REQUEST ON admin_approve_user QUEUE WITH msg_payload as:");
 	console.log(msg_payload);
-/*	logger.info("ADDING A POST REQUEST ON bid_queue QUEUE WITH msg_payload as:");
-	logger.info(msg_payload);*/
+	logger.info("ADDING A POST REQUEST ON admin_approve_user QUEUE WITH msg_payload as:");
+	logger.info(msg_payload);
 	
 	mq_client.make_request('admin_approve_user_queue', msg_payload, function(err, results){
 		console.log(results);
 		if(err){
+			logger.warn("AN ERROR OCCURED IN adminApproveUser");
 			throw err;
 		}
 		else {
