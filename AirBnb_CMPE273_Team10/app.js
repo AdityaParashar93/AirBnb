@@ -112,6 +112,7 @@ app.post('/afterAdminLogin', function(req, res, next) {
 
 app.post('/logout', home.logout);
 app.post('/adminApproveUser', admin.adminApproveUser);
+app.post('/logMyEvent', admin.logMyEvent);
 
 //GET
 app.get('/', routes.index);

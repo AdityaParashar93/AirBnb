@@ -1,2 +1,17 @@
 {"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-20T10:56:11.801Z"}
 {"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-20T10:56:11.804Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-21T01:32:11.057Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-21T01:32:11.061Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-21T01:33:56.650Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-21T06:07:49.179Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-21T06:07:49.182Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-21T09:01:06.888Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-21T09:01:06.891Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-21T09:01:18.769Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-21T09:35:50.882Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-21T09:35:50.884Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-21T09:58:10.588Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-21T10:00:36.737Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-21T10:00:36.739Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-21T10:03:55.233Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-21T10:03:55.235Z"}

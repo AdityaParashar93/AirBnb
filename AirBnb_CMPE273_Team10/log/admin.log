@@ -13,3 +13,212 @@
 {"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-20T10:58:29.302Z"}
 {"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-20T10:58:42.504Z"}
 {"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-20T10:58:42.504Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-21T01:32:11.169Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-21T01:32:11.170Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-21T01:32:41.256Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T01:33:13.984Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T01:33:13.985Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-21T06:07:49.184Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-21T06:07:49.185Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-21T06:07:58.755Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-21T06:07:58.758Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T06:09:04.743Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T06:09:04.743Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T06:09:47.815Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T06:09:47.815Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T06:11:05.692Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T06:11:05.692Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T07:17:12.372Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T07:17:12.373Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T07:22:46.481Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T07:22:46.481Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T07:25:19.381Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T07:25:19.381Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T07:27:34.834Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T07:27:34.834Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T07:28:00.660Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T07:28:00.660Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T07:28:29.154Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T07:28:29.154Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T07:32:20.658Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T07:32:20.658Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T07:51:50.297Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T07:51:50.297Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T07:52:18.672Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T07:52:18.672Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T07:53:18.044Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T07:53:18.044Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T07:53:41.659Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T07:53:41.659Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T07:53:59.745Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T07:53:59.745Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T07:54:21.863Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T07:54:21.863Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T07:56:22.437Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T07:56:22.437Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T07:56:37.213Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T07:56:37.213Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T08:00:04.530Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T08:00:04.530Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T08:03:52.818Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T08:03:52.818Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T08:04:29.858Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T08:04:29.859Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T08:05:06.474Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T08:05:06.474Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T08:05:20.439Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T08:05:20.439Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T08:06:27.971Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T08:06:27.971Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T08:06:42.626Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T08:06:42.626Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T08:06:59.998Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T08:06:59.998Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T08:07:06.004Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T08:07:06.005Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-21T08:08:56.547Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-21T08:09:04.425Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-21T08:09:04.970Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-21T08:12:21.181Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-21T08:12:21.581Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-21T08:13:26.704Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-21T08:13:27.999Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-21T08:25:27.545Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-21T08:25:32.708Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T08:45:21.961Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T08:45:21.962Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T08:46:16.611Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T08:46:16.611Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T08:53:27.220Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T08:53:27.220Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T08:55:17.501Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T08:55:17.501Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T08:58:03.092Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T08:58:03.092Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:00:15.051Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:00:15.051Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-21T09:01:06.893Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-21T09:01:06.894Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:01:09.535Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:01:09.536Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-21T09:01:23.905Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-21T09:01:24.676Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:01:45.422Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:01:45.422Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:02:55.900Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:02:55.900Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:03:36.085Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:03:36.085Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:03:48.735Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:03:48.735Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:04:08.371Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:04:08.371Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:04:29.182Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:04:29.182Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:04:36.769Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:04:36.769Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:05:05.704Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:05:05.704Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:05:21.654Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:05:21.654Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:05:26.022Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:05:26.022Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:05:30.669Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:05:30.669Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:05:46.668Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:05:46.668Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:05:56.079Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:05:56.079Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:06:04.275Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:06:04.275Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:06:20.193Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:06:20.193Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:06:24.339Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:06:24.339Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:07:59.204Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:07:59.204Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:08:07.784Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:08:07.784Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:08:12.514Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:08:12.514Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:09:37.883Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:09:37.883Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:09:47.243Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:09:47.243Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:11:27.067Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:11:27.067Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:11:50.458Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:11:50.458Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:11:55.098Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:11:55.098Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:13:13.673Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:13:13.674Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:13:19.705Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:13:19.705Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:13:24.724Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:13:24.724Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:13:51.832Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:13:51.832Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:13:56.949Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:13:56.949Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:16:14.753Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:16:14.753Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:16:20.124Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:16:20.124Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:16:24.201Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:16:24.201Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:16:31.729Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:16:31.730Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:16:37.156Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:16:37.156Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:16:42.856Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:16:42.856Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:16:57.679Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:16:57.679Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:17:07.158Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:17:07.158Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:18:16.747Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:18:16.747Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:18:52.324Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:18:52.324Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:18:56.188Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:18:56.188Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:20:35.862Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:20:35.862Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:21:02.194Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:21:02.194Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:21:37.469Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:21:37.469Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:25:20.404Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:25:20.405Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:26:40.875Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:26:40.875Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:27:20.257Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:27:20.257Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:27:29.588Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:27:29.588Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:28:15.562Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:28:15.562Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-21T09:35:50.888Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-21T09:35:50.888Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:36:03.003Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:36:03.008Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:39:53.284Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:39:53.284Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:54:26.013Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:54:26.013Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:55:03.198Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:55:03.199Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:55:54.816Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:55:54.816Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-21T09:56:42.651Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-21T09:56:42.651Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-21T09:58:16.218Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-21T09:58:18.319Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-21T09:59:22.023Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-21T10:00:20.110Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-21T10:00:36.742Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-21T10:00:36.742Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-21T10:00:44.235Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-21T10:03:55.238Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-21T10:03:55.238Z"}

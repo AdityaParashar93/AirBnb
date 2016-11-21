@@ -24,8 +24,35 @@ var logger = new (winston.Logger)({
   ]
 });
 
+var logger_fe = new (winston.Logger)({
+	  transports: [
+	    new (winston.transports.File)({
+	      filename: 'log/fe_admin.log',
+	      timestamp: tsFormat,
+	      level: env === 'development' ? 'debug' : 'info'
+	    })
+	  ]
+	});
+
 logger.info("ADMIN LOG SESSION STARTS");
 logger.warn("THIS IS A SAMPLE WARNING LOG MESSAGE");
+
+exports.logMyEvent = function(req, res) {
+	
+	var msg_payload = { 
+			"username"	 		: req.session.username,
+			"clicklog"	 		: req.param("clicklog"),
+			"timeSpentOnPage" 	: req.param("timeSpentOnPage")
+	};
+	
+	console.log("LOGGING EVENT IN logMyEvent WITH msg_payload as:");
+	console.log(msg_payload);
+	logger_fe.info("LOGGING EVENT IN logMyEvent WITH msg_payload as:");
+	logger_fe.info(msg_payload);
+	res.send({"statusCode" : 200});
+	
+};
+
 
 exports.land = function(req, res) {
 

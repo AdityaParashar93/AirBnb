@@ -1,6 +1,6 @@
 var app = angular.module('airbnb_admin', [ 'ngRoute' ]);
 
-console.log("I AM INSIDE THE ANGULARJS FILE admin.js");
+console.log("I AM INSIDE THE ANGULARJS FILE admin.js baraka");
 
 // FOLLOEING PART WILL CONFIGURE ALL MY ROUTES
 //configure our routes

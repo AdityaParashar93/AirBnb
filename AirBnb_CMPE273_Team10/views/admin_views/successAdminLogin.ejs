@@ -28,13 +28,13 @@
 
 <body ng-app="airbnb_admin" ng-controller="airbnb_admin">
 		<!-- start: Header -->
-	<div class="navbar">
-		<div class="navbar-inner">
-			<div class="container-fluid">
+	<div id="navbar" class="navbar">
+		<div id="navbar-inner" class="navbar-inner">
+			<div id="container-fluid" class="container-fluid">
 
-				<a class="brand"><span>ADMIN PANEL</span></a>
+				<a id="ADMIN PANEL DIV" class="brand"><span>ADMIN PANEL</span></a>
 
-				<div class="nav-no-collapse header-nav">
+				<div id="nav-no-collapse header-nav" class="nav-no-collapse header-nav">
 					<ul class="nav pull-right">
 						<li class="dropdown hidden-phone">
 							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
@@ -81,9 +81,9 @@
 								<li class="dropdown-menu-title">
  									<span>Account Settings</span>
 								</li>
-								<li><a href="#"><i class="halflings-icon user"></i> Profile</a></li>
-								<li><a href="#"><i class="halflings-icon wrench"></i> Setting</a></li>
-								<li><a href="#"><i class="halflings-icon off"></i> Logout</a></li>
+								<li><a id="Profile" href="#"><i class="halflings-icon user"></i> Profile</a></li>
+								<li><a id="Setting" href="#"><i class="halflings-icon wrench"></i> Setting</a></li>
+								<li><a id="Logout" href="#"><i class="halflings-icon off"></i> Logout</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -94,18 +94,18 @@
 	</div>
 	<!-- start: Header -->
 	
-		<div class="container-fluid-full">
-			<div class="row-fluid">
+		<div id="container-fluid-full" class="container-fluid-full">
+			<div id="row-fluid" class="row-fluid">
 				
 			<!-- start: Main Menu -->
 			<div id="sidebar-left" class="span2">
-				<div class="nav-collapse sidebar-nav">
+				<div id="nav-collapse sidebar-nav" class="nav-collapse sidebar-nav">
 					<ul class="nav nav-tabs nav-stacked main-menu">
-						<li><a href="#"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>	
-						<li><a href="#"><i class="icon-envelope"></i><span class="hidden-tablet"> Review</span></a></li>
-						<li><a href="#tasks"><i class="icon-tasks"></i><span class="hidden-tablet"> Tasks</span></a></li>
-						<li><a href="#"><i class="icon-edit"></i><span class="hidden-tablet"> Bill</span></a></li>
-						<li><a href="#"><i class="icon-eye-open"></i><span class="hidden-tablet"> Display</span></a></li>
+						<li><a id="Dashboard" href="#"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>	
+						<li><a id="Review" href="#"><i class="icon-envelope"></i><span class="hidden-tablet"> Review</span></a></li>
+						<li><a id="Tasks" href="#tasks"><i class="icon-tasks"></i><span class="hidden-tablet"> Tasks</span></a></li>
+						<li><a id="Bill" href="#"><i class="icon-edit"></i><span class="hidden-tablet"> Bill</span></a></li>
+						<li><a id="Display" href="#"><i class="icon-eye-open"></i><span class="hidden-tablet"> Display</span></a></li>
 						<li>
 							<a class="dropmenu" href="#"><i class="icon-dashboard"></i><span class="hidden-tablet"> Analytics</span><span class="label label-important"> 3 </span></a>
 							<ul>
@@ -123,13 +123,13 @@
 			<!-- start: Content -->
 			<div id="content" class="span10">
 				<ul class="breadcrumb">
-					<li>Dashboard</li>
+					<li id="sampleeee">Dashboard</li>
 				</ul>
 				<!-- Page Content -->
-				<div id="page-content-wrapper">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-lg-12">
+				<div id="page-content-wrapper" id="page-content-wrapper">
+					<div id="container-fluid" class="container-fluid">
+						<div id="row" class="row">
+							<div id="col-lg-12" class="col-lg-12">
 								<div id="main">
 									<div ng-view></div>
 								</div>
@@ -159,8 +159,73 @@
 		<script src="js/jquery.masonry.min.js"></script>
 		<script src="js/jquery.sparkline.min.js"></script>
 		<script src="js/custom.js"></script>
+		<script src="js/ifvisible.js"></script>
+		<script src="js/timeme.js"></script>
+		<script type="text/javascript">
+    		TimeMe.setIdleDurationInSeconds(30);
+    		TimeMe.setCurrentPageName("my-home-page");
+    		TimeMe.initialize();        
+		</script>
+<script>
+var timeSpentOnPage;
+var app = angular.module('airbnb_admin');
+//login
+app.controller('airbnb_admin', function($scope, $http) {
 
+	console.log("I AM INSIDE airbnb_admin CONTROLLER lol");
+	$scope.invalid_login = true;
+	
+	$(document).click(function(event) {
+		var target = event.target || event.srcElement;
+		var id = target.id;
+		if(id == ""){
+			id = "empty";
+		}
 		
+		var text = $(event.target).text();
+	    var clicklog = id;
+
+	    timeSpentOnPage = TimeMe.getTimeOnCurrentPageInSeconds();
+		var page_analytics = {
+				"clicklog" : clicklog,
+				"timeSpentOnPage" : timeSpentOnPage
+		};
+		
+		console.log(page_analytics);
+		
+		$http({
+			method : "POST",
+			url : '/logMyEvent',
+			data : page_analytics
+		}).success(function(data) {
+
+			if (data.statusCode === 200) {
+				console.log("MY EVENT HAS BEEN LOGGED");
+				// console.log(data);
+			} else {
+				console.log("SOMETHING WENT WRONG");
+			}
+		});
+	});
+
+});
+
+
+
+
+$(window).unload(function() {
+	
+	  console.log("bye bye");
+	  timeSpentOnPage += TimeMe.getTimeOnCurrentPageInSeconds();
+	  console.log(timeSpentOnPage);
+});
+
+
+window.onload = function(e) {
+    console.log("hi hi");
+};
+</script>
+
 	<!-- end: JavaScript-->
 	
 </body>
