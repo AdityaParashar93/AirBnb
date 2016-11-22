@@ -122,6 +122,16 @@ app.get('/admin', admin.land);
 app.get('/successAdminLogin', admin.redirectToAdminHomepage);
 app.get('/adminApproveUserTasks', admin.adminApproveUserTasks);
 
+function isAuthenticated(req, res, next) {
+	  if(req.session.username) {
+	     console.log(req.session.username+"+++++"+req.session.lastlogin);
+	     return next();
+	  }
+	  res.redirect('/');
+	}
+
+
+
 mongo.connect(mongoSessionConnectURL, function() {
 	console.log('Connected to mongo at: ' + mongoSessionConnectURL);
 	http.createServer(app).listen(app.get('port'), function() {

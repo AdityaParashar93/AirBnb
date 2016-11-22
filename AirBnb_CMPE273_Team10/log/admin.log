@@ -222,3 +222,15 @@
 {"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-21T10:00:44.235Z"}
 {"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-21T10:03:55.238Z"}
 {"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-21T10:03:55.238Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-22T02:49:18.110Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-22T02:49:18.111Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-22T03:13:31.347Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-22T03:13:31.347Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-22T03:15:25.166Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-22T03:15:25.166Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-22T03:25:36.876Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-22T03:25:36.877Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-22T03:26:15.622Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-22T03:26:15.622Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-22T03:26:41.291Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-22T03:26:41.292Z"}

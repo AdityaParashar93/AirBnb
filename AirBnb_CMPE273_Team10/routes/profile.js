@@ -14,7 +14,7 @@ var mongoURL 	= "mongodb://localhost:27017/AirbnbDatabaseMongoDB";
 
 
 exports.land = function(req, res) {
-
+	console.log("********************************here ********************************");
     ejs.renderFile('./views/Profile.ejs', function(err, result) {
         // render on success
         if (!err) {

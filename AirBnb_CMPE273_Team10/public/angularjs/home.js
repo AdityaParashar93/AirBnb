@@ -24,12 +24,22 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider,$route
                 templateUrl : 'templates/index.html',
             },
 		}
+	}).state('home', {	
+		url : '/',
+		views: {
+            'header': {
+                templateUrl : 'templates/header2.html',
+            },
+            'content': {
+                templateUrl : 'templates/index.html',
+            },
+		}
 	});
 });
 
 
 //login
-app.controller('airbnb', function($scope, $http) {
+app.controller('airbnb', function($scope, $http, $state) {
 	
 	
 
@@ -57,7 +67,8 @@ app.controller('airbnb', function($scope, $http) {
 
 			if (data.statusCode === 200) {
 				console.log("render the successful login page here");
-				window.location.assign("/successLogin");
+				$state.go('home');
+			//	window.location.assign("/successLogin");
 			} else {
 				console.log("render the Invalid LogIn Message here");
 				$scope.invalid_login = false;

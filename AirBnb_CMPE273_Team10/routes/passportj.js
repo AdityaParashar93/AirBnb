@@ -27,7 +27,7 @@ module.exports = function(passport) {
 				console.log("placees re");
 				console.log(user.approve_flag);
 				
-				if (user.approve_flag === "YES") {
+				if (user.approve_flag === "NO") {
 					var password = user.password;
 
 					console.log("The password is: " + password);
