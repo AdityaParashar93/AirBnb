@@ -74,7 +74,9 @@ app.post('/signin', function(req, res, next) {
 			console.log('BEFORE SENDING USER');
 			console.log(user);
 			res.send({
-				'statusCode' : 200
+				'statusCode' : 200,
+				'username' : user.username
+				
 			});
 		} else {
 			res.send({

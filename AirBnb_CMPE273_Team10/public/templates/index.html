@@ -79,32 +79,36 @@ input:focus ~ .underline {
 }
 </style>
 
-<div class="body">
+<div class="body" ng-controller="airbnb" >
   <div class="row">
   <div class="col-md-1">
   </div>
-  <div class="col-md-10" style="padding-bottom:40px;">
+  <div  class="col-md-10" style="padding-bottom:40px;">
   <br>
     <p style="font-size:40px"><span style="font:sans-serif;color:rgb(250,150,150);font-size:bold"><b>Live there.<b></span> Book Unique homes and experience <br>a city like a local</p>
     <br><br>
+    <form ng-submit="searchProperties()">
     <div class="row" style="padding-bottom:6px;">
       <div class="col-md-3" ><label>Where</label><br><span class="input-underline-wrapper">
-        <input placeholder="Destination,city,address" style="height:50px" style="border-color:white;border-box:transparent;" type="text" class="form form-control">
+        <input placeholder="Destination,city,address" ng-model="location" style="height:50px" style="border-color:white;border-box:transparent;" type="text" class="form form-control">
         <div class="underline"></div>
       </span></div>
-      <div class="col-md-3"><label>From</label><br><input style="height:50px" type="date" class="form form-control"></div>
-      <div class="col-md-2"><label>To</label><br><input style="height:50px" type="date" class="form form-control"></div>
-      <div class="col-md-2"><label>Guests</label><br>
-        <select style="height:50px" placeholder="Guest" class="form form-control">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+      <div class="col-md-3"><label>From</label><br><input ng-model="fromDate" style="height:50px" type="date" class="form form-control"></div>
+      <div class="col-md-2"><label>To</label><br><input  ng-model="toDate" style="height:50px" type="date" class="form form-control"></div>
+      <div  class="col-md-2"><label>Guests</label><br>
+        <select ng-model="guest" style="height:50px" placeholder="guest" class="form form-control">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
         </select>
     </div>
-    <div class="col-md-2"><br><input  style="height:50px;background-color:#ff5a5f;color:white" type="submit" class="form form-control"></div>
+    <div class="col-md-2"><br><input  ng-click="searchProperties()" style="height:50px;background-color:#ff5a5f;color:white" type="submit" class="form form-control"></div>
+    
     </div>
+    </form>
+    
   </div>
 </div>
 <div class="row">
@@ -196,7 +200,7 @@ input:focus ~ .underline {
   <div class="col-md-1"></div>
   <div class="col-md-10">
   <div id="contact" class="container-fluid bg-grey">
-		<h2 class="text-center">CONTACT US</h2>
+		<h2 class="text-center" id="help">CONTACT US</h2>
 		<div class="row">
 			<div class="col-sm-6">
 				<p>Contact us and we'll get back to you within 24 hours.</p>

@@ -1,8 +1,8 @@
 var app = angular.module('airbnb', ['ui.router','ngRoute','ngResource']);
-
+var username;
 console.log("I AM INSIDE THE ANGULARJS FILE home.js");
 
-// FOLLOEING PART WILL CONFIGURE ALL MY ROUTES
+// FOLLOWING PART WILL CONFIGURE ALL MY ROUTES
 app.config(function($stateProvider, $urlRouterProvider, $locationProvider,$routeProvider) {
 	console.log("I AM INSIDE $ROUTEPROVIDER FUNCTION OF ANGULARJS");
 	$locationProvider.html5Mode(true);
@@ -37,21 +37,70 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider,$route
 	});
 });
 
-
+var flag = 0;
 //login
-app.controller('airbnb', function($scope, $http, $state) {
-	
-	
+app.controller('airbnb', function($scope, $http, $state, $window,$timeout ) {
 
+	
+	if($window.localStorage.getItem("username")){
+			console.log("here");
+			$scope.username = $window.localStorage.getItem("username");
+			console.log($window.localStorage.getItem("username"));
+			$state.go('home');
+			//	$window.localStorage.removeItem("username");
+		}
+		
+	$scope.searchProperties = function(){
+		console.log($scope.location);
+		console.log($scope.fromDate);
+		console.log($scope.toDate);
+		console.log($scope.guest);
+		
+		$http({
+			method : "POST",
+			url : '/getPropertyList',
+			data : {
+			'location' : $scope.location,
+			'fromDate' : $scope.fromDate,
+			'toDate' : $scope.toDate,
+			'guest' : $scope.guest
+				
+			}
+		}).success(function(data) {
+			
+			
+		}).error(function(error){
+			console.log(error);
+		});
+	
+	
+	
+	
+	
+	};
+
+	$scope.logout = function(){
+		$window.localStorage.removeItem("username");
+		$http({
+			method : "POST",
+			url : '/logout',
+			data : {}
+		}).success(function(data) {
+
+			$timeout(function () {
+			    // 0 ms delay to reload the page.
+				$state.go('landing');
+			}, 0);
+		});
+		
+	};
+	
 	
 	$scope.invalid_login = true;
-	
-	
 	console.log("I AM IN AIRBNB CONTROLLER");
-		$scope.signin = function() {
-
-		console.log("SIGN IN BUTTON CLICKED");
-
+	$scope.signin = function() {
+		console.log($scope.inputUsername);
+	console.log("SIGN IN BUTTON CLICKED");
 		var credentials = {
 			"username" : $scope.inputUsername,
 			"password" : $scope.inputPassword
@@ -67,8 +116,16 @@ app.controller('airbnb', function($scope, $http, $state) {
 
 			if (data.statusCode === 200) {
 				console.log("render the successful login page here");
+				username = data.username;
+				console.log(data.username);
+				$window.localStorage.setItem("username", username);
 				$state.go('home');
-			//	window.location.assign("/successLogin");
+				$timeout(function () {
+				    // 0 ms delay to reload the page.
+				    $state.reload('home');
+				}, 0);
+				
+				//	window.location.assign("/successLogin");
 			} else {
 				console.log("render the Invalid LogIn Message here");
 				$scope.invalid_login = false;
@@ -76,7 +133,6 @@ app.controller('airbnb', function($scope, $http, $state) {
 				$scope.valid_register = true;
 				$scope.already_exists = true;
 			}
-
 		});
 	};
 	

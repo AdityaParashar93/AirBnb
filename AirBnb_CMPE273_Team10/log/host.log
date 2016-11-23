@@ -97,3 +97,35 @@
 {"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:18.555Z"}
 {"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-22T03:26:41.286Z"}
 {"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-22T03:26:41.289Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-22T22:04:00.894Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-22T22:04:00.898Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-22T22:05:01.178Z"}
+{"saltRounds":10,"myPlaintextPassword":"test","salt":"$2a$10$BzW/Xw6J9tNfLJ.cgrAqfe","hash":"$2a$10$xBplop3NXVPdCDpn/awSk.tz0dyxn34e6/Koyx6MvswSTQwP1AIdu","dt":"2016-11-22T22:05:00.896Z","first_name":"arunabh","last_name":"s","inputUsername":"arunabh05@test.com","inputPassword":"$2a$10$8lOZ.O7b3jVtK4UHY0aRA.2hdQAmk.9BWqxkWJpLMzU1g6R8jral.","dob":"3333-11-22","approve_flag":"NO","level":"info","message":"","timestamp":"2016-11-22T22:05:01.178Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-22T22:58:34.645Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-22T22:58:34.648Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-22T22:59:33.368Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-22T22:59:33.370Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-22T23:45:16.991Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-22T23:47:23.327Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-22T23:48:29.693Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-22T23:52:13.542Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-22T23:53:34.606Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-22T23:53:43.892Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-22T23:55:15.797Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-23T00:01:40.105Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-23T00:01:52.603Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-23T00:19:46.456Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-23T00:31:57.341Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-23T00:33:44.240Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-23T00:36:00.500Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-23T00:45:31.477Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-23T00:49:08.694Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-23T00:55:16.336Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-23T00:55:59.593Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-23T00:58:15.673Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-23T00:58:27.399Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-23T01:00:29.212Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-23T01:18:30.211Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-23T01:23:48.079Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-23T01:28:49.919Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-23T01:29:07.177Z"}
