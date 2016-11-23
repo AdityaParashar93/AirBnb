@@ -40,7 +40,9 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider,$route
 var flag = 0;
 //login
 app.controller('airbnb', function($scope, $http, $state, $window,$timeout ) {
-
+	$scope.guest = 1;
+	$scope.fromDate= "2016-12-05";
+	$scope.toDate = "2016-12-25";
 	
 	if($window.localStorage.getItem("username")){
 			console.log("here");
