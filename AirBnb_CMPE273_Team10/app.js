@@ -115,6 +115,7 @@ app.post('/afterAdminLogin', function(req, res, next) {
 app.post('/logout', home.logout);
 app.post('/adminApproveUser', admin.adminApproveUser);
 app.post('/logMyEvent', admin.logMyEvent);
+app.post('/adminListCityHosts', admin.adminListCityHosts);
 
 //GET
 app.get('/', routes.index);
@@ -123,6 +124,9 @@ app.get('/Profile', profile.land);
 app.get('/admin', admin.land);
 app.get('/successAdminLogin', admin.redirectToAdminHomepage);
 app.get('/adminApproveUserTasks', admin.adminApproveUserTasks);
+app.get('/adminListCityNames', admin.adminListCityNames);
+app.get('/adminTopTenPropertiesAsRevenue', admin.adminTopTenPropertiesAsRevenue);
+app.get('/adminCitywiseRevenue', admin.adminCitywiseRevenue);
 
 function isAuthenticated(req, res, next) {
 	  if(req.session.username) {
