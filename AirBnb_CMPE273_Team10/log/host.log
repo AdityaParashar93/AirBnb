@@ -1,0 +1,9 @@
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-25T22:57:14.131Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-25T22:57:14.133Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-25T23:02:10.622Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-25T23:03:54.335Z"}
+{"saltRounds":10,"myPlaintextPassword":"1234","salt":"$2a$10$hPI5aai0YghkStFtbNISnu","hash":"$2a$10$O.8SZZsfIFyH9Aa.TGGbWOBCO1387HvszGWqXa7YrgbsJ.MSQ8hFK","dt":"2016-11-25T23:03:54.099Z","first_name":"test","inputUsername":"test@gmail.com","inputPassword":"$2a$10$LWXtlrFuGvhnKEnOcf0SXeQqgTaxifpL9OMciGSLoIhV7o1defFNa","dob":"1121-12-12","approve_flag":"NO","level":"info","message":"","timestamp":"2016-11-25T23:03:54.336Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-25T23:04:03.264Z"}
+{"saltRounds":10,"myPlaintextPassword":"1234","salt":"$2a$10$wwPI.coUQEVGyKOV6QP6Xu","hash":"$2a$10$EOWKaYajxXk9iobXT4.KMeyPSvFvsj7D/QZf6JKhFqYkxpJUhpl06","dt":"2016-11-25T23:04:03.034Z","first_name":"test","last_name":"test","inputUsername":"test@gmail.com","inputPassword":"$2a$10$5lmtw8KZt3Ur0S5s2ieaBOXitJ4Ps5iOCIacNRYbMgOzRjZQ0wpEG","dob":"1121-12-12","approve_flag":"NO","level":"info","message":"","timestamp":"2016-11-25T23:04:03.264Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-25T23:25:34.344Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-25T23:25:34.346Z"}
