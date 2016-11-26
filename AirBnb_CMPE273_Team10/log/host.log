@@ -1,9 +1,225 @@
-{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-25T22:57:14.131Z"}
-{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-25T22:57:14.133Z"}
-{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-25T23:02:10.622Z"}
-{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-25T23:03:54.335Z"}
-{"saltRounds":10,"myPlaintextPassword":"1234","salt":"$2a$10$hPI5aai0YghkStFtbNISnu","hash":"$2a$10$O.8SZZsfIFyH9Aa.TGGbWOBCO1387HvszGWqXa7YrgbsJ.MSQ8hFK","dt":"2016-11-25T23:03:54.099Z","first_name":"test","inputUsername":"test@gmail.com","inputPassword":"$2a$10$LWXtlrFuGvhnKEnOcf0SXeQqgTaxifpL9OMciGSLoIhV7o1defFNa","dob":"1121-12-12","approve_flag":"NO","level":"info","message":"","timestamp":"2016-11-25T23:03:54.336Z"}
-{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-25T23:04:03.264Z"}
-{"saltRounds":10,"myPlaintextPassword":"1234","salt":"$2a$10$wwPI.coUQEVGyKOV6QP6Xu","hash":"$2a$10$EOWKaYajxXk9iobXT4.KMeyPSvFvsj7D/QZf6JKhFqYkxpJUhpl06","dt":"2016-11-25T23:04:03.034Z","first_name":"test","last_name":"test","inputUsername":"test@gmail.com","inputPassword":"$2a$10$5lmtw8KZt3Ur0S5s2ieaBOXitJ4Ps5iOCIacNRYbMgOzRjZQ0wpEG","dob":"1121-12-12","approve_flag":"NO","level":"info","message":"","timestamp":"2016-11-25T23:04:03.264Z"}
-{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-25T23:25:34.344Z"}
-{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-25T23:25:34.346Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-20T10:56:11.801Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-20T10:56:11.804Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-21T01:32:11.057Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-21T01:32:11.061Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-21T01:33:56.650Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-21T06:07:49.179Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-21T06:07:49.182Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-21T09:01:06.888Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-21T09:01:06.891Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-21T09:01:18.769Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-21T09:35:50.882Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-21T09:35:50.884Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-21T09:58:10.588Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-21T10:00:36.737Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-21T10:00:36.739Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-21T10:03:55.233Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-21T10:03:55.235Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-22T02:49:18.105Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-22T02:49:18.107Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-22T02:50:09.477Z"}
+{"saltRounds":10,"myPlaintextPassword":"123","salt":"$2a$10$eSXzzVux5JU4AO1dgp.JBe","hash":"$2a$10$iz5DXMJb.BcUhY9MxKxfaOXuz7StBJYSw90NtSIHolC2jLKyJLNwi","dt":"2016-11-22T02:50:09.187Z","first_name":"aa","last_name":"bb","inputUsername":"arunabh@yest.com","inputPassword":"$2a$10$C5159/LxWV/.HrqvugMruuQmIl3XXLO31TKiWWQAxZ0K3/mvYnnAS","dob":"3333-11-22","approve_flag":"NO","level":"info","message":"","timestamp":"2016-11-22T02:50:09.477Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T02:50:27.600Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-22T02:50:32.491Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-22T03:13:31.340Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-22T03:13:31.343Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-22T03:15:25.160Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-22T03:15:25.163Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-22T03:25:36.871Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-22T03:25:36.873Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:25:39.014Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:25:40.154Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-22T03:25:41.963Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-22T03:26:15.616Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-22T03:26:15.619Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.097Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.123Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.133Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.140Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.147Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.155Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.162Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.169Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.178Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.186Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.194Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.205Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.214Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.222Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.232Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.242Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.251Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.259Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.268Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.275Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.283Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.795Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.819Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.831Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.839Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.848Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.855Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.862Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.870Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.878Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.885Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.892Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.901Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.910Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.917Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.923Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.930Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.937Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.945Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.953Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.960Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:17.967Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:18.346Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:18.375Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:18.417Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:18.430Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:18.439Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:18.448Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:18.455Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:18.463Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:18.470Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:18.476Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:18.483Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:18.490Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:18.497Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:18.503Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:18.510Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:18.517Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:18.524Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:18.531Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:18.539Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:18.547Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-22T03:26:18.555Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-22T03:26:41.286Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-22T03:26:41.289Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-22T07:03:49.332Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-22T07:03:49.336Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-22T22:49:10.444Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-22T22:49:10.446Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-22T23:30:56.412Z"}
+{"saltRounds":10,"myPlaintextPassword":"qwer","salt":"$2a$10$xBisX2Ztdc3YexsAzLf0w.","hash":"$2a$10$xHPGsGC46tmQtB5oukSFFufhl7jpDXfmFNwKQSo.DeumZNjACUB9q","dt":"2016-11-22T23:30:56.162Z","first_name":"Sagar","last_name":"Mane","inputUsername":"sagar@gmail.com","inputPassword":"$2a$10$GB.0DMKThqEhxEg9uOqhY.O/fQKjdyWOEDWTa2bmPQEI36DvconCa","dob":"1212-12-12","approve_flag":"NO","level":"info","message":"","timestamp":"2016-11-22T23:30:56.412Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-22T23:32:29.704Z"}
+{"saltRounds":10,"myPlaintextPassword":"1234","salt":"$2a$10$uRkmXtbQCSpctgrek4q0Uu","hash":"$2a$10$QAXDVIAgz3diOzgMXTHV7.Bc2rKIYDkxLqLEoDn0V32i2v1u5qvL.","dt":"2016-11-22T23:32:29.483Z","first_name":"Rohan","last_name":"Kankapurkar","inputUsername":"rohan@gmail.com","inputPassword":"$2a$10$NpiIx7jBhJODR8j77JDwlutfXI4TLGKluILNLSbByG6eKkkwLKAH.","dob":"1212-12-12","approve_flag":"NO","level":"info","message":"","timestamp":"2016-11-22T23:32:29.704Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-22T23:36:49.164Z"}
+{"saltRounds":10,"myPlaintextPassword":"1234","salt":"$2a$10$3Ec5j3pceS2laAsavzVgW.","hash":"$2a$10$WDYItmNuUfoRkIuP4h2yDudG1vQZMUyjD8WufbnUIe04IP4HWRZy2","dt":"2016-11-22T23:36:48.929Z","first_name":"Jay","last_name":"Jay","inputUsername":"jay@gmail.com","inputPassword":"$2a$10$66dg8obJmU9D.fbvfnm1leVM11NSBl0jRBI/FMJQrmY2I2iq9jWza","dob":"1212-12-12","approve_flag":"NO","level":"info","message":"","timestamp":"2016-11-22T23:36:49.165Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-22T23:37:27.191Z"}
+{"saltRounds":10,"myPlaintextPassword":"4321","salt":"$2a$10$BO6KfPuRW91xcEoBS/7kGe","hash":"$2a$10$oJFGDQs1fiBTjnqInXFQFeO6Bvo/XG0rw8vYnri76.GbsOTENwsDS","dt":"2016-11-22T23:37:26.882Z","first_name":"Aditya","last_name":"Parashar","inputUsername":"aditya@gmail.com","inputPassword":"$2a$10$v.5jFhdIosqtOgWLbUzWK.1DyaM4pGufbvP/v.SyaA9gy849817i.","dob":"1212-12-12","approve_flag":"NO","level":"info","message":"","timestamp":"2016-11-22T23:37:27.191Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-22T23:37:55.632Z"}
+{"saltRounds":10,"myPlaintextPassword":"rewq","salt":"$2a$10$4G9U58QXnXlRuQwOIPodnu","hash":"$2a$10$v66AzaI.dxGjBcGXEVxhmOJ73oVEgCucPDA.l6em9DcGfqfLctb9C","dt":"2016-11-22T23:37:55.395Z","first_name":"Abhishek","last_name":"Madan","inputUsername":"abhishek@gmail.com","inputPassword":"$2a$10$QN1.FDg70eufWtV9nGF8jOgJ5bLBPbNyIca7gfQg4roIZUzY1eNVO","dob":"1212-12-12","approve_flag":"NO","level":"info","message":"","timestamp":"2016-11-22T23:37:55.632Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-22T23:41:46.146Z"}
+{"saltRounds":10,"myPlaintextPassword":"1234","salt":"$2a$10$.yjfvImzUPfs.lmNAwk4MO","hash":"$2a$10$uGSKVmSgveSCowQ/7MybDO6qtnxT8s4sC/MWaExW1mS5pwQPAt1Lu","dt":"2016-11-22T23:41:45.825Z","first_name":"Arunabh","last_name":"Shrivastav","inputUsername":"arunabh@gmail.com","inputPassword":"$2a$10$V/YK.RULdlGyf/X5u76nzuFV0OUvCM06WZliu9.EMTY3AI9AseUNO","dob":"1212-12-12","approve_flag":"NO","level":"info","message":"","timestamp":"2016-11-22T23:41:46.146Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-22T23:43:07.203Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-22T23:43:07.204Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-22T23:47:11.132Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-22T23:47:11.133Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-22T23:51:11.956Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-22T23:51:11.957Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-23T00:57:45.386Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-23T00:57:45.387Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-23T01:09:25.141Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-23T01:09:25.143Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-23T01:14:29.734Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-23T01:14:29.736Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-23T02:58:54.759Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-23T02:58:54.760Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-23T02:59:17.974Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-23T02:59:17.975Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-23T03:00:38.492Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-23T03:00:38.494Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-25T23:08:02.572Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-25T23:08:02.576Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-25T23:08:50.246Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-25T23:08:50.247Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-25T23:48:25.929Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-25T23:48:25.932Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T01:59:59.253Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T01:59:59.254Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T02:03:45.677Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T02:03:45.678Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T02:09:38.428Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T02:09:38.430Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T02:22:41.261Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T02:22:41.263Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T02:23:36.291Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T02:23:36.293Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T02:24:29.564Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T02:24:29.566Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T02:28:40.689Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T02:28:40.690Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T02:34:20.006Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T02:34:20.007Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T02:40:53.731Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T02:40:53.732Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T02:44:04.664Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T02:44:04.665Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T02:51:00.248Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T02:51:00.250Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T02:59:05.839Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T02:59:05.841Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T02:59:30.326Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T02:59:30.328Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T03:02:50.892Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T03:02:50.894Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T03:05:20.915Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T03:05:20.916Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T07:59:22.389Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T07:59:22.393Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T08:01:32.157Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T08:01:32.159Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T08:05:53.918Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T08:05:53.920Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T08:07:37.301Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T08:07:37.303Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T08:10:31.161Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T08:10:31.163Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T08:15:50.123Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T08:15:50.124Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T08:21:32.110Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T08:21:32.112Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T08:22:55.190Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T08:22:55.192Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T08:30:38.824Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T08:30:38.826Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T08:37:40.234Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T08:37:40.236Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T08:38:34.310Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T08:38:34.312Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T08:49:41.313Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T08:49:41.314Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T08:51:28.216Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T08:51:28.217Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T08:54:56.863Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T08:54:56.864Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T08:58:05.244Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T08:58:05.246Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T08:58:50.674Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T08:58:50.677Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T09:00:15.815Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T09:00:15.817Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T09:00:41.707Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T09:00:41.710Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T09:01:06.288Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T09:01:06.289Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T09:01:56.906Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T09:01:56.907Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T09:04:12.333Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T09:04:12.335Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T09:05:19.853Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T09:05:19.855Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T09:06:21.740Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T09:06:21.742Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T10:09:43.018Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T10:09:43.020Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T10:11:52.294Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T10:11:52.296Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T10:14:05.876Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T10:14:05.877Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T10:18:21.403Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T10:18:21.405Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T10:19:05.225Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T10:19:05.227Z"}
