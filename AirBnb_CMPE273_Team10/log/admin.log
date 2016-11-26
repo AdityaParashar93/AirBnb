@@ -727,3 +727,28 @@
 {"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-26T10:23:06.419Z"}
 {"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-11-26T10:23:10.048Z"}
 {"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-26T10:23:10.049Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-26T11:21:39.181Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T11:21:39.181Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-26T11:21:55.734Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-26T11:30:31.685Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T11:30:31.685Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-26T11:30:43.935Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-26T11:30:44.483Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-26T11:36:34.814Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T11:36:34.814Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-26T11:36:42.900Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-26T11:36:43.796Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-11-26T11:37:00.123Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-26T11:37:00.123Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-11-26T11:37:03.271Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-26T11:37:03.272Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-11-26T11:37:05.073Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-26T11:37:05.073Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-11-26T11:37:07.612Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-26T11:37:07.612Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_hosts QUEUE WITH msg_payload as:","timestamp":"2016-11-26T11:37:09.120Z"}
+{"username":"admin@gmail.com","city":"california","level":"info","message":"","timestamp":"2016-11-26T11:37:09.120Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-11-26T11:37:13.355Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-26T11:37:13.355Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_hosts QUEUE WITH msg_payload as:","timestamp":"2016-11-26T11:37:16.050Z"}
+{"username":"admin@gmail.com","city":"new york","level":"info","message":"","timestamp":"2016-11-26T11:37:16.050Z"}

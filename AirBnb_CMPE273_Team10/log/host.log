@@ -223,3 +223,10 @@
 {"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T10:18:21.405Z"}
 {"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T10:19:05.225Z"}
 {"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T10:19:05.227Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T11:21:39.173Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T11:21:39.175Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T11:30:31.679Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T11:30:31.681Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-26T11:31:14.906Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T11:36:34.806Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T11:36:34.809Z"}
