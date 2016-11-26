@@ -1,0 +1,26 @@
+
+<div ng-controller="admin_approve">
+				<ul class="breadcrumb">
+					<li id="display">DISPLAY</li>
+				</ul>
+	<div class="col-sm-6" ng-repeat="user in results">
+		<div class="well well-sm">
+			<div class="col-sm-6">
+				<img src="http://i443.photobucket.com/albums/qq153/alexnakic/california.jpg"
+					class="img-rounded img-responsive" />
+			</div>
+			<div class="col-sm-8 col-md-10">
+
+				<small>
+				<cite title="San Francisco, USA">
+				<h4>{{user}}</h4> 
+				<i class="glyphicon glyphicon-map-marker"> </i>
+				</cite>
+				</small>
+				<!-- Show Host Button -->
+				<a id="city_list" ng-href="#citylist/{{user}}"> View Hosts</a>
+
+			</div>
+		</div>
+	</div>
+</div>
