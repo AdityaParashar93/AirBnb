@@ -1,4 +1,5 @@
-var app = angular.module('airbnb', ['ui.router','ngRoute','ngResource']);
+var app = angular.module('airbnb', ['ui.router','ngRoute','ngResource','ngFileUpload']);
+
 var username;
 console.log("I AM INSIDE THE ANGULARJS FILE home.js");
 
@@ -34,15 +35,98 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider,$route
                 templateUrl : 'templates/index.html',
             },
 		}
+	}).state('become_a_host', {	
+		url : '/become_a_host',
+		views: {
+            'header': {
+                templateUrl : 'templates/header.html',
+            },
+            'content': {
+                
+                templateUrl : 'templates/become_a_host.html',
+
+            },	
+		}
 	});
 });
 
 var flag = 0;
 //login
-app.controller('airbnb', function($scope, $http, $state, $window,$timeout ) {
+app.controller('airbnb', function ($scope,$http,$window,$state,$document,$timeout,Upload) {
+	$scope.validate_property=true;
+	$scope.validate_property1=true;
+	$scope.validate_property2=true;
+	
+	var location;
+	$scope.myfunction=function (pos){
+		console.log(pos);
+		location=pos;
+	};
+	
+	$scope.property_input={};
+	$scope.stepsModel = [];
+
+	
 	$scope.guest = 1;
 	$scope.fromDate= "2016-12-05";
 	$scope.toDate = "2016-12-25";
+	
+	$scope.imageUpload = function(element){
+        var reader = new FileReader();
+        reader.onload = $scope.imageIsLoaded;
+        reader.readAsDataURL(element.files[0]);
+    };
+    
+    $scope.imageIsLoaded = function(e){
+        $scope.$apply(function() {
+            $scope.stepsModel.push(e.target.result);
+        });
+    };
+	
+
+	$scope.amenities = [
+		                  {text: "Essentials"},
+		                  {text: "Towels, bed sheets, soap, and toilet paper"},
+		                  {text: "Wifi"},
+		                  {text: "Shampoo"},
+		                  {text: "Closet/drawers"},
+		                  {text: "TV"},
+		                  {text: "Heat"},
+		                  {text: "Air conditioning"},
+		                  {text: "Breakfast, coffee, tea"},
+		                  {text: "Desk/workspace"},
+		                  {text: "Fireplace"},
+		                  {text: "Iron"},
+		                  {text: "Hair dryer"},
+		                  {text: "Pets in the house"}
+					];
+	$scope.selected_amenities=[];
+	$scope.shares = [
+		                  {text: "Kitchen"},
+		                  {text: "Laundry - washer"},
+		                  {text: "Laundry - dryer"},
+		                  {text: "Parking"},
+		                  {text: "Elevator"},
+		                  {text: "Pool"},
+		                  {text: "Hot tub"},
+		                  {text: "Gym"}
+		            ];
+	$scope.selected_shares=[];
+	
+	  
+	  $scope.sync = function(bool, item){
+		    if(bool){
+		      
+		      $scope.selected_amenities.push(item);
+		    }
+	};
+
+	$scope.sync1 = function(bool, item){
+	    if(bool){
+	      
+	      $scope.selected_shares.push(item);
+	    } 
+	};
 	
 	if($window.localStorage.getItem("username")){
 			console.log("here");
@@ -52,6 +136,95 @@ app.controller('airbnb', function($scope, $http, $state, $window,$timeout ) {
 			//	$window.localStorage.removeItem("username");
 		}
 		
+	$scope.test=function(){
+		$scope.validate_property=false;
+		$scope.validate_property1=true;
+		$scope.validate_property2=true;
+		var temp={from:new Date(),to:new Date()};
+		
+		$scope.property_input.availability=[];
+		$scope.property_input.availability.push(temp);
+		console.log($scope.property_input.availability);
+		$scope.property_input.revenue=0;
+		$scope.property_input.ratings=0;
+		$scope.property_input.owner="test";
+		
+		
+		if($scope.country!=="" && $scope.street_address!=="" && $scope.city!=="" && $scope.state!==""  && $scope.property_description!=="" && $scope.price!=="" && $scope.cc_num!=="" /* && $scope.selected_amenities.length>0 && $scope.selected_amenities.shares>0*/){
+			$scope.validate_property=true;
+			$scope.validate_property1=true;
+			$scope.validate_property2=false;
+		}
+		if($scope.validate_property){
+			$scope.property_input.country=$scope.country;
+			$scope.property_input.street_address=$scope.street_address;
+			$scope.property_input.city=$scope.city;
+			$scope.property_input.state=$scope.state;
+			$scope.property_input.zip_code=$scope.zip_code;
+			$scope.property_input.co_ordinates=location;
+			$scope.property_input.property_type=$scope.property_type;
+			$scope.property_input.room_type=$scope.room_type;
+			$scope.property_input.number_of_beds=$scope.number_of_beds;
+			$scope.property_input.number_of_guests=$scope.number_of_guests;
+			$scope.property_input.number_of_bathrooms=$scope.number_of_bathrooms;
+			$scope.property_input.shared_amenities=$scope.selected_amenities;
+			$scope.property_input.shared_spaces=$scope.selected_shares;
+			$scope.property_input.property_images=$scope.stepsModel;
+			$scope.property_input.property_title=$scope.property_title;
+			$scope.property_input.property_description=$scope.property_description;
+			$scope.property_input.property_price=$scope.price;
+			$scope.property_input.cc_num=$scope.cc_num;
+			$scope.property_input.bid_status=$scope.bid_status;
+			
+			console.log($scope.property_input);
+			$http({
+				method : "POST",
+				url : '/register_new_property',
+				data : {
+					"property_input":$scope.property_input,
+				}
+			}).success(function(data) {
+
+				if (data.statusCode === 200) {
+					$scope.response_message="Hey your propeerty has been added to our db";
+					$scope.validate_property2=false;
+					$scope.validate_property1=true;
+				} else {
+					$scope.response_message="Hey we faced some technical difficulties.Please try again later.";
+					$scope.validate_property1=false;
+					$scope.validate_property2=true;
+				}
+			});
+		}
+		else{
+			console.log("Hey incomplete form");
+			$scope.response_message="Please fill all the fields";
+			$scope.validate_property1=false;
+			$scope.validate_property2=true;
+		}
+	};
+	
+	 $scope.submit = function() {
+	      if ($scope.files.$valid && $scope.files) {
+	        $scope.upload($scope.files);
+	        console.log($scope.files);
+	      }
+	      console.log($scope.files);
+	 };
+	 $scope.uploadFiles = function (files) {
+	      if (files && files.length) {
+	        for (var i = 0; i < files.length; i++) {
+	          Upload.upload({ data: {file: files[i]}});
+	          console.log(files);
+	        }
+	        // or send them all together for HTML5 browsers:
+	        Upload.upload({data: {file: files}});
+	        console.log(files);
+	      }
+	    };
+	
+	
+	
 	$scope.searchProperties = function(){
 		console.log($scope.location);
 		console.log($scope.fromDate);
@@ -140,7 +313,7 @@ app.controller('airbnb', function($scope, $http, $state, $window,$timeout ) {
 	
 	$scope.Profile = function()
 	{
-		window.location.assign("/Profile");
+		$window.location.assign("/Profile");
 	};
 	
 });

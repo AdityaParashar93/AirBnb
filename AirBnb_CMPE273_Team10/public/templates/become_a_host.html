@@ -1,0 +1,272 @@
+<div class="col-md-1"></div>
+<div class="col-md-10">
+<form class="form-horizontal" ng-controller="airbnb">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Become A Host</legend>
+
+<!-- Country-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Country">Country</label>  
+  <div class="col-md-4">
+  <input id="Country" type="text" placeholder="Enter Your Country" class="form-control input-md"  ng-model="country" value="" required>
+  </div>
+</div>
+
+<!-- Street Address-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="street_address">Street Address</label>  
+  <div class="col-md-4">
+  <input id="street_address" name="street_address" type="text" placeholder="Enter Your Street Address" class="form-control input-md"  ng-model="street_address" value="" required>
+  </div>
+</div>
+
+<!-- City-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="city">City</label>  
+  <div class="col-md-4">
+  <input id="city" name="city" type="text" placeholder="Enter Your City" class="form-control input-md"  ng-model="city" value="" required>
+    
+  </div>
+</div>
+
+<!--State-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="state">State</label>  
+  <div class="col-md-4">
+  <input id="state" name="state" type="text" placeholder="Enter Your State" class="form-control input-md"  ng-model="state" value="" required>
+  </div>
+</div>
+
+<!--Zip Code-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="zip_code">Zip Code</label>  
+  <div class="col-md-4">
+  <input id="zip_code" name="zip_code" type="number" placeholder="Enter the zip code" class="form-control input-md"  ng-model="zip_code" value="" required>
+    
+  </div>
+</div>
+
+<!--Google Map-->
+<label>Choose Property Location</label>
+<div id="map" style="width:100%;height:400px;background:yellow"></div>
+ <script>
+ 
+ 	function initMap() {
+           var map = new google.maps.Map(document.getElementById('map'), {
+             center: {lat: 37.336, lng: -121.886},
+             zoom: 15,
+             scrollwheel : true,
+     		draggable : true,
+     		mapTypeId : google.maps.MapTypeId.ROADMAP
+           });
+          var infoWindow = new google.maps.InfoWindow({map: map});
+
+           // Try HTML5 geolocation.
+           if (navigator.geolocation) {
+             navigator.geolocation.getCurrentPosition(function(position) {
+               var pos = {
+                 lat: position.coords.latitude,
+                 lng: position.coords.longitude
+               };
+               infoWindow.setPosition(pos);
+               infoWindow.setContent('Location found.');
+               map.setCenter(pos);
+               angular.element(document.getElementById('Latitude')).scope().myfunction(pos);
+               document.getElementById("Latitude").value=pos.lat;
+               document.getElementById("Longitude").value=pos.lng;
+             }, function() {
+               handleLocationError(true, infoWindow, map.getCenter());
+             });
+           } else {
+             // Browser doesn't support Geolocation
+             handleLocationError(false, infoWindow, map.getCenter());
+           }
+         }
+
+         function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+           infoWindow.setPosition(pos);
+           infoWindow.setContent(browserHasGeolocation ?
+                                 'Error: The Geolocation service failed.' :
+                                 'Error: Your browser doesn\'t support geolocation.');
+         }
+         
+         
+</script>
+     
+<script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwM2gtDCmU_7IvVGdBSIu1ubujkXEFbqY&callback=initMap">
+</script>
+<br>
+
+<!--Latitude-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Latitude">Latitude</label>  
+  <div class="col-md-4">
+  <input id="Latitude" name="Latitude"  type="number"  class="form-control input-md"  ng-model="lat" step="0.000000000000001" disabled required> 
+  </div>
+</div>
+
+<!--Longitude-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Longitude">Longitude</label>  
+  <div class="col-md-4">
+  <input id="Longitude" name="Longitude" type="number" class="form-control input-md"  ng-model="lng" step="0.000000000000001" disabled required>    
+</div>
+  </div>
+
+<!-- Property Type -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="property_type">Property Type</label>
+  <div class="col-md-4">
+    <select id="property_type" name="property_type" class="form-control" ng-model="property_type" required>
+      <option value="house">House</option>
+      <option value="apartment">Apartment</option>
+    </select>
+  </div>
+</div>
+
+<!-- Room Type -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="room_type">Room Type</label>
+  <div class="col-md-4">
+    <select id="room_type" name="room_type" class="form-control" ng-model="room_type" value="" required>
+      <option value="private_room">Private Room</option>
+      <option value="shared_room">Shared Room</option>
+    </select>
+  </div>
+</div>
+
+<!--Number Od Beds-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="bed_nos">Number Of Beds</label>
+  <div class="col-md-4">
+    <select id="bed_nos" name="bed_nos" class="form-control"  ng-model="number_of_beds" value="" required>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
+</div>
+
+<!-- Number Of Guest -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="guest_nos">Number Of Guests per room</label>
+  <div class="col-md-4">
+    <select id="guest_nos" name="guest_nos" class="form-control" ng-model="number_of_guests" value="" required>
+      <option value="1">1</option>
+      <option value="2">2</option>
+    </select>
+  </div>
+</div>
+
+<!--Number Of Bathrooms-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="bathroom_nos">Number Of Bathrooms</label>
+  <div class="col-md-4">
+    <select id="bathroom_nos" name="bathroom_nos" class="form-control"  ng-model="number_of_bathrooms" value="" required>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5+</option>
+    </select>
+  </div>
+</div>
+
+<!-- Amenities -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="amenity">Amenities</label>
+  <div class="col-md-4">
+  	 <p ng-repeat="amenity in amenities" class="amenity" id="amenity.text">
+  	 <input type="checkbox" ng-change="sync(bool, amenity.text)" ng-model="bool" > 
+      {{amenity.text}}
+  </div>
+</div>
+
+<!--Shared Spaces-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="share">Shared Spaces</label>
+  <div class="col-md-4">
+  	 <p ng-repeat="share in shares" class="share" id="share.text">
+  	 <input type="checkbox" ng-change="sync1(bool, share.text)" ng-model="bool" > 
+      {{share.text}}
+  </div>
+</div>
+
+<!-- File Button --> 
+<div class="form-group">
+  <label class="col-md-4 control-label" for="property_title">Prpoerty Images</label>  
+ <div class="col-md-4">
+  <!--  <div ng-repeat="step in stepsModel">
+        <img class="thumb" ng-src="{{step}}" />
+    </div><br>-->
+   <input type='file' ng-model-instant onchange="angular.element(this).scope().imageUpload(this)" required/ >
+ </div>
+</div>
+
+<!-- Property Title-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="property_title">Prpoerty Title</label>  
+  <div class="col-md-4">
+  <input id="property_title" name="property_title" type="text" placeholder="Enter the title for the property" class="form-control input-md" ng-model="property_title" value="" required>    
+  </div>
+</div>
+
+<!--Property Description-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="propert_desc">Property Description</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="propert_desc" name="propert_desc" ng-model="property_description" value="" required>Write Something about the property here</textarea>
+  </div>
+</div>
+
+<!--Price-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="price">Price</label>  
+  <div class="col-md-4">
+  <input id="price" name="price" type="number" placeholder="Enter the Price" class="form-control input-md" ng-model="price" value="" required>
+  </div>
+</div>
+
+<!--CC-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="cc_num">Credit Card Number</label>  
+  <div class="col-md-4">
+  <input id="cc_num" name="cc_num" type="text" placeholder="Credit Card Number" class="form-control input-md" ng-model="cc_num" value="" required>
+  </div>
+</div>
+
+<!-- Bid Status -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="bid_status">Bid Status</label>
+  <div class="col-md-4">
+    <select id="bid_status" name="bid_status" class="form-control" ng-model="bid_status" required>
+      <option value="Yes">Yes Allow Users to bid</option>
+      <option value="No">No Dont allow users to bid</option>
+    </select>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit" >Submit Property</label>
+  <div class="col-md-4">
+    <button id="submit" name="submit" class="btn btn-success" ng-click="test();">Submit</button>
+  </div>
+</div>
+
+<div class="form-group">
+<div class="alert alert-danger" ng-hide="validate_property1"><p><strong>{{response_message}}</strong></p></div>
+<div class="alert alert-success" ng-hide="validate_property2"><p><strong>{{response_message}}</strong></p></div>
+</div>
+
+
+</fieldset>
+</form>
+
+</div>
+<div class="col-md-1"></div>

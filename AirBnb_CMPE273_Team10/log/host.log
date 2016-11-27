@@ -1,0 +1,64 @@
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T00:13:30.066Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T00:13:30.080Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T00:32:02.631Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T00:32:02.632Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T00:36:59.786Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T00:36:59.788Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T00:46:16.453Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T00:46:16.456Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T00:49:39.148Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T00:49:39.150Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T01:04:50.577Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T01:04:50.579Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T01:27:55.144Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T01:27:55.146Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T01:41:27.979Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T01:41:27.980Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T01:43:43.711Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T01:43:43.713Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T02:11:01.302Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T02:11:01.303Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T02:15:37.400Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T02:15:37.402Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T02:37:48.050Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T02:37:48.051Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T02:43:59.088Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T02:43:59.090Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T02:52:49.023Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T02:52:49.025Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T03:03:45.889Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T03:03:45.891Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T03:08:18.926Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T03:08:18.928Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T03:09:39.793Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T03:09:39.795Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T03:13:15.156Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T03:13:15.158Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T19:12:57.910Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T19:12:57.910Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T19:13:30.793Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T19:13:30.795Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T20:04:37.867Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T20:04:37.869Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T20:04:44.576Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T20:04:44.578Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T20:06:50.369Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T20:06:50.371Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T20:12:40.563Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T20:12:40.564Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T21:09:13.254Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T21:09:13.255Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-26T21:09:59.609Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-26T21:09:59.611Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-27T02:49:51.933Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-27T02:49:51.934Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-27T02:53:02.056Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-27T02:53:02.058Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-27T02:55:11.671Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-27T02:55:11.673Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-27T02:55:59.286Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-27T02:55:59.287Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-27T03:04:39.018Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-27T03:04:39.020Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-27T03:05:48.893Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-27T03:05:48.895Z"}

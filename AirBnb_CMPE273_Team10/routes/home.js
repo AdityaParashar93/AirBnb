@@ -113,3 +113,21 @@ exports.logout = function(req, res) {
 	req.session.destroy();
 	res.redirect('/');
 };
+
+
+exports.register_new_property= function(req, res) {
+	
+	var msg_payload={"property":req.param("property_input")};
+	console.log(req.param("property_input").owner);
+	console.log(req.session.username+"trying to host"+msg_payload);
+	
+	mq_client.make_request('register_new_property', msg_payload, function(err, results){
+		console.log(results);
+		if(err){
+			throw err;
+		}
+		else {
+			res.send(results);
+		}  
+	});
+};

@@ -115,6 +115,7 @@ app.post('/afterAdminLogin', function(req, res, next) {
 app.post('/logout', home.logout);
 app.post('/adminApproveUser', admin.adminApproveUser);
 app.post('/logMyEvent', admin.logMyEvent);
+app.post('/register_new_property', home.register_new_property);
 
 //GET
 app.get('/', routes.index);
@@ -123,6 +124,7 @@ app.get('/Profile', profile.land);
 app.get('/admin', admin.land);
 app.get('/successAdminLogin', admin.redirectToAdminHomepage);
 app.get('/adminApproveUserTasks', admin.adminApproveUserTasks);
+app.get('/become_a_host', routes.index);
 
 function isAuthenticated(req, res, next) {
 	  if(req.session.username) {

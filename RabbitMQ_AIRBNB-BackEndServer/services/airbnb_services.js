@@ -161,3 +161,30 @@ exports.handle_admin_approve_user_queue_request = function (msg, callback) {
 	});
 
 };
+
+
+exports.handle_register_new_property = function (msg, callback) {
+	console.log("Hey Call is here");	
+	console.log(msg.property.country);
+	var res={};
+	var json_responses;
+	console.log("In handle request:"+ msg.username);
+	mongo.connect(mongoURL,function(connection){
+		console.log("Connected to mongo at:"+mongoURL);
+		var coll=mongo.collection('property_test');
+		coll.insert({"property_test":msg.property},function(err,user){
+			if(user){
+				console.log("data inserted successfully in products");
+				connection.close();
+				res.json_responses = {"statusCode" : 200};
+				callback(null,res);
+			}
+			else{
+				connection.close();
+				console.log("returned false");
+				res.json_responses = {"statusCode" : 406};
+				callback(null,res);
+			}
+		});
+	});
+};
