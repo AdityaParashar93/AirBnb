@@ -1,0 +1,28 @@
+<div>
+
+	<div class="table table-title">
+		<h2>FOLLOWING USERS ARE IN </h2>{{city}}
+	</div>
+	<table class="table table-fill">
+		<tr>
+			<th>USER FIRST NAME</th>
+			<th>USER LAST NAME</th>
+			<th>USERNAME</th>
+			<th>VIEW</th>
+		</tr>
+		<tr ng-repeat="user in results">
+			<td>{{user.fname}}</td>
+			<td>{{user.lname}}</td>
+			<td>{{user.username}}</td>
+			<td>
+				<div>
+					<form role="form">
+						<input type="submit" ng-click="viewUser(user._id)"
+							value="VIEW USER PROFILE" class="btn btn-info btn-block">
+					</form>
+				</div>
+			</td>
+		</tr>
+	</table>
+
+</div>
