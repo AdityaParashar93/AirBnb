@@ -117,7 +117,7 @@ app.post('/adminApproveUser', admin.adminApproveUser);
 app.post('/logMyEvent', admin.logMyEvent);
 
 app.post('/register_new_property', home.register_new_property);
-app.post('adminListCityHosts', admin.adminListCityHosts);
+app.post('/adminListCityHosts', admin.adminListCityHosts);
 
 
 //GET
