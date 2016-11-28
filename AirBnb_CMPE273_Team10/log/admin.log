@@ -304,3 +304,9 @@
 {"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-27T03:04:39.023Z"}
 {"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-27T03:05:48.898Z"}
 {"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-27T03:05:48.898Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-28T20:28:58.080Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-28T20:28:58.080Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-28T20:48:21.943Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-28T20:48:21.943Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-28T20:58:41.453Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-28T20:58:41.453Z"}

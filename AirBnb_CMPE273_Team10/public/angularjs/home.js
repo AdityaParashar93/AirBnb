@@ -47,6 +47,21 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider,$route
 
             },	
 		}
+	}).state('host_dashboard', {	
+		url : '/host_dashboard',
+		views: {
+            'header': {
+                templateUrl : 'templates/host_dashboard_header.html',
+            },
+            'sidebar': {
+                templateUrl : 'templates/host_dashboard_sidebar.html',
+            },
+            'content': {
+                
+                templateUrl : 'templates/host_dashboard.html',
+
+            },	
+		}
 	});
 });
 

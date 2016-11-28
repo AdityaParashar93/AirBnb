@@ -16,6 +16,7 @@ var index 		= require('./routes/index');
 var home 		= require('./routes/home');
 var profile 	= require('./routes/profile');
 var admin 		= require('./routes/admin');
+var host_dashboard 		= require('./routes/host_dashboard');
 
 
 //URL for the sessions collections in mongoDB
@@ -117,7 +118,7 @@ app.post('/adminApproveUser', admin.adminApproveUser);
 app.post('/logMyEvent', admin.logMyEvent);
 
 app.post('/register_new_property', home.register_new_property);
-app.post('/adminListCityHosts', admin.adminListCityHosts);
+//app.post('/adminListCityHosts', admin.adminListCityHosts);
 
 
 //GET
@@ -129,10 +130,10 @@ app.get('/successAdminLogin', admin.redirectToAdminHomepage);
 app.get('/adminApproveUserTasks', admin.adminApproveUserTasks);
 
 app.get('/become_a_host', routes.index);
-
-app.get('/adminListCityNames', admin.adminListCityNames);
-app.get('/adminTopTenPropertiesAsRevenue', admin.adminTopTenPropertiesAsRevenue);
-app.get('/adminCitywiseRevenue', admin.adminCitywiseRevenue);
+app.get('/host_dashboard', host_dashboard.host_dashboard);
+//app.get('/adminListCityNames', admin.adminListCityNames);
+//app.get('/adminTopTenPropertiesAsRevenue', admin.adminTopTenPropertiesAsRevenue);
+//app.get('/adminCitywiseRevenue', admin.adminCitywiseRevenue);
 
 
 function isAuthenticated(req, res, next) {

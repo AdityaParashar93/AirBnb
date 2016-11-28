@@ -62,3 +62,9 @@
 {"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-27T03:04:39.020Z"}
 {"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-27T03:05:48.893Z"}
 {"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-27T03:05:48.895Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-28T20:28:58.074Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-28T20:28:58.076Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-28T20:48:21.938Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-28T20:48:21.940Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-28T20:58:41.445Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-28T20:58:41.448Z"}
