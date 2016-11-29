@@ -16,6 +16,9 @@ var index 		= require('./routes/index');
 var home 		= require('./routes/home');
 var profile 	= require('./routes/profile');
 var admin 		= require('./routes/admin');
+var editprofile = require('./routes/EditProfile');
+var account 	= require('./routes/Account');
+var receipt 	= require('./routes/Receipt');
 var host_dashboard 		= require('./routes/host_dashboard');
 
 
@@ -119,6 +122,11 @@ app.post('/logMyEvent', admin.logMyEvent);
 app.post('/register_new_property', home.register_new_property);
 app.post('/adminListCityHosts', admin.adminListCityHosts);
 
+app.post('/view_profile', profile.view_profile);
+app.post('/edit_profile', editprofile.edit_profile);
+app.post('/change_password', profile.change_password);
+app.post('/confirm_receipt', receipt.confirm_receipt);
+
 
 //GET
 app.get('/', routes.index);
@@ -133,6 +141,9 @@ app.get('/adminListCityNames', admin.adminListCityNames);
 app.get('/adminTopTenPropertiesAsRevenue', admin.adminTopTenPropertiesAsRevenue);
 app.get('/adminCitywiseRevenue', admin.adminCitywiseRevenue);
 
+app.get('/EditProfile', editprofile.land);
+app.get('/Account', account.land);
+app.get('/Receipt', receipt.land);
 
 function isAuthenticated(req, res, next) {
 	  if(req.session.username) {

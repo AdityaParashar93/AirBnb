@@ -26,6 +26,7 @@
     "request": "*",
     "require": "*",
     "url": "*",
-    "winston": "*"
+    "winston": "*",
+    "wkhtmltopdf": "^0.3.3"
   }
 }

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+<!--
+    <script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+
+    <script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--  <link rel='stylesheet' href='/stylesheets/Profile.css' />-->
+
+    <!-- Loading the AngularJS file from /public/angularJS folder -->
+
+
+    <script src="angularjs/receipt.js">  </script>
+
+</head>
+
+
+<body class="ng-scope" ng-app="receipt">
+
+<div class="container">
+    <div class="row">
+        <div class="well col-xs-10 col-sm-10 col-md-6 col-xs-offset-1 col-sm-offset-1 col-md-offset-3">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <address>
+                        <H2>Customer Receipt</H2>
+                        <br>
+                        Confirmation code:
+                        <br>
+                        <p id="demo"></p>
+                        <br>
+
+                    </address>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 text-right">
+                    <p>
+                        <em>AIRBNB</em>
+                        <em>+1 (415)800-5959</em>
+                    </p>
+                    <p>
+                        <em>WWW.AIRBNB.COM/CONTACT</em>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <table class="table table-hover" style="align-content: flex-start">
+                    <col width="20">
+                    <col width="500">
+                    <col width="20">
+                    <col width="500">
+
+                    <tr>
+                        <th class="text-left"></th>
+                        <th class="text-left"></th>
+                        <th class="text-left"></th>
+                        <th class="text-left"></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td><i class="glyphicon glyphicon-user"></i></td>
+                        <td style="text-align: left">CUST NAME</td>
+                        <td style="text-align: left"><span class="glyphicon glyphicon-map-marker"></span></td>
+                        <td style="text-align: left">LOCATION CITY</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td ><i class="material-icons"></i></td>
+                        <td style="text-align: left">ADDRESS</td>
+                        <td style="text-align: left"><span class="glyphicon glyphicon-home"></span></td>
+                        <td style="text-align: left">PROPERTY NAME</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td ><i class="material-icons"></i></td>
+                        <td  style="text-align: left">TYPE OF ROOM</td>
+                        <td  style="text-align: left"><!--<i class="material-icons">group</i>--></td>
+                        <td  style="text-align: left">NO OF GUESTS</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td ><span class="glyphicon glyphicon-calendar"></span></td>
+                        <td style="text-align: left">DATE FROM</td>
+                        <td style="text-align: left"><span class="glyphicon glyphicon-calendar"></span></td>
+                        <td style="text-align: left">DATE TO</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td ><i class="glyphicon glyphicon-lamp"></i></td>
+                        <td style="text-align: left">NO OF NIGHTS</td>
+                        <td style="text-align: left"><i class="glyphicon glyphicon-usd"></i></td>
+                        <td style="text-align: left">SECURITY DEPOSIT</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <address>
+                        <strong>Payment Details</strong>
+                        <br>
+                    </address>
+                </div>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th> </th>
+                        <th class="text-center"></th>
+                        <th class="text-center"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="col-md-9"><h4><em>ACCOMODATIONS</em></h4></td>
+                            <td class="col-md-1" style="text-align: center">  </td>
+                            <td class="col-md-1 text-center"></td>
+                            <td class="col-md-1 text-center">TOTAL COST</td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-9"><h4><em>AIRBNB SERVICE FEE</em></h4></td>
+                            <td class="col-md-1" style="text-align: center">  </td>
+                            <td class="col-md-1 text-center"></td>
+                            <td class="col-md-1 text-center">$300</td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-9"><h4><em>AIRBNB CONCIERGE</em></h4></td>
+                            <td class="col-md-1" style="text-align: center">  </td>
+                            <td class="col-md-1 text-center"></td>
+                            <td class="col-md-1 text-center">FREE</td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-9"><h4><em></em></h4></td>
+                            <td class="col-md-1" style="text-align: center">  </td>
+                            <td class="col-md-1 text-center">TOTAL</td>
+                            <td class="col-md-1 text-center">TOTAL FEES</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div ng-controller="RECEIPT">
+                    <input type="button" class="btn btn-success btn-lg btn-block" ng-click="Confirm()" value="CONFIRM"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    document.getElementById("demo").innerHTML = new Date();
+</script>
+</body>
+
+</html>
