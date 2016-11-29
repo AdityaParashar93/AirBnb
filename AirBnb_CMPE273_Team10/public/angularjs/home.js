@@ -67,7 +67,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider,$route
 
 var flag = 0;
 //login
-app.controller('airbnb', function ($scope,$http,$window,$state,$document,$timeout,Upload) {
+app.controller('airbnb', function ($scope,$http,$window,$state,$document,$timeout,$route,Upload) {
 	$scope.validate_property=true;
 	$scope.validate_property1=true;
 	$scope.validate_property2=true;
@@ -263,10 +263,6 @@ app.controller('airbnb', function ($scope,$http,$window,$state,$document,$timeou
 			console.log(error);
 		});
 	
-	
-	
-	
-	
 	};
 
 	$scope.logout = function(){
@@ -309,11 +305,11 @@ app.controller('airbnb', function ($scope,$http,$window,$state,$document,$timeou
 				username = data.username;
 				console.log(data.username);
 				$window.localStorage.setItem("username", username);
-				$state.go('home');
-				$timeout(function () {
-				    // 0 ms delay to reload the page.
-				    $state.reload('home');
-				}, 0);
+				$state.go('home', {reload: true});
+				//$state.go($state.current, {}, {reload: true});
+				$state.reload();
+				//$window.location.reload();
+				//$route.reload();
 				
 				//	window.location.assign("/successLogin");
 			} else {
@@ -329,6 +325,7 @@ app.controller('airbnb', function ($scope,$http,$window,$state,$document,$timeou
 	$scope.Profile = function()
 	{
 		$window.location.assign("/Profile");
+		$route.reload();
 	};
 	
 });

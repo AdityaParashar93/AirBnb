@@ -342,3 +342,49 @@
 {"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-29T04:36:25.047Z"}
 {"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-29T04:36:27.767Z"}
 {"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-29T04:36:27.768Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-29T07:06:20.877Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-29T07:06:25.919Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-11-29T07:06:44.046Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-29T07:06:44.046Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-11-29T07:07:23.862Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-29T07:07:23.862Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_hosts QUEUE WITH msg_payload as:","timestamp":"2016-11-29T07:07:56.423Z"}
+{"username":"admin@gmail.com","city":"california","level":"info","message":"","timestamp":"2016-11-29T07:07:56.423Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-11-29T07:08:00.689Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-29T07:08:00.689Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_hosts QUEUE WITH msg_payload as:","timestamp":"2016-11-29T07:08:03.018Z"}
+{"username":"admin@gmail.com","city":"arizona","level":"info","message":"","timestamp":"2016-11-29T07:08:03.018Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-11-29T07:08:15.431Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-29T07:08:15.431Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-11-29T07:08:34.234Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-29T07:08:34.234Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-29T08:17:15.753Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-29T08:17:15.753Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-29T08:40:26.140Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-29T08:40:26.140Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-29T08:44:16.265Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-29T08:44:16.265Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-29T08:49:11.528Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-29T08:49:11.528Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-29T08:53:31.664Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-29T08:53:31.665Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-29T09:04:21.364Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-29T09:04:21.364Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-29T09:28:23.400Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-29T09:28:23.400Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-29T09:33:38.855Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-29T09:33:38.856Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-29T09:42:04.772Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-29T09:42:04.772Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-29T09:48:53.488Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-29T09:48:53.488Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-29T09:49:54.888Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-29T09:49:54.888Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-29T09:51:14.818Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-29T09:51:14.818Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-29T09:52:31.700Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-29T09:52:31.700Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-29T09:53:17.470Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-29T09:53:17.470Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-29T09:54:55.058Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-29T09:54:55.058Z"}
