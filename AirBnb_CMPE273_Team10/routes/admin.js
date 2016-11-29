@@ -112,6 +112,55 @@ exports.adminApproveUserTasks = function(req, res) {
 };
 
 
+exports.adminListCityNames = function(req, res) {
+	
+	var username = req.session.username;
+	var msg_payload = { 
+			"username": username
+	};
+	
+	console.log("ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload AS: ");
+	console.log(msg_payload);
+	logger.info("ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:");
+	logger.info(msg_payload);
+	
+	mq_client.make_request('admin_list_city_names', msg_payload, function(err, results){
+		console.log(results);
+		if(err){
+			logger.warn("AN ERROR OCCURED IN adminListCityNames");
+			throw err;
+		}
+		else {
+			res.send(results);
+		}  
+	});
+};
+
+exports.adminListCityHosts = function(req, res) {
+	
+	var username = req.session.username;
+	var msg_payload = { 
+			"username": username,
+			"city" : req.param("city")
+	};
+	
+	console.log("ADDING A POST REQUEST ON admin_list_city_hosts QUEUE WITH msg_payload AS: ");
+	console.log(msg_payload);
+	logger.info("ADDING A POST REQUEST ON admin_list_city_hosts QUEUE WITH msg_payload as:");
+	logger.info(msg_payload);
+	
+	mq_client.make_request('admin_list_city_hosts', msg_payload, function(err, results){
+		console.log(results);
+		if(err){
+			logger.warn("AN ERROR OCCURED IN adminListCityHosts");
+			throw err;
+		}
+		else {
+			res.send(results);
+		}  
+	});
+};
+
 exports.adminApproveUser = function(req, res) {
 	
 	var msg_payload = { 
@@ -141,5 +190,51 @@ exports.adminApproveUser = function(req, res) {
 
 
 
+exports.adminTopTenPropertiesAsRevenue = function(req, res) {
+	var username = req.session.username;
+	var msg_payload = { 
+			"username": username
+	};
+	
+	console.log("ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:");
+	console.log(msg_payload);
+	logger.info("ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:");
+	logger.info(msg_payload);
+	
+	mq_client.make_request('admin_top_ten_properties', msg_payload, function(err, results){
+		console.log(results);
+		if(err){
+			logger.warn("AN ERROR OCCURED IN adminTopTenPropertiesAsRevenue");
+			throw err;
+		}
+		else {
+			res.send(results);
+		}  
+	});
+	
+};
 
+exports.adminCitywiseRevenue = function(req, res) {
+	var username = req.session.username;
+	var msg_payload = { 
+			"username": username
+	};
+	
+	console.log("ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:");
+	console.log(msg_payload);
+	logger.info("ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:");
+	logger.info(msg_payload);
+	
+	mq_client.make_request('admin_citywise_revenue', msg_payload, function(err, results){
+		console.log(results);
+		if(err){
+			logger.warn("AN ERROR OCCURED IN adminCitywiseRevenue");
+			throw err;
+		}
+		else {
+			res.send(results);
+		}  
+	});
+	
+};
 

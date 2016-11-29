@@ -118,7 +118,7 @@ app.post('/adminApproveUser', admin.adminApproveUser);
 app.post('/logMyEvent', admin.logMyEvent);
 
 app.post('/register_new_property', home.register_new_property);
-//app.post('/adminListCityHosts', admin.adminListCityHosts);
+app.post('/adminListCityHosts', admin.adminListCityHosts);
 
 
 //GET
@@ -131,9 +131,9 @@ app.get('/adminApproveUserTasks', admin.adminApproveUserTasks);
 
 app.get('/become_a_host', routes.index);
 app.get('/host_dashboard', host_dashboard.host_dashboard);
-//app.get('/adminListCityNames', admin.adminListCityNames);
-//app.get('/adminTopTenPropertiesAsRevenue', admin.adminTopTenPropertiesAsRevenue);
-//app.get('/adminCitywiseRevenue', admin.adminCitywiseRevenue);
+app.get('/adminListCityNames', admin.adminListCityNames);
+app.get('/adminTopTenPropertiesAsRevenue', admin.adminTopTenPropertiesAsRevenue);
+app.get('/adminCitywiseRevenue', admin.adminCitywiseRevenue);
 
 
 function isAuthenticated(req, res, next) {
