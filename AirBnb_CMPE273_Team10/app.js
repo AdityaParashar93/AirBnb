@@ -9,6 +9,7 @@ var path		= require('path');
 var LocalStrategy = require("passport-local").Strategy;
 var passport 	= require('passport');
 require('./routes/passportj')(passport);
+var property 		= require('./routes/property');
 
 //Routes files below
 var user 		= require('./routes/user');
@@ -119,6 +120,7 @@ app.post('/afterAdminLogin', function(req, res, next) {
 app.post('/logout', home.logout);
 app.post('/adminApproveUser', admin.adminApproveUser);
 app.post('/logMyEvent', admin.logMyEvent);
+
 app.post('/register_new_property', home.register_new_property);
 app.post('/adminListCityHosts', admin.adminListCityHosts);
 
@@ -126,17 +128,28 @@ app.post('/view_profile', profile.view_profile);
 app.post('/edit_profile', editprofile.edit_profile);
 app.post('/change_password', profile.change_password);
 app.post('/confirm_receipt', receipt.confirm_receipt);
+app.post('/getPropertyList', property.getPropertyList);
+
 
 
 //GET
+app.get('/getProperties',function(req,res){
+	res.send(req.session.properties);
+});
+
+
 app.get('/', routes.index);
 app.get('/successLogin', home.redirectToHomepage);
 app.get('/Profile', profile.land);
 app.get('/admin', admin.land);
 app.get('/successAdminLogin', admin.redirectToAdminHomepage);
 app.get('/adminApproveUserTasks', admin.adminApproveUserTasks);
+
 app.get('/become_a_host', routes.index);
+app.get('/propertyList', routes.index);
+
 app.get('/host_dashboard', host_dashboard.host_dashboard);
+
 app.get('/adminListCityNames', admin.adminListCityNames);
 app.get('/adminTopTenPropertiesAsRevenue', admin.adminTopTenPropertiesAsRevenue);
 app.get('/adminCitywiseRevenue', admin.adminCitywiseRevenue);

@@ -79,7 +79,7 @@ input:focus ~ .underline {
 }
 </style>
 
-<div class="body" ng-controller="airbnb" >
+<div class="body" >
   <div class="row">
   <div class="col-md-1">
   </div>
@@ -90,21 +90,21 @@ input:focus ~ .underline {
     <form autocomplete="off" ng-submit="searchProperties()">
     <div class="row" style="padding-bottom:6px;">
       <div class="col-md-3" ><label>Where</label><br><span class="input-underline-wrapper">
-        <input required placeholder="Destination,city,address" ng-model="location" style="height:50px" style="border-color:white;border-box:transparent;" type="text" class="form form-control">
+        <input required placeholder="Destination,city,address" ng-model="city" style="height:50px" style="border-color:white;border-box:transparent;" type="text" class="form form-control">
         <div class="underline"></div>
       </span></div>
       <div class="col-md-3"><label>From</label><br><input  ng-model="fromDate" style="height:50px" type="date" class="form form-control"></div>
       <div class="col-md-2"><label>To</label><br><input  ng-model="toDate" style="height:50px" type="date" class="form form-control"></div>
       <div  class="col-md-2"><label>Guests</label><br>
         <select ng-model="guest" style="height:50px" placeholder="guest" class="form form-control">
-            <option selected value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
+            <option selected value="1">1 guest</option>
+            <option value="2">2 guest</option>
+            <option value="3">3 guest</option>
+            <option value="4">4 guest</option>
+            <option value="5">5 guest</option>
         </select>
     </div>
-    <div class="col-md-2"><br><input  ng-click="searchProperties()" style="height:50px;background-color:#ff5a5f;color:white" type="submit" class="form form-control"></div>
+    <div class="col-md-2"><br><input   style="height:50px;background-color:#ff5a5f;color:white" type="submit" class="form form-control"></div>
     
     </div>
     </form>

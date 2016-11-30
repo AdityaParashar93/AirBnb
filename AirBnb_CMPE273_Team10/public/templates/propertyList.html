@@ -1,0 +1,164 @@
+<style>
+    background-color: transparent;
+    .navbar-default {
+    border-color: #FFFFFF;
+    box-shadow: 10px 10px 5px #FFFFFF;
+    background-image: linear-gradient(to bottom,#fff 0,#ffffff 100%);
+}
+
+#map {
+        width: 97%;
+        height: 659px;
+      }
+
+</style>
+
+<div onload="initMap()"  class="body"  style="border-top:1px solid rgba(180,180,180,.7)">
+
+<div class="row">
+
+	<div class="col-md-7" style="overflow-y:scroll;height:660px">
+	<div style="padding-left:40px;padding-top:40px;font:sans-serif"> 
+	
+	<form>
+	<div class="row">
+	<div  class="col-md-12 col-xl-12 col-xs-12">
+							<div class="row">
+					<div style="padding:10px" class="col-md-3 col-xs-2"><b>Dates</b></div>
+					<div class="col-md-9 col-xs-9">
+						<div  class="col-md-4 col-xs-4">
+							<input   ng-model="fromDate" style="height:40px " value="2016-12-05" type="date" class="form form-control"></div>
+    					<div class="col-md-4 col-xs-4">
+      						<input  ng-model="toDate" style="height:40px" value="2016-12-10" type="date" class="form form-control"></div>
+    					<div class="col-md-4 col-xs-4">
+      			    <select ng-model="guest" style="height:40px" placeholder="guest" class="form form-control">
+            			<option selected value="1">1 guest</option>
+            			<option value="2">2 guests</option>
+			            <option value="3">3 guests</option>
+			            <option value="4">4 guests</option>
+			            <option value="5">5 guests</option>
+			        </select>
+			        </div>
+				</div>
+				</div>
+			</div>		
+    	</div>	   		
+		<hr>
+		<div class="row">
+			<div  class="col-md-12 col-xl-12 col-xs-12">
+				<div class="row">
+					<div style="padding:5px" class="col-md-3 col-xs-2"><b>Room type</b></div>
+					<div  class="col-md-9 col-xs-10">
+    					<div style="padding:10px;margin-top:0;border:1px solid rgba(0,0,0,.3);background-color:rgba(220,220,220,0.5);" class="col-md-4 col-xs-4 checkbox">
+      						   <label><input type="checkbox" ng-click="add_type('Entire Home')" value="Entrie Home">Entire Home &nbsp;<span class="glyphicon glyphicon-home"></span></label>
+   						</div>
+   					
+   						<div style="padding:10px;margin-top:0;margin-right:0px;border:1px solid rgba(0,0,0,.3);background-color:rgba(200,200,200,0.5)" class="col-md-4 col-xs-4 checkbox">
+      			       <label><input type="checkbox" ng-click="add_type('Private Room')" value="Private Room">Private Room  &nbsp;<span style="color:rgba(0,50,125,.8)" class="glyphicon glyphicon-bed"></span></label>
+   		        		</div>
+   						<div style="padding:10px;margin-top:0;margin-right:0px;border:1px solid rgba(0,0,0,.3);background-color:rgba(220,220,220,0.5)" class="col-md-4 col-xs-4 checkbox">
+      			       <label><input type="checkbox" ng-click="add_type('Shared Room')" value="Shared Room">Shared Room  &nbsp;<span class="glyphicon glyphicon-bed"></span></label>
+   		        		</div>
+					</div>
+				</div>
+			</div>		
+    	</div>	   		
+		<hr> 
+		<div class="row">
+			<div  class="col-md-12 col-xl-12 col-xs-12">
+							<div class="row">
+					<div style="padding:10px" class="col-md-3 col-xs-3"><b>Max Price &nbsp;<span class="glyphicon glyphicon-usd"></span></b></div>
+					<div class="col-md-9 col-xs-9">
+    <p id="result">${{priceRange}}</p><input id="price" type="range" min="0" max="10000"  class="form form-control" ng-model="priceRange" value="25" />
+			</div>
+	</div>
+			</div>		
+    	</div>	   		
+		<hr>
+		<hr>	
+</form>
+<div class="row" >
+	<div class="col-md-6 col-sm-6 col-xs-6" style="padding-bottom:5px" ng-repeat="property in stateParams  ">{{property.city}}
+		<div ng-show="property.price < priceRange"><img scr="" height="200" width="98%">
+		<div  class="row" style="padding-left:15px; color:rgba(50,50,50,.9)">
+			<b  style="font-size:large; text-align:left;float:left;">${{property.price}}</b>&nbsp;/&nbsp;night<br>
+		 </div>
+		 <div class="row" style="padding-left:15px;text-align:left;float:left;color:rgba(50,50,50,.9)">{{property.room_type}} . {{property.city}}&nbsp; . {{property.number_of_guests}}&nbsp;guest<br><br></div>
+	
+		 </div>
+		</div>
+	</div>
+</div>
+</div>
+<div  class="col-md-5" style="padding:0">
+	
+	 <div style="height:100%; width:100%;">
+         <div id="map">12121212</div>
+    </div>
+    <script>
+      // In the following example, markers appear when the user clicks on the map.
+      // Each marker is labeled with a single alphabetical character.
+	 
+     // setTimeout(function(){
+    //import Javascript
+      var scope = angular.element("#map").scope();
+	  var a = [];
+	  var b = [];
+	  var place = [];
+		console.log(scope.stateParams);
+	  for(var i=0;i<scope.stateParams.length;i++){
+          a[i] = scope.stateParams[i].latitude;
+          b[i] = scope.stateParams[i].longitude;
+      }
+	console.log("here");      
+      console.log(":::::"+a);
+      console.log(":::::::::"+b);
+      var labels = [];
+      for(var i=0;i<scope.stateParams.length;i++){
+   	   labels[i] = scope.stateParams[i].room_type;
+     }
+
+      var labelIndex = 1;
+      
+      function initMap() {
+    	  
+          for(var i=0;i<scope.stateParams.length;i++){
+        	   place[i] = { lat: a[i] + i, lng: b[i] + i };
+          }
+        
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 5,
+          center : place[0]
+        });
+		
+        // Add a marker at the center of the map.
+
+        for(var i=0;i<scope.stateParams.length;i++){
+            addMarker(place[i], map,i);
+
+        } 
+        
+      }
+
+      // Adds a marker to the map.
+      function addMarker(location, map,i) {
+        // Add the marker at the clicked location, and add the next-available label
+        // from the array of alphabetical characters.
+        var marker = new google.maps.Marker({
+          position: location,
+          label: labels[i],
+          map: map,
+         // icon : 00FF00 
+        });
+      }
+
+      //},0);
+       
+      
+      //google.maps.event.addDomListener(window, 'load', initialize);
+    </script>  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxsx7bCOZPl47BYA8ZHXEfAkWGBqVtyuE
+&callback=initMap"
+    async defer></script>
+</div>
+</div>
+</div>

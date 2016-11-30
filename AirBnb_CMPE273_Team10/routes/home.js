@@ -119,10 +119,13 @@ exports.register_new_property= function(req, res) {
 	
 	var msg_payload={"property":req.param("property_input")};
 	console.log(req.param("property_input").owner);
+	if(req.session.username){
+	var msg_payload={"property":req.param("property_input"),"property_owner":req.session.username};
+	
 	console.log(req.session.username+"trying to host"+msg_payload);
 	
 	mq_client.make_request('register_new_property', msg_payload, function(err, results){
-		console.log(results);
+		console.log("Results: \n\n\n\n"+results);
 		if(err){
 			throw err;
 		}
@@ -130,4 +133,8 @@ exports.register_new_property= function(req, res) {
 			res.send(results);
 		}  
 	});
+	}else{
+		var result={json_responses:{statusCode:405}};
+		res.send(result);
+	}
 };
