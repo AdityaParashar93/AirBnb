@@ -1,0 +1,81 @@
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-13T05:03:46.861Z"}
+{"saltRounds":10,"myPlaintextPassword":"test","salt":"$2a$10$751/fqY3nVSaP8fPEYkSTu","hash":"$2a$10$ftG.F1LNimCU0Yj9SomkGeD/5/nasBnxl9DsXQfettJ6USz3Azquu","dt":"2016-11-13T05:03:46.769Z","first_name":"test","last_name":"test","inputUsername":"test@gmail.com","inputPassword":"$2a$10$ftG.F1LNimCU0Yj9SomkGeD/5/nasBnxl9DsXQfettJ6USz3Azquu","level":"info","message":"","timestamp":"2016-11-13T05:03:46.862Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-13T05:21:02.772Z"}
+{"saltRounds":10,"myPlaintextPassword":"test","salt":"$2a$10$0L6R.BVQvlAkHTtkEL7uGe","hash":"$2a$10$3IZQbYfc9LvvPF2PPGHCgubYV7dW0p/RjL5GtyTDt/fOUdvdDJrse","dt":"2016-11-13T05:21:02.679Z","first_name":"test","last_name":"test","inputUsername":"test@gmail.com","inputPassword":"$2a$10$3IZQbYfc9LvvPF2PPGHCgubYV7dW0p/RjL5GtyTDt/fOUdvdDJrse","level":"info","message":"","timestamp":"2016-11-13T05:21:02.773Z"}
+{"level":"info","message":"Checks before redirecting whether the session is valid ","timestamp":"2016-11-13T07:57:09.486Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-13T08:22:18.123Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-13T08:22:23.300Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-13T08:28:58.872Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-13T08:29:01.148Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-13T08:29:12.752Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-13T08:29:23.113Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-13T09:05:59.628Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-13T09:06:01.001Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-15T02:48:18.311Z"}
+{"saltRounds":10,"myPlaintextPassword":"1234","salt":"$2a$10$c1bbeTgVZPtiJZD99HISze","hash":"$2a$10$bGYhrl2c11r4rPYw3.2K6eoTV4ZU.S8x9AMSViBWsPUvSm3uI49P2","dt":"2016-11-15T02:48:18.218Z","first_name":"Sagar","last_name":"Mane","inputUsername":"sagar@gmail.com","inputPassword":"$2a$10$bGYhrl2c11r4rPYw3.2K6eoTV4ZU.S8x9AMSViBWsPUvSm3uI49P2","level":"info","message":"","timestamp":"2016-11-15T02:48:18.314Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-15T02:49:36.581Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-15T02:49:43.337Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-15T23:16:32.519Z"}
+{"saltRounds":10,"myPlaintextPassword":"1234","salt":"$2a$10$2jOhNL/5KAoHIPe6ajfM2O","hash":"$2a$10$wDrwBWqokowTL1TCkfdyCumDSRdpv3zb0xcLc5PIp.Kyd98JRcvMq","dt":"2016-11-15T23:16:32.415Z","first_name":"Hiral","last_name":"Parikh","inputUsername":"hiral@gmail.com","inputPassword":"$2a$10$wDrwBWqokowTL1TCkfdyCumDSRdpv3zb0xcLc5PIp.Kyd98JRcvMq","level":"info","message":"","timestamp":"2016-11-15T23:16:32.520Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-15T23:16:55.941Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-15T23:17:02.238Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-15T23:42:20.615Z"}
+{"saltRounds":10,"myPlaintextPassword":"1234","salt":"$2a$10$syj.hQQD3EBCbQS48P2u4.","hash":"$2a$10$da1C44/OVHtmEA91ITE3mOpxNMenQhx/.fCh6G0ds15OMGYjByn12","dt":"2016-11-15T23:42:20.389Z","first_name":"test","last_name":"test","inputUsername":"test@gmail.com","inputPassword":"$2a$10$r4NDRtrOKFupMBlHYmkEmOHuz3SoLXGW/KGB02tT./JETt62qc37W","level":"info","message":"","timestamp":"2016-11-15T23:42:20.617Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-15T23:42:47.248Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-15T23:42:52.578Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-16T00:03:00.297Z"}
+{"saltRounds":10,"myPlaintextPassword":"123","salt":"$2a$10$9Pa6bychBYEVB6ky4EEc6O","hash":"$2a$10$CywDD6OXRCMwvZMP4lACTu5Me0MEyYT7gD5pl9ssyXoXFFEwAHMCi","dt":"2016-11-16T00:02:59.984Z","first_name":"sagar","last_name":"mane","inputUsername":"sagar@gmail.com","inputPassword":"$2a$10$npn08rkR0rjTLm.IIeY8Re144knzRDnxaosvzWpFjN3eIXR.NXP3u","level":"info","message":"","timestamp":"2016-11-16T00:03:00.298Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-16T00:03:35.755Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-16T00:03:39.610Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-16T00:03:51.546Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-16T00:04:08.611Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-16T00:07:11.038Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-16T00:08:12.455Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-16T00:09:02.739Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-17T22:47:23.801Z"}
+{"saltRounds":10,"myPlaintextPassword":"asd","salt":"$2a$10$gRk0FIj4hlsyyPD51xxLF.","hash":"$2a$10$Ks2r0UApBPpvCt8mETGBOeHdRu5/QMs.40FcOF5R/zYuY369wjpi2","dt":"2016-11-17T22:47:23.502Z","first_name":"asdf","last_name":"erqdas","inputUsername":"asd@cc.com","inputPassword":"$2a$10$6SKaivL7HZgemmmr.GRioup01WsfSkKseI6Wu55Nju1ForvfCPCUy","dob":"2222-11-11","level":"info","message":"","timestamp":"2016-11-17T22:47:23.802Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-17T22:47:27.545Z"}
+{"saltRounds":10,"myPlaintextPassword":"asd","salt":"$2a$10$xG5u.rh4hYtTBhvoomTsJO","hash":"$2a$10$w.3qgG/rMiSfmMSL7zkNC.9vkIi59izyhDTfBR534l9VJRlK8IaES","dt":"2016-11-17T22:47:27.257Z","first_name":"asdf","last_name":"erqdas","inputUsername":"asd@cc.com","inputPassword":"$2a$10$srQFHv3W7dFLKFmUZg9j3.OY6lrgi6oJFZVKIE2lo2qJS.TtPhCaO","dob":"2222-11-11","level":"info","message":"","timestamp":"2016-11-17T22:47:27.545Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-17T22:47:37.403Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-17T22:47:43.606Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-17T22:47:45.403Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-17T22:50:25.007Z"}
+{"saltRounds":10,"myPlaintextPassword":"asdas","salt":"$2a$10$Rg/3ubgZ55.DUzQJnIslvO","hash":"$2a$10$qi/qvvRCZLJlTkCR8ObI2O/uceLt82CoWsvNdcMFfmyq5xiXqyKjG","dt":"2016-11-17T22:50:24.722Z","first_name":"asd","last_name":"asd","inputUsername":"asd@cc.com","inputPassword":"$2a$10$7S5e/cYbD/ZN.gWp1C9Os.pzF9j8UxMPbxepkeuLgyVB0GSsQ8iuq","dob":"0223-11-22","level":"info","message":"","timestamp":"2016-11-17T22:50:25.007Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-17T22:50:44.019Z"}
+{"saltRounds":10,"myPlaintextPassword":"123","salt":"$2a$10$7c12p1TFnYBXUzgXrVTOye","hash":"$2a$10$vUZCUSgh/p.kvqP9GcaHgO6VJiFl/DQDrXkW6SW07.yftStVfF2Ky","dt":"2016-11-17T22:50:43.726Z","first_name":"asd","last_name":"asd","inputUsername":"aasd@cc.com","inputPassword":"$2a$10$PZ3dQFqbEeT7Dp532SN55ell.LuVcsujSSWCzR5u91XuRcXISrYSe","dob":"0223-11-22","level":"info","message":"","timestamp":"2016-11-17T22:50:44.019Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-17T23:20:03.381Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-17T23:20:18.570Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-17T23:21:05.367Z"}
+{"saltRounds":10,"myPlaintextPassword":"qwer","salt":"$2a$10$kHB4SSVxLfkdGtwOU7a/wu","hash":"$2a$10$lyt71G.gC276.qY5rDEZ8ektH.gKv/.S/ce83y6w22YTfBHKtTs52","dt":"2016-11-17T23:21:05.131Z","first_name":"Nachiket","last_name":"Joshi","inputUsername":"nachiket663@gmail.com","inputPassword":"$2a$10$tyPNME8JWT4.aHI3.YyMv.z9TxY1380jDw9Tudbf0wAnr6CKAmpre","dob":"1991-12-10","level":"info","message":"","timestamp":"2016-11-17T23:21:05.367Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-17T23:21:38.560Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-17T23:21:46.669Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-18T07:27:48.240Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-18T07:27:49.606Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-18T09:12:10.779Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-18T09:12:10.825Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-18T09:12:26.558Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-18T09:12:42.581Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-18T09:12:42.632Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-18T09:12:47.152Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-18T11:29:59.110Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-18T11:30:01.014Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-18T11:33:15.654Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-18T11:34:05.645Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-18T21:47:01.999Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-18T23:43:07.362Z"}
+{"saltRounds":10,"myPlaintextPassword":"qwer","salt":"$2a$10$8BywY9ZIgUMyXNjusH5MOe","hash":"$2a$10$F4LIIeMz1Lz4vjU8q34FrOq8m3RO/HIxNVTfjrek5HE4kwa6DQxBS","dt":"2016-11-18T23:43:07.129Z","first_name":"Nachiket","last_name":"Joshi","inputUsername":"nachiket@gmail.com","inputPassword":"$2a$10$AeUNVGZhcSVd2o7rpP.Biuxq.cx2FLIfm8O9NGqBrsYB6VYlZBGQm","approve_flag":"NO","level":"info","message":"","timestamp":"2016-11-18T23:43:07.363Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-18T23:43:20.658Z"}
+{"saltRounds":10,"myPlaintextPassword":"qwer","salt":"$2a$10$9eiSo8UxSsp0Ybk4L7HQVO","hash":"$2a$10$nejDEY2k6eJy.xvgZsVHPeOxM7F1fGEGo1jEXzZmeN5zH0vhQCFsS","dt":"2016-11-18T23:43:20.426Z","first_name":"Nachiket","last_name":"Joshi","inputUsername":"nachiket@gmail.com","inputPassword":"$2a$10$SVjXNuw9zHOY0wckId5hmOp5vA1kZCoz/KBhV/oxxLcUjJo.t6lGK","approve_flag":"NO","level":"info","message":"","timestamp":"2016-11-18T23:43:20.658Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-18T23:45:38.864Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-18T23:46:12.196Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-18T23:46:28.373Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-18T23:47:10.391Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-18T23:47:21.842Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-18T23:48:00.774Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-19T02:26:28.309Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-19T02:27:08.837Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-19T02:30:17.556Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-19T02:30:19.746Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-19T02:31:10.866Z"}
+{"level":"info","message":"THIS PART CHECKS IF THE SESSION IS VALID BEFORE REDIRECTING","timestamp":"2016-11-19T02:31:21.808Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-19T02:31:23.657Z"}
