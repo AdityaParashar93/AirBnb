@@ -2012,3 +2012,5 @@
 {"city":"San Jose","fromDate":"2016-12-05","toDate":"2016-12-25","guest":1,"level":"info","message":"","timestamp":"2016-11-30T01:54:28.412Z"}
 {"level":"info","message":"Adding a request on property_list_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-30T01:54:57.477Z"}
 {"city":"San Jose","fromDate":"2016-12-05","toDate":"2016-12-25","guest":1,"level":"info","message":"","timestamp":"2016-11-30T01:54:57.478Z"}
+{"level":"info","message":"Adding a request on property_list_queue QUEUE WITH msg_payload as:","timestamp":"2016-11-30T03:48:14.075Z"}
+{"city":"Nagpour","fromDate":"2016-12-05","toDate":"2016-12-25","guest":1,"level":"info","message":"","timestamp":"2016-11-30T03:48:14.075Z"}

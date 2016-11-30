@@ -84,7 +84,7 @@ exports.edit_profile = function(req, res)
                             {
                                 "fname": first_name,
                                 "lname": last_name,
-                                "password": hash
+                                "city": city
                             }}
                     );
 

@@ -34,3 +34,13 @@
 {"username":"admin@gmail.com","clicklog":"content","timeSpentOnPage":2.245,"level":"info","message":"","timestamp":"2016-11-21T10:04:02.031Z"}
 {"level":"info","message":"LOGGING EVENT IN logMyEvent WITH msg_payload as:","timestamp":"2016-11-21T10:04:02.223Z"}
 {"username":"admin@gmail.com","clicklog":"content","timeSpentOnPage":2.437,"level":"info","message":"","timestamp":"2016-11-21T10:04:02.223Z"}
+{"level":"info","message":"LOGGING EVENT IN logMyEvent WITH msg_payload as:","timestamp":"2016-11-30T03:42:11.873Z"}
+{"username":"admin@gmail.com","clicklog":"empty","timeSpentOnPage":1.752,"level":"info","message":"","timestamp":"2016-11-30T03:42:11.874Z"}
+{"level":"info","message":"LOGGING EVENT IN logMyEvent WITH msg_payload as:","timestamp":"2016-11-30T03:42:13.400Z"}
+{"username":"admin@gmail.com","clicklog":"Bill","timeSpentOnPage":3.289,"level":"info","message":"","timestamp":"2016-11-30T03:42:13.400Z"}
+{"level":"info","message":"LOGGING EVENT IN logMyEvent WITH msg_payload as:","timestamp":"2016-11-30T03:42:14.293Z"}
+{"username":"admin@gmail.com","clicklog":"empty","timeSpentOnPage":4.183,"level":"info","message":"","timestamp":"2016-11-30T03:42:14.293Z"}
+{"level":"info","message":"LOGGING EVENT IN logMyEvent WITH msg_payload as:","timestamp":"2016-11-30T03:42:15.001Z"}
+{"username":"admin@gmail.com","clicklog":"empty","timeSpentOnPage":4.887,"level":"info","message":"","timestamp":"2016-11-30T03:42:15.001Z"}
+{"level":"info","message":"LOGGING EVENT IN logMyEvent WITH msg_payload as:","timestamp":"2016-11-30T03:42:15.823Z"}
+{"username":"admin@gmail.com","clicklog":"empty","timeSpentOnPage":5.709,"level":"info","message":"","timestamp":"2016-11-30T03:42:15.823Z"}

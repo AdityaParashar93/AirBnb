@@ -352,3 +352,16 @@
 {"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-30T02:15:52.311Z"}
 {"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-30T02:18:41.125Z"}
 {"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-30T02:18:41.125Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-30T03:41:32.015Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-30T03:41:32.015Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-11-30T03:41:49.230Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-11-30T03:42:11.886Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-30T03:42:11.886Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-11-30T03:42:15.017Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-30T03:42:15.017Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-11-30T03:42:15.837Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-11-30T03:42:15.837Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-30T03:51:56.572Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-30T03:51:56.572Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-30T03:52:06.431Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-30T03:52:06.431Z"}

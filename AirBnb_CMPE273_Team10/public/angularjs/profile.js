@@ -17,7 +17,7 @@ profile.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 });
 
 
-profile.controller('userprofile', function($scope, $http,$state) {
+profile.controller('userprofile', function($scope, $http,$state,$window) {
 
     $scope.Init = function()
     {
@@ -53,5 +53,18 @@ profile.controller('userprofile', function($scope, $http,$state) {
     {
         window.location.assign("/EditProfile");
     }
+    
+    $scope.logout = function(){
+        $window.localStorage.removeItem("username");
+        $http({
+            method : "POST",
+            url : '/logout',
+            data : {}
+        }).success(function(data) {
+
+            window.location.assign("/");
+        });
+
+    };
 
 });

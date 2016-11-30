@@ -18,7 +18,7 @@ var editprofile = angular.module('EditUserProfile', ['ui.router']);
 
 
 
-editprofile.controller('edituserprofile', function($scope, $http,$state) {
+editprofile.controller('edituserprofile', function($scope, $http,$state,$window) {
 
     $scope.Init = function()
     {
@@ -73,5 +73,19 @@ editprofile.controller('edituserprofile', function($scope, $http,$state) {
     {
         window.location.assign("/Account");
     }
+    
+    
+    $scope.logout = function(){
+        $window.localStorage.removeItem("username");
+        $http({
+            method : "POST",
+            url : '/logout',
+            data : {}
+        }).success(function(data) {
+
+            window.location.assign("/");
+        });
+
+    };
 
 });
