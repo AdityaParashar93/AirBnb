@@ -100,4 +100,26 @@ connection.on('ready', function() {
 			});
 		});
 	});
+	
+	connection.queue('property_list_queue', function(q) {
+
+		q.subscribe(function(message, headers, deliveryInfo, m) {
+
+			util.log(util.format(deliveryInfo.routingKey, message));
+			util.log("Message: " + JSON.stringify(message));
+			util.log("DeliveryInfo: " + JSON.stringify(deliveryInfo));
+
+			airbnb_services.handle_get_property_list_request(message, function(err,
+					res) {
+
+				// return index sent
+				connection.publish(m.replyTo, res, {
+					contentType : 'application/json',
+					contentEncoding : 'utf-8',
+					correlationId : m.correlationId
+				});
+
+			});
+		});
+	});	
 });

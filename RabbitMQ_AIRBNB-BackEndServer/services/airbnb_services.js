@@ -163,28 +163,89 @@ exports.handle_admin_approve_user_queue_request = function (msg, callback) {
 };
 
 
-exports.handle_register_new_property = function (msg, callback) {
-	console.log("Hey Call is here");	
-	console.log(msg.property.country);
-	var res={};
+exports.handle_register_new_property = function(msg, callback) {
+	console.log("Hey Call is here");
+	console.log(msg.property);
+
+	var res = {};
 	var json_responses;
-	console.log("In handle request:"+ msg.username);
-	mongo.connect(mongoURL,function(connection){
-		console.log("Connected to mongo at:"+mongoURL);
-		var coll=mongo.collection('property_test');
-		coll.insert({"property_test":msg.property},function(err,user){
-			if(user){
+	console.log("In handle request:" + msg.property_owner);
+	mongo.connect(mongoURL, function(connection) {
+		console.log("Connected to mongo at:" + mongoURL);
+		var coll = mongo.collection('property');
+		coll.insert({
+			"property_owner" : msg.property_owner,
+			"availability_to" : msg.property.availability.to,
+			"availability_from" : msg.property.availability.from,
+			"revenue" : msg.property.revenue,
+			"ratings" : msg.property.revenue,
+			"owner" : msg.username,
+			"country" : msg.property.revenue,
+			"street_address" : msg.property.revenue,
+			"city" : msg.property.city,
+			"state" : msg.property.state,
+			"zip_code" : msg.property.zip_code,
+			"latitude" : msg.property.co_ordinates.lat,
+			"longitude" : msg.property.co_ordinates.lng,
+			"room_type" : msg.property.room_type,
+			"number_of_beds" : msg.property.number_of_beds,
+			"number_of_guests" : msg.property.number_of_guests,
+			"shared_amenities" : msg.property.shared_amenities,
+			"shared_spaces" : msg.property.shared_spaces,
+		//"property_images" : [],
+			"property_title" : msg.property.property_title,
+			"property_description" : msg.property.property_description,
+			"price" : msg.property.property_price,
+			"cc_num" : msg.property.cc_num,
+			"bid_status" : msg.property.bid_status,
+			"approval_flag":false
+		}, function(err, user) {
+			if (user) {
 				console.log("data inserted successfully in products");
 				connection.close();
-				res.json_responses = {"statusCode" : 200};
-				callback(null,res);
-			}
-			else{
+				res.json_responses = {
+					"statusCode" : 200
+				};
+				callback(null, res);
+			} else {
 				connection.close();
 				console.log("returned false");
-				res.json_responses = {"statusCode" : 406};
-				callback(null,res);
+				res.json_responses = {
+					"statusCode" : 406
+				};
+				callback(null, res);
 			}
 		});
 	});
+};
+
+exports.handle_get_property_list_request = function(msg,callback){
+	
+
+	console.log("IN handle_property_list_request:");
+	console.log(msg);
+	var json_responses = {};
+	var city		= msg.location;
+	var guest		= (msg.guest).toString;
+	var fromDate 	= msg.fromDate;
+	var toDate      = msg.toDate;
+	
+	mongo.connect(mongoURL, function() {
+		console.log('CONNECTED TO MONGO IN handle_get_property_list_request');
+		var listing = mongo.collection('property');
+		var json_response= {};
+		
+		console.log(msg.city);
+		console.log(msg.guest);
+		listing.find({ city: msg.city, number_of_guests: guest }).toArray(
+
+				function(err, user) {
+
+					json_responses = {
+						"properties" : user
+					};
+					console.log(user);
+					callback(null, json_responses);
+			});
+	});	
 };
