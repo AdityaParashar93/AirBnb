@@ -6,7 +6,11 @@
     background-image: linear-gradient(to bottom,#fff 0,#ffffff 100%);
 }
 </style>
-
+<script>
+$('#myModal').click(function(event){
+    event.preventDefault();
+});
+</script>
 <div  id="header" class=" navbar navbar-default  ">
   <div  class="navbar-header">
     <a class="navbar-brand" style="position:relative;padding:0"  href="#"><img id="a" src="http://media.gizmodo.co.uk/wp-content/uploads/2014/07/airbnb-logo-230x129.jpg" height=50 width=90> </a>
@@ -14,8 +18,8 @@
   <ul class="nav navbar-nav navbar-right">
     <li><a href="/become_a_host">Become a host</a></li>
     <li><a href="#help" >Help</a></li>
-    <li><a href="#myModal2" role="button" data-toggle="modal">Sign Up</a></li>
-    <li><a href="#myModal" role="button" data-toggle="modal">Log In</a></li>
+    <li><a href="#myModal2" onclick="event.preventDefault();" role="button" data-toggle="modal">Sign Up</a></li>
+    <li><a href="#myModal" onclick="event.preventDefault();" role="button" data-toggle="modal">Log In</a></li>
    </ul>
 </div>
 <div id="myModal"  class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -32,9 +36,8 @@
       <input data-dismiss="modal" style="height:40px;background-color:rgb(255,100,100);color:white;font-weight:bold" ng-click="signin()" type="submit" value="Log in" class="form form-control">
 </form >
       <br>
-      <b><a stlye="float:rightx">Forgot Password ?</a><b>
+      <a stlye="float:rightx"><b>Forgot Password ?</b></a>
 <div class="modal-footer row">
-
 <br>
   <div class="alert alert-danger" ng-hide="invalid_login">
     <strong>Invalid Email address or Password</strong>
@@ -78,7 +81,7 @@
 				<div class="alert alert-danger" ng-hide="already_exists">
 					<strong>This user already exists!</strong>
 				</div>
-  </div>
+</div>
 </div>
 </div>
 </div>

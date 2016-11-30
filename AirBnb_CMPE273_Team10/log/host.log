@@ -641,3 +641,21 @@
 {"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-30T03:52:17.989Z"}
 {"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-30T03:54:46.798Z"}
 {"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-30T03:55:01.634Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-30T07:46:21.752Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-30T07:46:21.754Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-30T07:47:55.992Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-30T07:47:55.994Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-30T07:48:09.886Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-30T08:59:38.951Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-30T09:02:09.006Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-30T09:02:29.164Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-30T09:04:26.206Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-30T09:05:09.273Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-30T09:05:47.259Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-30T09:10:53.807Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-30T09:14:11.118Z"}
+{"level":"info","message":"IN DESTROY SESSION FUNCTION","timestamp":"2016-11-30T09:14:24.306Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-30T22:01:39.680Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-30T22:01:39.710Z"}
+{"level":"info","message":"HOST LOG SESSION STARTS","timestamp":"2016-11-30T22:02:11.593Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-30T22:02:11.595Z"}

@@ -365,3 +365,11 @@
 {"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-30T03:51:56.572Z"}
 {"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-30T03:52:06.431Z"}
 {"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-30T03:52:06.431Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-30T07:46:21.757Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-30T07:46:21.757Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-30T07:47:55.997Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-30T07:47:55.997Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-30T22:01:39.738Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-30T22:01:39.738Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-11-30T22:02:11.597Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-11-30T22:02:11.598Z"}

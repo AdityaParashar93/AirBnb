@@ -147,6 +147,8 @@ app.get('/adminApproveUserTasks', admin.adminApproveUserTasks);
 
 app.get('/become_a_host', routes.index);
 app.get('/propertyList', routes.index);
+app.get('/home', routes.index);
+app.get('/myModal', routes.index);
 
 app.get('/host_dashboard', host_dashboard.host_dashboard);
 

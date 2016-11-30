@@ -123,11 +123,11 @@
       function initMap() {
     	  
           for(var i=0;i<scope.stateParams.length;i++){
-        	   place[i] = { lat: a[i] + i, lng: b[i] + i };
+        	   place[i] = { lat: a[i], lng: b[i] };
           }
         
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 5,
+          zoom: 9,
           center : place[0]
         });
 		
@@ -144,6 +144,8 @@
       function addMarker(location, map,i) {
         // Add the marker at the clicked location, and add the next-available label
         // from the array of alphabetical characters.
+        	console.log(location);
+
         var marker = new google.maps.Marker({
           position: location,
           label: labels[i],

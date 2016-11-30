@@ -259,6 +259,7 @@ app.controller('airbnb', function($scope, $http, $state, $window,$document,$time
 			}
 		
 		}else{
+			$('#myModal').modal({show:true});
 			console.log("login required");
 			$scope.login = false;
 			
