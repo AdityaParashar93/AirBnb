@@ -148,6 +148,7 @@ app.get('/successAdminLogin', admin.redirectToAdminHomepage);
 app.get('/adminApproveUserTasks', admin.adminApproveUserTasks);
 app.get('/adminTopTenHostsTask', admin.adminTopTenHostsTask);
 app.get('/adminApprovePropertyTask', admin.adminApprovePropertyTask);
+app.get('/adminDashboardInfo', admin.adminDashboardInfo);
 
 app.get('/become_a_host', routes.index);
 app.get('/propertyList', routes.index);

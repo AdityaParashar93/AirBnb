@@ -312,3 +312,28 @@ exports.adminCitywiseRevenue = function(req, res) {
 	
 };
 
+
+exports.adminDashboardInfo = function(req, res) {
+	var username = req.session.username;
+	var msg_payload = { 
+			"username": username
+	};
+	
+	console.log("ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:");
+	console.log(msg_payload);
+	logger.info("ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:");
+	logger.info(msg_payload);
+	
+	mq_client.make_request('admin_dashboard_info', msg_payload, function(err, results){
+		console.log(results);
+		if(err){
+			logger.warn("AN ERROR OCCURED IN adminCitywiseRevenue");
+			throw err;
+		}
+		else {
+			res.send(results);
+		}  
+	});
+	
+};
+

@@ -12,6 +12,11 @@ app.config(function($routeProvider) {
 		templateUrl : "templates/login.html"
 	})
 	
+	.when("/dashboard", {
+		templateUrl : "templates/admin/dashboard.html",
+		controller	: "dashboardController"
+	})
+	
 	.when("/tasks", {
 		templateUrl : "templates/admin/tasks.html",
 		controller	: "adminApproveUserTasksController"
@@ -83,6 +88,30 @@ app.controller('airbnb_admin', function($scope, $http) {
 		});
 	};
 
+});
+
+app.controller("dashboardController", function($scope, $http){
+	console.log("I AM INSIDE CONTROLELR: dashboardController.");
+	
+	$http({
+		method : "get",
+		url : '/adminDashboardInfo'
+	}).success(function(data) {
+		console.log("SUCCESSFULLY FOUND ADMIN DASHBOARD INFO");
+		console.log(data);
+		$scope.number_of_users = data.count_users;
+		$scope.number_of_properties = data.count_prop;
+		$scope.number_of_hosts= data.count_host;
+		$scope.results = data.users;
+		$scope.tot_revenue= data.tot_revenue[0].totalrevenue;
+		console.log("hi");
+		console.log(data.tot_revenue[0].totalrevenue);
+		
+		
+	}).error(function(error) {
+
+	});
+	
 });
 
 app.controller("adminApproveUserTasksController", function($scope, $http) {

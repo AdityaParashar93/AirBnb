@@ -316,3 +316,63 @@ exports.handle_admin_citywise_revenue_request = function (msg, callback) {
 	});
 
 };
+exports.handle_admin_dashboard_info_request = function (msg, callback) {
+
+	console.log("IN handle_admin_dashboard_info_request:");
+	console.log(msg);
+	
+	console.log("LISTENING TO A handle_admin_dashboard_info_request WITH msg_payload AS: ");
+	
+	mongo.connect(mongoURL, function() {
+		console.log('CONNECTED TO MONGO COLLECTION property IN handle_admin_dashboard_info_request');
+		var collection_login = mongo.collection('login');
+		var collection_property = mongo.collection('property');
+		
+		
+		var json_response= {};
+		
+		collection_login.count({},
+
+		function(err, user) {
+			if (user) {
+				collection_property.count({},
+				function(err, user2){
+					if(user2){
+						collection_login.find({
+							approve_flag : {
+								$eq : "YES"
+							}
+						}).count({}, function(err,user3){
+							if(user3){
+								collection_login.aggregate(
+									{$match:{"approve_flag":"YES"}},
+									{$group:{_id:"$approve_flag",
+									 totalrevenue:{$sum:"$revenue"}
+								}},  function(err, user4){
+									if(user4){
+								json_responses = {
+									"statusCode" : 200,
+									"count_users" : user,
+									"count_prop" : user2,
+									"count_host" : user3,
+									"tot_revenue" : user4
+								};
+						callback(null, json_responses);
+						}else{
+						console.log("returned false");
+						json_responses = {
+								"statusCode" : 401
+						};
+						callback(null, json_responses);
+						}
+								})
+							}
+						});
+					}
+				}		
+				);
+			}
+		});
+
+	});
+};
