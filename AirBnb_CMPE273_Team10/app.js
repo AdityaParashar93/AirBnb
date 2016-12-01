@@ -144,6 +144,7 @@ app.get('/Profile', profile.land);
 app.get('/admin', admin.land);
 app.get('/successAdminLogin', admin.redirectToAdminHomepage);
 app.get('/adminApproveUserTasks', admin.adminApproveUserTasks);
+app.get('/adminTopTenHostsTask', admin.adminTopTenHostsTask);
 
 app.get('/become_a_host', routes.index);
 app.get('/propertyList', routes.index);

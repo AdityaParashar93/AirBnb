@@ -111,6 +111,30 @@ exports.adminApproveUserTasks = function(req, res) {
 	});
 };
 
+exports.adminTopTenHostsTask = function(req, res) {
+	
+	var username = req.session.username;
+	var msg_payload = { 
+			"username": username
+	};
+	
+	console.log("ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload AS: ");
+	console.log(msg_payload);
+	logger.info("ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:");
+	logger.info(msg_payload);
+	
+	mq_client.make_request('admin_top_ten_hosts', msg_payload, function(err, results){
+		console.log(results);
+		if(err){
+			logger.warn("AN ERROR OCCURED IN adminTopTenHostsTask");
+			throw err;
+		}
+		else {
+			res.send(results);
+		}  
+	});
+};
+
 
 exports.adminListCityNames = function(req, res) {
 	
