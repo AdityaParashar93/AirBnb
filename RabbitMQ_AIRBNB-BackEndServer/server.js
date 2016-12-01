@@ -4,6 +4,7 @@ var util	= require('util');
 var mongo	= require("./services/mongo");
 var airbnb_property_services = require('./services/airbnb_property_services');
 var airbnb_admin_services = require('./services/airbnb_admin_services');
+var airbnb_host_services = require('./services/airbnb_host_services');
 
 var connection = amqp.createConnection({
 	host : '127.0.0.1'
@@ -286,4 +287,48 @@ connection.on('ready', function() {
 			});
 		});
 	});	
+	connection.queue('host_confirmation', function(q) {
+
+		q.subscribe(function(message, headers, deliveryInfo, m) {
+
+			util.log(util.format(deliveryInfo.routingKey, message));
+			util.log("Message: " + JSON.stringify(message));
+			util.log("DeliveryInfo: " + JSON.stringify(deliveryInfo));
+
+			airbnb_host_services.handle_host_confirmation(message, function(err,
+					res) {
+
+				// return index sent
+				connection.publish(m.replyTo, res, {
+					contentType : 'application/json',
+					contentEncoding : 'utf-8',
+					correlationId : m.correlationId
+				});
+
+			});
+		});
+	});
+	connection.queue('send_host_approval', function(q) {
+
+		q.subscribe(function(message, headers, deliveryInfo, m) {
+
+			util.log(util.format(deliveryInfo.routingKey, message));
+			util.log("Message: " + JSON.stringify(message));
+			util.log("DeliveryInfo: " + JSON.stringify(deliveryInfo));
+
+			airbnb_host_services.send_host_approval_request(message, function(err,
+					res) {
+
+				// return index sent
+				connection.publish(m.replyTo, res, {
+					contentType : 'application/json',
+					contentEncoding : 'utf-8',
+					correlationId : m.correlationId
+				});
+
+			});
+		});
+	});
+	
+	
 });
