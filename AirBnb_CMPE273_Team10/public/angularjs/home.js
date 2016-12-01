@@ -65,7 +65,6 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider,$route
             'content': {
                 templateUrl : 'templates/become_a_host.html',
                 controller : 'airbnb'
-
             },	
 		}
 	}).state('host_dashboard', {	
@@ -83,11 +82,23 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider,$route
 
             },	
 		}
+	}).state('check_becomehost', {	
+		url : '/check_becomehost',
+		views: {
+            'header': {
+                templateUrl : 'templates/header2.html',
+            },
+            'content': {
+                
+                templateUrl : 'templates/check_becomehost.html',
+            },	
+		}
 	});
 });
 
 //login
 app.controller('airbnb', function($scope, $http, $state, $window,$document,$timeout ,$stateParams,$route ,Upload, $cookies, $cookieStore) {
+	$scope.test_login=false;
 	$scope.stateParams = $cookieStore.get('properties');
 		$scope.login = true;
 
@@ -180,13 +191,41 @@ app.controller('airbnb', function($scope, $http, $state, $window,$document,$time
 			$state.go('propertyList');
 		}
 	}*/
+	$scope.send_host_approval=function(){
+		console.log("check this");
+		
+		$http({
+			method : "POST",
+			url : '/send_host_approval',
+			data : {
+			}
+		}).success(function(data) {
+			if (data.statusCode === 200) {
+				
+				
+			}
+			else {
+			}
+		});
+	};
 	
 	$scope.test=function(){
 		if($window.localStorage.getItem("username")){
-			$scope.validate_property=false;
-			$scope.validate_property1=true;
-			$scope.validate_property2=true;
-			var temp={from:new Date(),to:new Date()};
+			$scope.test_login=true;
+			console.log("check for flag1"+$window.localStorage.getItem("host_status_flag1"));
+			if($window.localStorage.getItem("host_status_flag1")){
+				console.log("Flag1 found false");
+				$('#myModal2').modal({show:true});
+			}
+			console.log("Check for flag sagar	"+$window.localStorage.getItem("host_status_flag"));
+			if($window.localStorage.getItem("host_status_flag")=='false'){
+				console.log("Flag found false");
+				$('#myModal1').modal({show:true});
+			}
+				$scope.validate_property=false;
+				$scope.validate_property1=true;
+				$scope.validate_property2=true;
+				var temp={from:new Date(),to:new Date()};
 			
 			$scope.property_input.availability=[];
 			$scope.property_input.availability.push(temp);
@@ -259,11 +298,10 @@ app.controller('airbnb', function($scope, $http, $state, $window,$document,$time
 			}
 		
 		}else{
+			$scope.test_login=false;
 			$('#myModal').modal({show:true});
 			console.log("login required");
 			$scope.login = false;
-			
-			//$state.go('landing');
 		}
 	};
 	
@@ -380,10 +418,43 @@ app.controller('airbnb', function($scope, $http, $state, $window,$document,$time
 		});		
 	};
 	
+	$scope.host_confirmation=function(){
+		$window.localStorage.removeItem("host_status_flag");
+		$window.localStorage.removeItem("host_status_flag1");
+		$scope.host_status_flag=true;
+		console.log("In host confirmation function");
+		$http({
+			method : "POST",
+			url : '/host_confirmation',
+			data : {
+			}
+		}).success(function(data) {
+			if (data.statusCode === 200) {
+				console.log(data.user.approve_flag);
+				if(data.user.approve_flag=='NO'){
+					console.log("Flag found as NO......");
+					$scope.host_status_flag=false;
+					$window.localStorage.setItem("host_status_flag", $scope.host_status_flag);
+				}
+				else if(data.user.approve_flag=='APPROVE'){
+					console.log("Flag found as APPROVE......");
+					$scope.host_status_flag1=false;
+					$window.localStorage.setItem("host_status_flag1", $scope.host_status_flag1);
+				}
+				else{
+					console.log("Flag found as Yes......");	
+					$scope.host_status_flag=true;
+					$window.localStorage.setItem("host_status_flag", $scope.host_status_flag);
+				}
+			} else {
+			}
+		});
+	};
+	
 	
 	$scope.signin = function() {
 		console.log($scope.inputUsername);
-	console.log("SIGN IN BUTTON CLICKED");
+		console.log("SIGN IN BUTTON CLICKED");
 		var credentials = {
 			"username" : $scope.inputUsername,
 			"password" : $scope.inputPassword
@@ -397,11 +468,14 @@ app.controller('airbnb', function($scope, $http, $state, $window,$document,$time
 			data : credentials
 		}).success(function(data) {
 			if (data.statusCode === 200) {
+				$scope.host_confirmation();
 				console.log("render the successful login page here");
 				$scope.username = data.username;
-				$window.localStorage.setItem("state", "home");
+				//$window.localStorage.setItem("state", "home");
 				$window.localStorage.setItem("username", data.username);
-				$state.go('home');
+				//if(!$scope.test_login){
+					$state.go('home');
+				//}
 			} else {
 				console.log("render the Invalid LogIn Message here");
 				$scope.invalid_login = false;

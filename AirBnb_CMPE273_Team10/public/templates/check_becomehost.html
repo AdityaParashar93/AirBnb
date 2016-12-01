@@ -1,0 +1,19 @@
+<div class="col-md-1"></div>
+<div class="col-md-10">
+	<div class="form-group">
+  		<label class="col-md-4 control-label" for="property_type">DO you want to become a Host?</label>
+  		<div class="col-md-4">
+    		<select id="property_type" name="property_type" class="form-control" ng-model="host_flag" required>
+      			<option value=true>Yes</option>
+      			<option value=false>No</option>
+    		</select>
+  		</div>
+	</div>
+	<div class="form-group">
+  		<label class="col-md-4 control-label" for="submit" >Submit request to become a host!</label>
+  			<div class="col-md-4">
+    			<button id="submit" name="submit" class="btn btn-success" ng-click="host_confirmation();">Submit</button>
+  			</div>
+	</div>
+</div>
+<div class="col-md-1"></div>

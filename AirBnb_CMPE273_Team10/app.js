@@ -131,7 +131,8 @@ app.post('/change_password', profile.change_password);
 app.post('/confirm_receipt', receipt.confirm_receipt);
 app.post('/getPropertyList', property.getPropertyList);
 
-
+app.post('/host_confirmation', home.host_confirmation);
+app.post('/send_host_approval',home.send_host_approval);
 
 //GET
 app.get('/getProperties',function(req,res){
@@ -162,6 +163,8 @@ app.get('/adminCitywiseRevenue', admin.adminCitywiseRevenue);
 app.get('/EditProfile', editprofile.land);
 app.get('/Account', account.land);
 app.get('/Receipt', receipt.land);
+
+app.get('/check_becomehost', routes.index);
 
 function isAuthenticated(req, res, next) {
 	  if(req.session.username) {

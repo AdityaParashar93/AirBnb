@@ -138,3 +138,36 @@ exports.register_new_property= function(req, res) {
 		res.send(result);
 	}
 };
+exports.host_confirmation=function(req,res){
+	var msg_payload={"username":req.session.username};
+	mq_client.make_request('host_confirmation', msg_payload, function(err, results){
+		console.log("Results: \n\n\n\n"+results);
+		if(err){
+			throw err;
+		}
+		else {
+			console.log(results);
+			res.send(results);
+		}  
+	});
+};
+
+exports.send_host_approval=function(req,res){
+	console.log(req.session.username);
+	var msg_payload={"username":req.session.username};
+	mq_client.make_request('send_host_approval', msg_payload, function(err, results){
+		if(err){
+			throw err;
+		}
+		else{
+			if(results.statusCode==200){
+				console.log("host approved ",results);	
+			}
+			else{
+				console.log("Error");
+			}
+		}
+		
+	});
+	
+};
