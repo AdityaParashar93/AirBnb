@@ -21,6 +21,13 @@ var editprofile = require('./routes/EditProfile');
 var account 	= require('./routes/Account');
 var receipt 	= require('./routes/Receipt');
 var host_dashboard 		= require('./routes/host_dashboard');
+var test = require('./routes/test');
+
+
+var clickPage = require('./routes/clicksPerPage');
+var clickProperty = require('./routes/propertyClicks');
+var traceBid = require('./routes/traceBidding');
+var traceUser = require('./routes/traceUser');
 
 
 //URL for the sessions collections in mongoDB
@@ -133,6 +140,9 @@ app.post('/getPropertyList', property.getPropertyList);
 
 app.post('/host_confirmation', home.host_confirmation);
 app.post('/send_host_approval',home.send_host_approval);
+app.post('/validateCard', test.validateCard);
+app.post('/getBillDetails', profile.getBillDetails);
+app.post('/save_Bill', profile.save_Bill);
 
 //GET
 app.get('/getProperties',function(req,res){
@@ -164,6 +174,13 @@ app.get('/adminCitywiseRevenue', admin.adminCitywiseRevenue);
 app.get('/EditProfile', editprofile.land);
 app.get('/Account', account.land);
 app.get('/Receipt', receipt.land);
+app.get('/test', test.land);
+
+app.get('/TraceBidGraph',traceBid.land);
+app.get('/TraceUserGraph', traceUser.land);
+app.get('/PropertyClickGraph', clickProperty.land);
+app.get('/ClickPageGraph', clickPage.land);
+
 
 app.get('/check_becomehost', routes.index);
 
