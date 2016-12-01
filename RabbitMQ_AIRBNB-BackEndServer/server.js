@@ -57,6 +57,29 @@ connection.on('ready', function() {
 		});
 	});
 	
+	
+	connection.queue('admin_list_property', function(q) {
+
+		q.subscribe(function(message, headers, deliveryInfo, m) {
+
+			util.log(util.format(deliveryInfo.routingKey, message));
+			util.log("Message: " + JSON.stringify(message));
+			util.log("DeliveryInfo: " + JSON.stringify(deliveryInfo));
+
+			airbnb_admin_services.handle_admin_list_property_request(message, function(err,
+					res) {
+
+				// return index sent
+				connection.publish(m.replyTo, res, {
+					contentType : 'application/json',
+					contentEncoding : 'utf-8',
+					correlationId : m.correlationId
+				});
+
+			});
+		});
+	});
+	
 	connection.queue('admin_top_ten_hosts', function(q) {
 
 		q.subscribe(function(message, headers, deliveryInfo, m) {
@@ -197,7 +220,8 @@ connection.on('ready', function() {
 		});
 	});
 	
-	connection.queue('admin_list_user', function(q) {
+	
+	connection.queue('admin_approve_user_queue', function(q) {
 
 		q.subscribe(function(message, headers, deliveryInfo, m) {
 
@@ -205,7 +229,7 @@ connection.on('ready', function() {
 			util.log("Message: " + JSON.stringify(message));
 			util.log("DeliveryInfo: " + JSON.stringify(deliveryInfo));
 
-			airbnb_property_services.handle_admin_list_user_request(message, function(err,
+			airbnb_admin_services.handle_admin_approve_user_queue_request(message, function(err,
 					res) {
 
 				// return index sent
@@ -219,8 +243,7 @@ connection.on('ready', function() {
 		});
 	});
 	
-	
-	connection.queue('admin_approve_user_queue', function(q) {
+	connection.queue('admin_approve_property_queue', function(q) {
 
 		q.subscribe(function(message, headers, deliveryInfo, m) {
 
@@ -228,7 +251,7 @@ connection.on('ready', function() {
 			util.log("Message: " + JSON.stringify(message));
 			util.log("DeliveryInfo: " + JSON.stringify(deliveryInfo));
 
-			airbnb_admin_services.handle_admin_approve_user_queue_request(message, function(err,
+			airbnb_admin_services.handle_admin_approve_property_request(message, function(err,
 					res) {
 
 				// return index sent
