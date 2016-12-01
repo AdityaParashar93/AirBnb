@@ -53,7 +53,7 @@
     <!--<![endif]-->
 
     <!--[if lt IE 9]>
-    <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/airglyphs-ie8.css">
+<!--    <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/airglyphs-ie8.css">-->
 
     <![endif]-->
 
@@ -99,6 +99,8 @@
 
 <body class="ng-scope" ng-app="account">
 <div id="header" class="makent-header new ">
+
+
     <header class="header--sm show-sm" aria-hidden="true" role="banner">
         <a href="javascript:void(0);" aria-label="Homepage" data-prevent-default="" class="link-reset burger--sm">
             <i class="icon icon-reorder icon-rausch"></i>
@@ -323,7 +325,6 @@
             </div>
         </div>
     </header>
-
 
     <header class="regular-header clearfix hide-sm" id="old-header" role="banner">
 
@@ -602,7 +603,10 @@
             </ul>
         </div>
     </header>
+
+
 </div>
+
 
 <div class="flash-container">
 </div>
@@ -936,23 +940,47 @@
     </div>
 </div>
 <main id="site-content" role="main" ng-controller="editaccountprofile" class="ng-scope"> <!--ng-controller="payout_preferences"-->
-    <div class="subnav hide-print">
+    <div class="subnav hide-print" ng-controller="editaccountprofile"  ng-init="Init()">
         <div class="page-container-responsive">
             <ul class="subnav-list">
                 <li>
-                    <a href="#" ng-click="Profile()" aria-selected="false" class="subnav-item">Dashboard</a>
+                    <a href="#" ng-click="Profile()" aria-selected="true" class="subnav-item">Dashboard</a>
                 </li>
                 <li>
-                    <a href="http://makent.trioangle.com/rooms" aria-selected="false" class="subnav-item">Your Listings</a>
+                    <a href="" aria-selected="false" class="subnav-item">Your Listings</a>
                 </li>
                 <li>
-                    <a href="http://makent.trioangle.com/trips/current" aria-selected="false" class="subnav-item">Your Trips</a>
+                    <a href="" aria-selected="false" class="subnav-item">Your Trips</a>
                 </li>
                 <li>
                     <a href="#" ng-click="EditProfile()" aria-selected="false" class="subnav-item">Profile</a>
                 </li>
                 <li>
-                    <a href="#" ng-click="Account()" aria-selected="true" class="subnav-item">Account</a>
+                    <a href="#" ng-click="Account()" aria-selected="false" class="subnav-item">Account</a>
+                </li>
+
+                <li>
+                    <!--<a href="#" ng-click="Host_Dashboard()" aria-selected="false" class="subnav-item" ng-show="isHost">Host dashboard</a>-->
+                    <div class="collapse navbar-collapse js-navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown dropdown-large">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">host analytics</a>
+
+                                <ul class="dropdown-menu dropdown-menu-large row">
+                                    <li class="col-md-30">
+                                        <ul>
+                                            <li><a href="#" ng-click="ClickPage()">Graph for clicks per page</a></li>
+                                            <li><a href="#" ng-click="ClickProperty()">Graph for Property click</a></li>
+                                            <li><a href="#" ng-click="TraceUser()">Trace diagram for tracking user</a></li>
+                                            <li><a href="#" ng-click="TraceBid()">Trace diagram for tracking bidding</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </li>
+                        </ul>
+
+                    </div><!-- /.nav-collapse -->
                 </li>
             </ul>
         </div>
@@ -960,42 +988,38 @@
 
 
 
-
-    <div class="page-container-responsive row-space-top-4 row-space-4">
+    <div id="notification-area"></div>
+    <div class="page-container-responsive space-top-4 space-4" >
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 space-sm-4">
                 <ul class="sidenav-list">
-
-
-
-
                     <li>
-                        <a href="http://makent.trioangle.com/users/notifications" aria-selected="false" class="hide sidenav-item">Notifications</a>
+                        <a href="" aria-selected="false" class="hide sidenav-item">Notifications</a>
                     </li>
 
                     <li>
-                        <a href="http://makent.trioangle.com/users/payment_methods" aria-selected="false" class="hide sidenav-item">Payment Methods</a>
+                        <a href="" aria-selected="false" class="hide sidenav-item">Payment Methods</a>
                     </li>
 
                     <li>
-                        <a href="http://makent.trioangle.com/users/payout_preferences/10005" aria-selected="true" class="sidenav-item">Payout Preferences</a>
+                        <a href="" aria-selected="true" class="sidenav-item">Payout Preferences</a>
                     </li>
 
                     <li>
-                        <a href="http://makent.trioangle.com/users/transaction_history" aria-selected="false" class="sidenav-item">Transaction History</a>
+                        <a href="" aria-selected="false" class="sidenav-item">Transaction History</a>
                     </li>
 
 
                     <li>
-                        <a href="http://makent.trioangle.com/users/privacy" aria-selected="false" class="hide sidenav-item">Privacy</a>
+                        <a href="" aria-selected="false" class="hide sidenav-item">Privacy</a>
                     </li>
 
                     <li>
-                        <a href="http://makent.trioangle.com/users/security" aria-selected="false" class="sidenav-item">Security</a>
+                        <a href="" aria-selected="false" class="sidenav-item">Security</a>
                     </li>
 
                     <li>
-                        <a href="http://makent.trioangle.com/users/settings" aria-selected="false" class="hide sidenav-item">Settings</a>
+                        <a href="" aria-selected="false" class="hide sidenav-item">Settings</a>
                     </li>
 
                 </ul><!-- <div class="space-top-4 space-4">

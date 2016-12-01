@@ -73,7 +73,25 @@ editprofile.controller('edituserprofile', function($scope, $http,$state,$window)
     {
         window.location.assign("/Account");
     }
-    
+
+    $scope.ClickPage = function()
+    {
+        window.location.assign("/ClickPageGraph");
+    }
+
+    $scope.ClickProperty = function()
+    {
+        window.location.assign("/PropertyClickGraph");
+    }
+    $scope.TraceUser = function()
+    {
+        window.location.assign("/TraceUserGraph");
+    }
+    $scope.TraceBid = function()
+    {
+        window.location.assign("/TraceBidGraph");
+    }
+
     
     $scope.logout = function(){
         $window.localStorage.removeItem("username");

@@ -20,7 +20,8 @@ var receipt = angular.module('receipt', ['ui.router']);
 receipt.controller('RECEIPT', function($scope, $http,$state) {
 
 
-
+    var timestamp = new Date().getUTCMilliseconds();
+    console.log(timestamp);
     $scope.Confirm = function()
     {
 

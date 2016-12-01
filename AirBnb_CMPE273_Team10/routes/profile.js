@@ -36,69 +36,26 @@ exports.land = function(req, res) {
 
 exports.view_profile = function(req,res)
 {
-    /* console.log("IN view_profile FUNCTION");
-     // img path
-     var imgPath = "C:\\Users\\jnirg\\Desktop\\PIXECT-20161114145523.jpg";
 
-     // connect to mongo
-     mongoose.connect('localhost', 'testing_storeImg');
-
-     // example schema
-     var schema = new Schema({
-     img: { data: Buffer, contentType: String }
-     });
-
-     // our model
-     var A = mongoose.model('A', schema);
-
-     mongoose.connection.on('open', function () {
-     console.error('mongo is open');
-
-     // empty the collection
-     A.remove(function (err) {
-     if (err) throw err;
-
-     console.error('removed old docs');
-
-     // store an img in binary in mongo
-     var a = new A;
-     a.img.data = fs.readFileSync(imgPath);
-     a.img.contentType = 'image/png';
-     a.save(function (err, a) {
-     if (err) throw err;
-
-     console.error('saved img to mongo');
-
-     // start a demo server
-     var server = express.createServer();
-     server.get('/', function (req, res, next) {
-     A.findById(a, function (err, doc) {
-     if (err) return next(err);
-     res.contentType(doc.img.contentType);
-     res.send(doc.img.data);
-     });
-     });
-
-     server.on('close', function () {
-     console.error('dropping db');
-     mongoose.connection.db.dropDatabase(function () {
-     console.error('closing db connection');
-     mongoose.connection.close();
-     });
-     });
-
-     process.on('SIGINT', function () {
-     server.close();
-     });
-
-     server.listen(3333, function (err) {
-     console.error('press CTRL+C to exit');
-     });
-     });
-     });
-     });*/
     console.log("IN VIEW PROFILE FUNCTION");
-    MongoClient.connect(mongoURL, function (err, db) {
+
+    var username = req.session.username;
+    var msg_payload = {
+        "username": username
+    };
+    mq_client.make_request('handle_get_profile_info', msg_payload, function(err, results){
+        console.log(results);
+        if(err){
+            logger.warn("AN ERROR OCCURED IN adminApproveUserTasks");
+            throw err;
+        }
+        else {
+            res.send(results);
+        }
+    });
+
+
+    /*MongoClient.connect(mongoURL, function (err, db) {
         if (err) {
             console.log('Unable to connect to the mongoDB server. Error:', err);
         } else {
@@ -136,12 +93,38 @@ exports.view_profile = function(req,res)
             });
         }
     });
-
+*/
 }
 
+
+exports.getBillDetails = function(req,res)
+{
+    console.log("IN getBillDetails");
+
+    var bills = mongo.collection('bills');
+    bills.find({ custName: req.session.username}).toArray(
+
+        function(err, user) {
+
+
+
+            json_responses = {
+                "Result" : user,
+                "statusCode" : 200
+            };
+            console.log(user);
+            res.send(json_responses);
+        });
+}
 
 
 exports.change_password = function(req, res)
 {
     console.log("IN CHANGE PASSWORD");
+}
+
+exports.save_Bill = function(req,res)
+{
+    property_details = req.param("property");
+
 }

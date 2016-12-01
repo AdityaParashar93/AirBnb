@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>User Profile</title>
-
     <script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -155,11 +154,71 @@
                     </tbody>
                 </table>
                 <div ng-controller="RECEIPT">
-                    <input type="button" class="btn btn-success btn-lg btn-block" ng-click="Confirm()" value="CONFIRM"/>
+                    <!--<input type="button" class="btn btn-success btn-lg btn-block" ng-click="Confirm()" value="CONFIRM"/>-->
+                    <ul class="nav navbar-nav navbar-right">
+                       <!-- <li><a href="/become_a_host">Become a host</a></li>
+                        <li><a href="#help" >Help</a></li>
+                        <li><a href="#myModal2" role="button" data-toggle="modal">Sign Up</a></li>-->
+                        <li><a href="#myModal" role="button" data-toggle="modal">Confirm Receipt</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<div id="myModal"  class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog" >
+        <div class="modal-content" style="width:500px">
+            <div>
+                <div class="modal-header">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            Payment Details
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="cardNumber">
+                                    CARD NUMBER</label>
+                                <div class="input-group">
+                                    <input type="text" name="password" class="form-control" ng-model="CardNo" minlength="16" maxlength="16" required placeholder="Valid Card Number"/>
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-5 col-md-5 pull-left">
+                                    <div class="form-group">
+                                        <label for="expityMonth">
+                                            EXPIRY DATE
+                                        </label>
+                                        <div class="col-xs-6 col-lg-6 pl-ziro">
+                                            <input type="text" name="password" ng-model="Month" required class="form-control" placeholder="Month"/>
+                                        </div>
+                                        <div class="col-xs-6 col-lg-6 pl-ziro">
+                                            <input type="text" name="password" ng-model="Year" required class="form-control" placeholder="Year"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-5 col-md-5 pull-right">
+                                    <div class="form-group">
+                                        <label for="cvCode">
+                                            CV CODE
+                                        </label>
+                                        <input type="text" name="password" ng-model="CCV" maxlength="3" minlength="3" required class="form-control" placeholder="CCV"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <br/>
+                <input type="submit" class="btn btn-success btn-lg btn-block" ng-click="checkout(a);" value = "Checkout"/>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 

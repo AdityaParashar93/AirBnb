@@ -42,7 +42,34 @@ exports.edit_profile = function(req, res)
 {
     console.log("IN EDIT PROFILE FUNCTION");
 
-    MongoClient.connect(mongoURL, function (err, db) {
+
+    var first_name		= req.param("first_name");
+    var last_name		= req.param("last_name");
+    var gender	        = req.param("gender");
+    var city	        = req.param("city");
+    var description     = req.param("description");
+
+    var msg_payload = {
+        "first_name": first_name,
+        "last_name" : last_name,
+        "gender" : gender,
+        "city" : city,
+        "description" : description,
+        "username" : req.session.username
+    };
+    mq_client.make_request('handle_edit_profile', msg_payload, function(err, results){
+        console.log(results);
+        if(err){
+            logger.warn("AN ERROR OCCURED IN adminApproveUserTasks");
+            throw err;
+        }
+        else {
+            res.send(results);
+        }
+    });
+
+
+    /*MongoClient.connect(mongoURL, function (err, db) {
         if (err) {
             console.log('Unable to connect to the mongoDB server. Error:', err);
         } else {
@@ -92,40 +119,8 @@ exports.edit_profile = function(req, res)
 
                     response={"statusCode" : 200};
                     res.send(response);
-
-                    /*var msg_payload = {
-                        "saltRounds"			: saltRounds,
-                        "myPlaintextPassword"	: req.param("inputPassword"),
-                        "salt"					: bcrypt.genSaltSync(saltRounds),
-                        "hash"					: bcrypt.hashSync(myPlaintextPassword),
-                        "dt"					: dt,
-                        "first_name"			: req.param("first_name"),
-                        "last_name"				: req.param("last_name"),
-                        "inputUsername"			: req.param("inputUsername"),
-                        "inputPassword"			: hash
-
-                    };
-
-                    console.log("ADDING A POST REQUEST register_new_user_queue QUEUE WITH msg_payload as:");
-                    console.log(msg_payload);
-                    //logger.info("ADDING A POST REQUEST ON register_new_user_queue QUEUE WITH msg_payload as:");
-                    //logger.info(msg_payload);
-
-                    mq_client.make_request('register_new_user_queue', msg_payload, function(err, results){
-                        console.log(results);
-                        if(err){
-                            throw err;
-                        }
-                        else {
-                            req.session.username = req.param("inputUsername");
-
-                            response={"statusCode" : 200, "Result"	:	results};
-                            res.send(response);
-                        }
-                    });*/
-                    //done(null, result);
                 }
             });
         }
-    });
+    });*/
 }

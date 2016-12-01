@@ -8,6 +8,10 @@
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
+        <script src="angular.min.js"></script>
+        <script src="ng-file-upload-shim.min.js"></script>
+        <script src="ng-file-upload.min.js"></script>
+
         <script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
@@ -22,21 +26,7 @@
 
         <script src="angularjs/profile.js">  </script>
 
-        <style>
-            body {
-                padding-top: 50px;
-            }
-            #divTotal{
-                background-color: green;
-            }
-            .affix{
-                right: 0px;
-            }
-            .affix-top{
-                right: 0px;
-                position: fixed;
-            }
-        </style>
+
 
         <style type="text/css">.pac-container{background-color:#fff;position:absolute!important;z-index:1000;border-radius:2px;border-top:1px solid #d9d9d9;font-family:Arial,sans-serif;box-shadow:0 2px 6px rgba(0,0,0,0.3);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden}.pac-logo:after{content:"";padding:1px 1px 1px 0;height:16px;text-align:right;display:block;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);background-position:right;background-repeat:no-repeat;background-size:120px 14px}.hdpi.pac-logo:after{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)}.pac-item{cursor:default;padding:0 4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:30px;text-align:left;border-top:1px solid #e6e6e6;font-size:11px;color:#999}.pac-item:hover{background-color:#fafafa}.pac-item-selected,.pac-item-selected:hover{background-color:#ebf2fe}.pac-matched{font-weight:700}.pac-item-query{font-size:13px;padding-right:3px;color:#000}.pac-icon{width:15px;height:20px;margin-right:7px;margin-top:6px;display:inline-block;vertical-align:top;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);background-size:34px}.hdpi .pac-icon{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)}.pac-icon-search{background-position:-1px -1px}.pac-item-selected .pac-icon-search{background-position:-18px -1px}.pac-icon-marker{background-position:-1px -161px}.pac-item-selected .pac-icon-marker{background-position:-18px -161px}.pac-placeholder{color:gray}</style><style type="text/css">.pac-container{background-color:#fff;position:absolute!important;z-index:1000;border-radius:2px;border-top:1px solid #d9d9d9;font-family:Arial,sans-serif;box-shadow:0 2px 6px rgba(0,0,0,0.3);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden}.pac-logo:after{content:"";padding:1px 1px 1px 0;height:16px;text-align:right;display:block;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);background-position:right;background-repeat:no-repeat;background-size:120px 14px}.hdpi.pac-logo:after{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)}.pac-item{cursor:default;padding:0 4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:30px;text-align:left;border-top:1px solid #e6e6e6;font-size:11px;color:#999}.pac-item:hover{background-color:#fafafa}.pac-item-selected,.pac-item-selected:hover{background-color:#ebf2fe}.pac-matched{font-weight:700}.pac-item-query{font-size:13px;padding-right:3px;color:#000}.pac-icon{width:15px;height:20px;margin-right:7px;margin-top:6px;display:inline-block;vertical-align:top;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);background-size:34px}.hdpi .pac-icon{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)}.pac-icon-search{background-position:-1px -1px}.pac-item-selected .pac-icon-search{background-position:-18px -1px}.pac-icon-marker{background-position:-1px -161px}.pac-item-selected .pac-icon-marker{background-position:-18px -161px}.pac-placeholder{color:gray}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -66,7 +56,7 @@
         <!--<![endif]-->
 
         <!--[if lt IE 9]>
-        <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/airglyphs-ie8.css">
+        <!--<link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/airglyphs-ie8.css">-->
 
         <![endif]-->
         <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/host_dashboard.css">
@@ -225,61 +215,12 @@
                         <div class="tooltip tooltip-top-left dropdown-menu recently-viewed__dropdown" data-behavior="recently-viewed__dropdown">
                         </div>
                     </li>
-                    <!-- show-md -->
-                    <!--<li class="browse-container dropdown-trigger pull-left">
-                      <a class="link-reset header-browse-trigger" href="#" data-prevent-default="" id="header-browse-trigger">
-                  Browse
-                   <i class="icon icon-caret-down icon-light-gray h5"></i>
-                </a>
-                <ul class="tooltip tooltip-top-left dropdown-menu list-unstyled">
-                  <li>
-                    <a href="http://makent.trioangle.com/wishlists/popular" class="link-reset menu-item header-browse-popular">
-                      Popular
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://makent.trioangle.com/locations" class="hide link-reset menu-item header-browse-neighborhoods">
-                      Neighborhoods
-                    </a>
-                  </li>
-                </ul>
-
-                    </li>-->
                 </ul>
             </div>
             <div class="pull-right" ng-controller="userprofile">
                 <ul class="nav pull-left help-menu list-unstyled">
 
-                    <!-- <li id="header-help-menu" class="help-menu-container pull-left large-right-margin hide-md dropdown-trigger">
-                      <a class="help-toggle link-reset" href="http://makent.trioangle.com/help">
-                        Help
-                        <i class="icon icon-caret-down icon-light-gray h5"></i>
-                      </a>
-                      <div class="tooltip tooltip-top-right dropdown-menu help-dropdown">
-                        <ul class="list-layout">
-                    <li class="search-bar--help hide">
-                      <form action="http://makent.trioangle.com/help/search" class="search-form--help menu-item">
-                        <div class="input-addon">
-                          <input type="text" placeholder="Search the help center" autocomplete="off" name="q" class="input-stem">
-                          <input type="hidden" name="search_from" value="hdr">
-                          <i class="btn btn-primary icon icon-search input-suffix form-submit--help"></i>
-                        </div>
-                      </form>
-                    </li>
-                    <li class="visit-helpcenter-cta hide">
-                      <a href="http://makent.trioangle.com/help" class="help-center-link menu-item">
-                        Visit the Help Center »
-                      </a>
-                    </li>
-                    <li class="loading"></li>
-                    <li class="all_faqs hide">
-                      <a href="http://makent.trioangle.com/help" class="link-reset menu-item">
-                        See all FAQs
-                      </a>
-                    </li>
-                  </ul>
-                      </div>
-                    </li> -->
+
                     <li class="list-your-space pull-left">
                         <a id="list-your-space" class="become" href="" style="border-left:none !important;">
             <span id="list-your-space" class="btn btn-special list-your-space-btn">
@@ -302,20 +243,8 @@
                             </div>
                         </div>
                     </li>
-                    <!--   <li id="header-help-menu" class="help-menu-container pull-left dropdown-trigger">
-               <a class="help-toggle link-reset" href="http://makent.trioangle.com/help">
-                 Help
-               </a>
-             </li>
-             -->
-                </ul>
-                <!-- Live Demo Refresh -->
-                <!--<ul class="nav pull-left demo-home list-unstyled medium-left-margin search-form-container" style="color:#ff5a5f;">
-                  <li id="sign_up" class="pull-left medium-left-margin">
-                   Demo will refresh at every 3 hours.
-                  </li>
-                </ul>-->
 
+                </ul>
 
 
                 <ul class="nav pull-left list-unstyled">
@@ -811,6 +740,28 @@
                     <li>
                         <a href="#" ng-click="Account()" aria-selected="false" class="subnav-item">Account</a>
                     </li>
+
+                    <li ng-show="isHost">
+                        <div class="collapse navbar-collapse js-navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown dropdown-large">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">host analytics</a>
+
+                                    <ul class="dropdown-menu dropdown-menu-large row">
+                                        <li class="col-md-30">
+                                            <ul>
+                                                <li><a href="#" ng-click="ClickPage()">Graph for clicks per page</a></li>
+                                                <li><a href="#" ng-click="ClickProperty()">Graph for Property click</a></li>
+                                                <li><a href="#" ng-click="TraceUser()">Trace diagram for tracking user</a></li>
+                                                <li><a href="#" ng-click="TraceBid()">Trace diagram for tracking bidding</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -837,7 +788,7 @@
                             </h2>
                             <ul class="list-unstyled text-center">
                                 <li>
-                                    <a href="">View Profile</a>
+                            <!--        <a href="">View Profile</a>-->
                                 </li>
                                 <li>
                                     <a href="" ng-click="EditProfile()" class="btn btn-primary btn-block text-wrap space-top-1" id="edit-profile">Complete Profile</a>
@@ -862,9 +813,9 @@
                         </div>
                     </div>
 
-                    <div class="panel space-4">
+                    <div class="panel space-4" ng-init="getBillInfo()">
                         <div class="panel-header">
-                            Notifications
+                            Bills
                         </div>
                         <div class="panel-body">
 
@@ -872,9 +823,61 @@
                                 <li class="default alert3">
                                     <div class="row row-table ">
                                         <div class="col-11 col-middle">
-                  <span class="dashboard_alert_text">
-                    Please confirm your email address by clicking on the link we just emailed you. If you cannot find the email, you can <a href="">request a new confirmation email</a> or <a href="">change your email address</a>.
-                  </span>
+
+                                            <table ng-repeat="vals in bills">
+                                                <col width="100"/>
+                                                <col width="20"/>
+                                                <col width="100"/>
+                                                <col width="20"/>
+                                                <col width="100"/>
+                                                <col width="20"/>
+                                                <col width="100"/>
+                                                <col width="20"/>
+                                                <col width="100"/>
+                                                <thead>
+                                                    <th>City Name</th>
+                                                    <th>&nbsp;&nbsp;</th>
+                                                    <th>Address</th>
+                                                    <th>&nbsp;&nbsp;</th>
+                                                    <th>Property Name</th>
+                                                    <th>&nbsp;&nbsp;</th>
+                                                    <th>Duration</th>
+                                                    <th>&nbsp;&nbsp;</th>
+                                                    <th></th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            {{vals.city}}
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;&nbsp;
+                                                        </td>
+                                                        <td>
+                                                            {{vals.address}}
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;&nbsp;
+                                                        </td>
+                                                        <td>
+                                                            {{vals.property_name}}
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;&nbsp;
+                                                        </td>
+                                                        <td>
+                                                            {{vals.stayDuration}}
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        </td>
+                                                        <td>
+                                                            <input type="submit" ng-click="GenerateBill(vals)" value="Generate Bill"/>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
                                         </div>
                                         <div class="col-1 col-middle">
                                         </div>
