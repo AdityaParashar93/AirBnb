@@ -10,7 +10,7 @@
 				<th>USER LAST NAME</th>
 				<th>USERNAME</th>
 				<th>APROVED FLAG</th>
-				<th>APROVED</th>
+				<th>APROVE HOST</th>
 			</tr>
 			<tr ng-repeat="user in results">
 				<td>{{user.fname}}</td>
@@ -20,14 +20,8 @@
 				<td>
 					<div>
 						<form role="form">
-							<div class="form-group">
-								<input type="text" ng-model="user.new_approve_flag" name="approve_flag"
-									id="approve_flag" class="form-control input-sm"
-									placeholder="YES to approve USERE">
-							</div>
-
-							<input type="submit" ng-click="approveUser(user.new_approve_flag, user._id)"
-								value="APPROVE USER" class="btn btn-info btn-block">
+						<input type="submit" ng-click="approveUser(user._id)"
+								value="APPROVE" class="btn btn-info btn-block">
 						</form>
 					</div>
 				</td>

@@ -17,6 +17,11 @@ app.config(function($routeProvider) {
 		controller	: "adminApproveUserTasksController"
 	})
 	
+	.when("/approvePropertyTask", {
+		templateUrl : "templates/admin/approvePropertyTask.html",
+		controller	: "adminApprovePropertyTaskController"
+	})
+	
 	.when("/topTenHosts", {
 		templateUrl : "templates/admin/topTenHosts.html",
 		controller	: "adminApproveUsertopTenHostsController"
@@ -88,6 +93,22 @@ app.controller("adminApproveUserTasksController", function($scope, $http) {
 		url : '/adminApproveUserTasks'
 	}).success(function(data) {
 		console.log("SUCCESSFULLY LISTED PENDING APPROVAL HOSTS");
+		console.log(data);
+		$scope.results = data.users;
+	}).error(function(error) {
+
+	});
+
+});
+
+app.controller("adminApprovePropertyTaskController", function($scope, $http) {
+	console.log("I AM INSIDE CONTROLELR: adminApprovePropertyTaskController. I LIST ADMIN PROPERTY APPROVAL TASK ON THE PAGE");
+
+	$http({
+		method : "get",
+		url : '/adminApprovePropertyTask'
+	}).success(function(data) {
+		console.log("SUCCESSFULLY LISTED PENDING PROPERTY REQUESTS");
 		console.log(data);
 		$scope.results = data.users;
 	}).error(function(error) {
@@ -234,9 +255,8 @@ app.controller("adminListCityNamesController", function($scope, $http) {
 app.controller('admin_approve', function($scope, $http) {
 	console.log("I AM INSIDE admin_approve CONTROLLER");
 	
-	$scope.approveUser = function(flag, id) {
+	$scope.approveUser = function(id) {
 		var user_credentials = {
-			"flag" : flag,
 			"user_id" : id
 		};
 		console.log(user_credentials);
@@ -248,7 +268,6 @@ app.controller('admin_approve', function($scope, $http) {
 
 			if (data.statusCode === 200) {
 				console.log("USER APPROVED AND ADDED TO SYSTEM");
-				// console.log(data);
 			} else {
 				console.log("SOMETHING WENT WRONG");
 			}
@@ -256,6 +275,31 @@ app.controller('admin_approve', function($scope, $http) {
 	};
 	
 });
+
+app.controller('admin_approve_property', function($scope, $http) {
+	console.log("I AM INSIDE admin_approve_host CONTROLLER");
+	
+	$scope.approveProperty = function(id) {
+		var user_credentials = {
+			"user_id" : id
+		};
+		console.log(user_credentials);
+		$http({
+			method : "POST",
+			url : '/adminApproveProperty',
+			data : user_credentials
+		}).success(function(data) {
+
+			if (data.statusCode === 200) {
+				console.log("USER APPROVED AND ADDED TO SYSTEM");
+			} else {
+				console.log("SOMETHING WENT WRONG");
+			}
+		});
+	};
+	
+});
+
 
 app.controller('topTenPropertiesAsRevenueController', function($scope, $http) {
 	

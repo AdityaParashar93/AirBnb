@@ -111,6 +111,31 @@ exports.adminApproveUserTasks = function(req, res) {
 	});
 };
 
+
+exports.adminApprovePropertyTask = function(req, res) {
+	
+	var username = req.session.username;
+	var msg_payload = { 
+			"username": username
+	};
+	
+	console.log("ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload AS: ");
+	console.log(msg_payload);
+	logger.info("ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:");
+	logger.info(msg_payload);
+	
+	mq_client.make_request('admin_list_property', msg_payload, function(err, results){
+		console.log(results);
+		if(err){
+			logger.warn("AN ERROR OCCURED IN adminApprovePropertyTask");
+			throw err;
+		}
+		else {
+			res.send(results);
+		}  
+	});
+};
+
 exports.adminTopTenHostsTask = function(req, res) {
 	
 	var username = req.session.username;
@@ -189,7 +214,6 @@ exports.adminApproveUser = function(req, res) {
 	
 	var msg_payload = { 
 			"username"	 	: req.session.username,
-			"flag" 			: req.param("flag"),
 			"user_id"		: req.param("user_id")
 	
 	};
@@ -203,6 +227,32 @@ exports.adminApproveUser = function(req, res) {
 		console.log(results);
 		if(err){
 			logger.warn("AN ERROR OCCURED IN adminApproveUser");
+			throw err;
+		}
+		else {
+			res.send(results);
+		}  
+	});
+	
+};
+
+
+exports.adminApproveProperty = function(req, res) {
+	
+	var msg_payload = { 
+			"username"	 	: req.session.username,
+			"user_id"		: req.param("user_id")
+	};
+	
+	console.log("ADDING A POST REQUEST ON admin_approve_property QUEUE WITH msg_payload as:");
+	console.log(msg_payload);
+	logger.info("ADDING A POST REQUEST ON admin_approve_property QUEUE WITH msg_payload as:");
+	logger.info(msg_payload);
+	
+	mq_client.make_request('admin_approve_property_queue', msg_payload, function(err, results){
+		console.log(results);
+		if(err){
+			logger.warn("AN ERROR OCCURED IN adminApproveProperty");
 			throw err;
 		}
 		else {

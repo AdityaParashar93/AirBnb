@@ -1,0 +1,36 @@
+<div ng-controller="admin_approve_property">
+	<div>
+
+		<div class="table table-title">
+			<h2>APPROVE FOLLOWING PROPERTY REQUESTS</h2>
+		</div>
+		<table class="table table-fill">
+			<tr>
+				<th>PROPERTY OWNER</th>
+				<th>PROPERTY DESCRIPTION</th>
+				<th>PROPERTY BID STATUS</th>
+				<th>PROPERTY APROVAL FLAG</th>
+				<th>PROPERTY TITLE</th>
+				<th>PROPERTY PRICE</th>
+				<th>APPROVE PROPERTY</th>
+			</tr>
+			<tr ng-repeat="user in results">
+				<td>{{user.property_owner}}</td>
+				<td>{{user.property_description}}</td>
+				<td>{{user.bid_status}}</td>
+				<td>{{user.approval_flag}}</td>
+				<td>{{user.property_title}}</td>
+				<td>{{user.price}}</td>
+				<td>
+					<div>
+						<form role="form">
+						<input type="submit" ng-click="approveProperty(user._id)"
+								value="APPROVE" class="btn btn-info btn-block">
+						</form>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+	</div>
+</div>

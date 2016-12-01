@@ -119,6 +119,7 @@ app.post('/afterAdminLogin', function(req, res, next) {
 
 app.post('/logout', home.logout);
 app.post('/adminApproveUser', admin.adminApproveUser);
+app.post('/adminApproveProperty', admin.adminApproveProperty);
 app.post('/logMyEvent', admin.logMyEvent);
 
 app.post('/register_new_property', home.register_new_property);
@@ -145,6 +146,7 @@ app.get('/admin', admin.land);
 app.get('/successAdminLogin', admin.redirectToAdminHomepage);
 app.get('/adminApproveUserTasks', admin.adminApproveUserTasks);
 app.get('/adminTopTenHostsTask', admin.adminTopTenHostsTask);
+app.get('/adminApprovePropertyTask', admin.adminApprovePropertyTask);
 
 app.get('/become_a_host', routes.index);
 app.get('/propertyList', routes.index);
