@@ -73,3 +73,11 @@ exports.confirm_receipt = function(req,res)
     }
 
 }
+
+
+exports.get_bill_data = function(req,res)
+{
+    var result = req.session.billDetails;
+    response={"statusCode" : 200, "billDetails" : result};
+    res.send(response);
+}

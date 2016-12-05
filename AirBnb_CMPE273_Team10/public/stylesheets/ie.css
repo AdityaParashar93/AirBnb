@@ -7,7 +7,7 @@
 }
 
 .todo-actions i {
-	margin: 2px 5px 0px 5px;	
+	margin: 2px 5px 0px 5px;
 }
 
 .message .header i {
@@ -26,7 +26,7 @@
 	margin: 0px 0px;
 	margin-left: 14.422% !important;
 }
-	
+
 #sidebar-left {
 	background: #3D3D3D;
 	margin-left: 0px !important;
@@ -41,7 +41,7 @@ hr {
 }
 
 .dark {
-	right: -12px;	
+	right: -12px;
 }
 
 footer {
@@ -55,45 +55,55 @@ footer {
 
 .task .time .date {
 	font-size: 14px;
-	margin-bottom: 5px;	
+	margin-bottom: 5px;
 }
 
 .statbox .footer {
-	background:none;
-	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#19FFFFFF,endColorstr=#19FFFFFF);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#19FFFFFF,endColorstr=#19FFFFFF);
+	background: none;
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#19FFFFFF,
+		endColorstr=#19FFFFFF);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#19FFFFFF,
+		endColorstr=#19FFFFFF);
 	zoom: 1;
 }
 
 .statbox .footer:hover {
-	background:none;
-	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,endColorstr=#33FFFFFF);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,endColorstr=#33FFFFFF);
+	background: none;
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,
+		endColorstr=#33FFFFFF);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,
+		endColorstr=#33FFFFFF);
 	zoom: 1;
 }
 
-.sidebar-nav > ul > li > ul {
-	background:none;
-	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#3F000000,endColorstr=#3F000000);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#3F000000,endColorstr=#3F000000);
+.sidebar-nav>ul>li>ul {
+	background: none;
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3F000000,
+		endColorstr=#3F000000);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3F000000,
+		endColorstr=#3F000000);
 	zoom: 1;
 }
 
-.verticalChart .singleBar .bar .value span{
+.verticalChart .singleBar .bar .value span {
 	color: #000;
 }
 
 .verticalChart .singleBar .bar {
-	background:none;
-	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,endColorstr=#33FFFFFF);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,endColorstr=#33FFFFFF);
+	background: none;
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,
+		endColorstr=#33FFFFFF);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,
+		endColorstr=#33FFFFFF);
 	zoom: 1;
 }
 
 ul.chat.metro li .message {
-	background:none;
-	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#44000000,endColorstr=#44000000);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#44000000,endColorstr=#44000000);
+	background: none;
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#44000000,
+		endColorstr=#44000000);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#44000000,
+		endColorstr=#44000000);
 	zoom: 1;
 	border: 0px;
 }

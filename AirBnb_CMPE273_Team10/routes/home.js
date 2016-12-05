@@ -171,3 +171,21 @@ exports.send_host_approval=function(req,res){
 	});
 	
 };
+
+exports.submit_review=function(req,res){
+	var temp=req.param("review");
+	temp.user=req.session.username;
+	console.log(temp);
+	var msg_payload={"id":req.param("id"),"review":temp};
+	mq_client.make_request('submit_review', msg_payload, function(err, results){
+		console.log("Results: \n\n\n\n"+results);
+		if(err){
+			throw err;
+		}
+		else {
+			console.log(results);
+			res.send(results);
+		}  
+	});
+};
+

@@ -1,0 +1,20 @@
+<div ng-controller="admin_approve_property">
+	<div>
+
+		<div class="table table-title">
+			<h2>HOST ANALYTICS PANEL</h2>
+		</div>
+		<table class="table table-fill">
+			<tr>
+				<th>HOST NAME</th>
+				<th>VIEW ANALYTICS</th>
+
+			</tr>
+ 			<tr ng-repeat="user in results">
+				<td>{{user}}</td>
+				<td><a id="city_list" ng-href="#hostanalytics/{{user}}"> View Analytics</a></td>
+			</tr> 
+		</table>
+
+	</div>
+</div>

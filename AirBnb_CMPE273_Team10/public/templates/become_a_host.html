@@ -1,57 +1,70 @@
 <div class="col-md-1"></div>
 <div class="col-md-10">
-<form class="form-horizontal" ng-controller="airbnb">
-<fieldset>
+	<form class="form-horizontal" ng-controller="airbnb">
+		<fieldset>
 
-<!-- Form Name -->
-<legend>Become A Host</legend>
+			<!-- Form Name -->
+			<legend>Become A Host</legend>
 
-<!-- Country-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="Country">Country</label>  
-  <div class="col-md-4">
-  <input id="Country" type="text" id="country" placeholder="Enter Your Country" class="form-control input-md"  ng-model="country" value="" required>
-  </div>
-</div>
+			<!-- Country-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="Country">Country</label>
+				<div class="col-md-4">
+					<input id="Country" type="text" id="country"
+						placeholder="Enter Your Country" class="form-control input-md"
+						ng-model="country" value="" required>
+				</div>
+			</div>
 
-<!-- Street Address-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="street_address">Street Address</label>  
-  <div class="col-md-4">
-  <input id="street_address" name="street_address" type="text" placeholder="Enter Your Street Address" class="form-control input-md"  ng-model="street_address" value="" required>
-  </div>
-</div>
+			<!-- Street Address-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="street_address">Street
+					Address</label>
+				<div class="col-md-4">
+					<input id="street_address" name="street_address" type="text"
+						placeholder="Enter Your Street Address"
+						class="form-control input-md" ng-model="street_address" value=""
+						required>
+				</div>
+			</div>
 
-<!-- City-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="city">City</label>  
-  <div class="col-md-4">
-  <input id="city" name="city" type="text" placeholder="Enter Your City" class="form-control input-md"  ng-model="city" value="" required>
-    
-  </div>
-</div>
+			<!-- City-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="city">City</label>
+				<div class="col-md-4">
+					<input id="city" name="city" type="text"
+						placeholder="Enter Your City" class="form-control input-md"
+						ng-model="city" value="" required>
 
-<!--State-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="state">State</label>  
-  <div class="col-md-4">
-  <input id="state" name="state" type="text" placeholder="Enter Your State" class="form-control input-md"  ng-model="state" value="" required>
-  </div>
-</div>
+				</div>
+			</div>
 
-<!--Zip Code-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="zip_code">Zip Code</label>  
-  <div class="col-md-4">
-  <input id="zip_code" name="zip_code" type="number" placeholder="Enter the zip code" class="form-control input-md"  ng-model="zip_code" value="" required>
-    
-  </div>
-</div>
+			<!--State-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="state">State</label>
+				<div class="col-md-4">
+					<input id="state" name="state" type="text"
+						placeholder="Enter Your State" class="form-control input-md"
+						ng-model="state" value="" required>
+				</div>
+			</div>
 
-<!--Google Map-->
-<label>Choose Property Location</label>
-<div id="map" style="width:100%;height:400px;background:yellow"></div>
- <script>
+			<!--Zip Code-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="zip_code">Zip
+					Code</label>
+				<div class="col-md-4">
+					<input id="zip_code" name="zip_code" type="number"
+						placeholder="Enter the zip code" class="form-control input-md"
+						ng-model="zip_code" value="" required>
+
+				</div>
+			</div>
+
+			<!--Google Map-->
+			<label>Choose Property Location</label>
+			<div id="map" style="width: 100%; height: 400px; background: yellow"></div>
+			<script>
  
  	function initMap() {
  		
@@ -119,254 +132,311 @@
          }
          
 </script>
-     
-<script async defer
-   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwM2gtDCmU_7IvVGdBSIu1ubujkXEFbqY&callback=initMap">
+
+			<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwM2gtDCmU_7IvVGdBSIu1ubujkXEFbqY&callback=initMap">
 </script>
-<br>
+			<br>
 
-<!--Latitude-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="Latitude">Latitude</label>  
-  <div class="col-md-4">
-  <input id="Latitude" name="Latitude"  type="number"  class="form-control input-md"  ng-model="lat" step="0.000000000000001" disabled required> 
-  </div>
-</div>
+			<!--Latitude-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="Latitude">Latitude</label>
+				<div class="col-md-4">
+					<input id="Latitude" name="Latitude" type="number"
+						class="form-control input-md" ng-model="lat"
+						step="0.000000000000001" disabled required>
+				</div>
+			</div>
 
-<!--Longitude-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="Longitude">Longitude</label>  
-  <div class="col-md-4">
-  <input id="Longitude" name="Longitude" type="number" class="form-control input-md"  ng-model="lng" step="0.000000000000001" disabled required>    
-</div>
-  </div>
+			<!--Longitude-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="Longitude">Longitude</label>
+				<div class="col-md-4">
+					<input id="Longitude" name="Longitude" type="number"
+						class="form-control input-md" ng-model="lng"
+						step="0.000000000000001" disabled required>
+				</div>
+			</div>
 
-<!-- Property Type -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="property_type">Property Type</label>
-  <div class="col-md-4">
-    <select id="property_type" name="property_type" class="form-control" ng-model="property_type" required>
-      <option value="house">House</option>
-      <option value="apartment">Apartment</option>
-    </select>
-  </div>
-</div>
+			<!-- Property Type -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="property_type">Property
+					Type</label>
+				<div class="col-md-4">
+					<select id="property_type" name="property_type"
+						class="form-control" ng-model="property_type" required>
+						<option value="house">House</option>
+						<option value="apartment">Apartment</option>
+					</select>
+				</div>
+			</div>
 
-<!-- Room Type -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="room_type">Room Type</label>
-  <div class="col-md-4">
-    <select id="room_type" name="room_type" class="form-control" ng-model="room_type" value="" required>
-      <option value="Entire Home">Entire Home</option>
-      <option value="Private Room">Private Room</option>
-      <option value="Shared Room">Shared Room</option>
-    </select>
-  </div>
-</div>
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="property_type">Available
+					From</label>
+				<div class="col-md-4">
+					<input type="date" ng-model="availableFrom">
+				</div>
+			</div>
 
-<!--Number Od Beds-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="bed_nos">Number Of Beds</label>
-  <div class="col-md-4">
-    <select id="bed_nos" name="bed_nos" class="form-control"  ng-model="number_of_beds" value="" required>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-    </select>
-  </div>
-</div>
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="property_type">Property
+					Type</label>
+				<div class="col-md-4">
+					<input type="date" ng-model="availableTo">
+				</div>
+			</div>
+			<!-- Room Type -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="room_type">Room
+					Type</label>
+				<div class="col-md-4">
+					<select id="room_type" name="room_type" class="form-control"
+						ng-model="room_type" value="" required>
+						<option value="Entire Home">Entire Home</option>
+						<option value="Private Room">Private Room</option>
+						<option value="Shared Room">Shared Room</option>
+					</select>
+				</div>
+			</div>
 
-<!-- Number Of Guest -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="guest_nos">Number Of Guests per room</label>
-  <div class="col-md-4">
-    <select id="guest_nos" name="guest_nos" class="form-control" ng-model="number_of_guests" value="" required>
-      <option value="1">1</option>
-      <option value="2">2</option>
-    </select>
-  </div>
-</div>
+			<!--Number Od Beds-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="bed_nos">Number
+					Of Beds</label>
+				<div class="col-md-4">
+					<select id="bed_nos" name="bed_nos" class="form-control"
+						ng-model="number_of_beds" value="" required>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</div>
+			</div>
 
-<!--Number Of Bathrooms-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="bathroom_nos">Number Of Bathrooms</label>
-  <div class="col-md-4">
-    <select id="bathroom_nos" name="bathroom_nos" class="form-control"  ng-model="number_of_bathrooms" value="" required>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5+</option>
-    </select>
-  </div>
-</div>
+			<!-- Number Of Guest -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="guest_nos">Number
+					Of Guests per room</label>
+				<div class="col-md-4">
+					<select id="guest_nos" name="guest_nos" class="form-control"
+						ng-model="number_of_guests" value="" required>
+						<option value="1">1</option>
+						<option value="2">2</option>
+					</select>
+				</div>
+			</div>
 
-<!-- Amenities -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="amenity">Amenities</label>
-  <div class="col-md-4">
-  	 <p ng-repeat="amenity in amenities" class="amenity" id="amenity.text">
-  	 <input type="checkbox" ng-change="sync(bool, amenity.text)" ng-model="bool" > 
-      {{amenity.text}}
-  </div>
-</div>
+			<!--Number Of Bathrooms-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="bathroom_nos">Number
+					Of Bathrooms</label>
+				<div class="col-md-4">
+					<select id="bathroom_nos" name="bathroom_nos" class="form-control"
+						ng-model="number_of_bathrooms" value="" required>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5+</option>
+					</select>
+				</div>
+			</div>
 
-<!--Shared Spaces-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="share">Shared Spaces</label>
-  <div class="col-md-4">
-  	 <p ng-repeat="share in shares" class="share" id="share.text">
-  	 <input type="checkbox" ng-change="sync1(bool, share.text)" ng-model="bool" > 
-      {{share.text}}
-  </div>
-</div>
+			<!-- Amenities -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="amenity">Amenities</label>
+				<div class="col-md-4">
+					<p ng-repeat="amenity in amenities" class="amenity"
+						id="amenity.text">
+						<input type="checkbox" ng-change="sync(bool, amenity.text)"
+							ng-model="bool"> {{amenity.text}}
+				</div>
+			</div>
 
-<!-- File Button --> 
-<div class="form-group">
-  <label class="col-md-4 control-label" for="property_title">Prpoerty Images</label>  
- <div class="col-md-4">
-  <!--  <div ng-repeat="step in stepsModel">
+			<!--Shared Spaces-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="share">Shared
+					Spaces</label>
+				<div class="col-md-4">
+					<p ng-repeat="share in shares" class="share" id="share.text">
+						<input type="checkbox" ng-change="sync1(bool, share.text)"
+							ng-model="bool"> {{share.text}}
+				</div>
+			</div>
+
+			<!-- File Button -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="property_title">Property
+					Images</label>
+				<div class="col-md-4">
+					<!--  <div ng-repeat="step in stepsModel">
         <img class="thumb" ng-src="{{step}}" />
     </div><br>-->
-   <input type='file' ng-model-instant onchange="angular.element(this).scope().imageUpload(this)" required/ >
- </div>
-</div>
-
-<!-- Property Title-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="property_title">Prpoerty Title</label>  
-  <div class="col-md-4">
-  <input id="property_title" name="property_title" type="text" placeholder="Enter the title for the property" class="form-control input-md" ng-model="property_title" value="" required>    
-  </div>
-</div>
-
-<!--Property Description-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="propert_desc">Property Description</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="propert_desc" name="propert_desc" ng-model="property_description" value="" required>Write Something about the property here</textarea>
-  </div>
-</div>
-
-<!--Price-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="price">Price</label>  
-  <div class="col-md-4">
-  <input id="price" name="price" type="number" placeholder="Enter the Price" class="form-control input-md" ng-model="price" value="" required>
-  </div>
-</div>
-
-<!--CC-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="cc_num">Credit Card Number</label>  
-  <div class="col-md-4">
-  <input id="cc_num" name="cc_num" type="text" placeholder="Credit Card Number" class="form-control input-md" ng-model="cc_num" value="" required>
-  </div>
-</div>
-
-<!-- Bid Status -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="bid_status">Bid Status</label>
-  <div class="col-md-4">
-    <select id="bid_status" name="bid_status" class="form-control" ng-model="bid_status" required>
-      <option value="Yes">Yes Allow Users to bid</option>
-      <option value="No">No Dont allow users to bid</option>
-    </select>
-  </div>
-</div>
-
-<!-- Button -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="submit" >Submit Property</label>
-  <div class="col-md-4">
-    <button id="submit" name="submit" class="btn btn-success" ng-click="test();">Submit</button>
-  </div>
-</div>
-<div class="form-group">
-<div class="alert alert-danger" ng-hide="validate_property1"><p><strong>{{response_message}}</strong></p></div>
-<div class="alert alert-success" ng-hide="validate_property2"><p><strong>{{response_message}}</strong></p></div>
-</div>
-</form>
-<div class="col-md-1"></div>
-<div id="myModal"  class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-<div class="modal-dialog">
-<div class="modal-content" style="width:500px">
-  <div class="modal-header" >
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-      <h3 id="myModalLabel">Log In</h3>
-  </div>
-  <div class="modal-body" >
-    <form >
-    <input type="email" ng-model="inputUsername" required name="email" id="email" placeholder="Email Address" class="form form-control" style=" height:40px"><br>
-<br>      <input type="password" type="password" required ng-model="inputPassword" name="password" id="password" placeholder="Password" class="form form-control" style="height:40px"><br>
-<br>      <input data-dismiss="modal" style="height:40px;background-color:rgb(255,100,100);color:white;font-weight:bold" ng-click="signin()" type="submit" value="Log in" class="form form-control">
-</form >
-      <br>
-      <b><a stlye="float:rightx">Forgot Password ?</a><b>
-<div class="modal-footer row">
-
-<br>
-  <div class="alert alert-danger" ng-hide="invalid_login">
-    <strong>Invalid Email address or Password</strong>
-  </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-
-<div id="myModal1"  class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content" style="width:500px">
-  			<div class="modal-header" >
-    			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-      			<h3 id="myModalLabel">Host Confirmation</h3>
-  			</div>
-  			<div class="modal-body" >
-				<div class="col-md-1"></div>
-				<div class="col-md-10">
-					<div class="form-group">
-  						<label class="col-md-4 control-label" for="property_type">DO you want to become a Host?</label>
-  						<div class="col-md-4">
-    						<select id="property_type" name="property_type" class="form-control" ng-model="host_flag" required>
-      							<option value=true>Yes</option>
-      							<option value=false>No</option>
-    						</select>
-  						</div>
-					</div>
-					<div class="form-group">
-  						<label class="col-md-4 control-label" for="submit" >Submit request to become a host!</label>
-  						<div class="col-md-4">
-    						<button id="submit" name="submit" class="btn btn-success" ng-click="send_host_approval();">Submit</button>
-  						</div>
-					</div>
+					<!-- <input type='file' ng-model-instant onchange="angular.element(this).scope().imageUpload(this)" required/ > -->
+					<input type="text" class="form fomr-control"
+						ng-model="property_image">
 				</div>
-				<div class="col-md-1"></div>    
-  			</div>
+			</div>
+
+			<!-- Property Title-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="property_title">Prpoerty
+					Title</label>
+				<div class="col-md-4">
+					<input id="property_title" name="property_title" type="text"
+						placeholder="Enter the title for the property"
+						class="form-control input-md" ng-model="property_title" value=""
+						required>
+				</div>
+			</div>
+
+			<!--Property Description-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="propert_desc">Property
+					Description</label>
+				<div class="col-md-4">
+					<textarea class="form-control" id="propert_desc"
+						name="propert_desc" ng-model="property_description" value=""
+						required>Write Something about the property here</textarea>
+				</div>
+			</div>
+
+			<!--Price-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="price">Price</label>
+				<div class="col-md-4">
+					<input id="price" name="price" type="number"
+						placeholder="Enter the Price" class="form-control input-md"
+						ng-model="price" value="" required>
+				</div>
+			</div>
+
+			<!--CC-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="cc_num">Credit
+					Card Number</label>
+				<div class="col-md-4">
+					<input id="cc_num" name="cc_num" type="text"
+						placeholder="Credit Card Number" class="form-control input-md"
+						ng-model="cc_num" value="" required>
+				</div>
+			</div>
+
+			<!-- Bid Status -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="bid_status">Bid
+					Status</label>
+				<div class="col-md-4">
+					<select id="bid_status" name="bid_status" class="form-control"
+						ng-model="bid_status" required>
+						<option value="Yes">Yes Allow Users to bid</option>
+						<option value="No">No Dont allow users to bid</option>
+					</select>
+				</div>
+			</div>
+
+			<!-- Button -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="submit">Submit
+					Property</label>
+				<div class="col-md-4">
+					<button id="submit" name="submit" class="btn btn-success"
+						ng-click="test();">Submit</button>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="alert alert-danger" ng-hide="validate_property1">
+					<p>
+						<strong>{{response_message}}</strong>
+					</p>
+				</div>
+				<div class="alert alert-success" ng-hide="validate_property2">
+					<p>
+						<strong>{{response_message}}</strong>
+					</p>
+				</div>
+			</div>
+	</form>
+	<div class="col-md-1"></div>
+	<div id="myModal" class="modal fade" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content" style="width: 500px">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-hidden="true">x</button>
+					<h3 id="myModalLabel">Log In</h3>
+				</div>
+				<div class="modal-body">
+					<form>
+						<input type="email" ng-model="inputUsername" required name="email"
+							id="email" placeholder="Email Address" class="form form-control"
+							style="height: 40px"><br> <br> <input
+							type="password" type="password" required ng-model="inputPassword"
+							name="password" id="password" placeholder="Password"
+							class="form form-control" style="height: 40px"><br>
+						<br> <input data-dismiss="modal"
+							style="height: 40px; background-color: rgb(255, 100, 100); color: white; font-weight: bold"
+							ng-click="signin()" type="submit" value="Log in"
+							class="form form-control">
+					</form>
+					<br> <b><a stlye="float:rightx">Forgot Password ?</a><b>
+							<div class="modal-footer row">
+
+								<br>
+								<div class="alert alert-danger" ng-hide="invalid_login">
+									<strong>Invalid Email address or Password</strong>
+								</div>
+							</div>
+				</div>
+			</div>
 		</div>
 	</div>
-</div>
 
-<div id="myModal2"  class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content" style="width:500px">
-  			<div class="modal-header" >
-    			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-      			<h3 id="myModalLabel">Host Confirmation</h3>
-  			</div>
-  			<div class="modal-body" >
-				<div class="col-md-1"></div>
-				<div class="col-md-10">
-					<div class="form-group">
-  						<label class="col-md-4 control-label" for="property_type">Your request is still pending.We will let you know once it is approved.</label>
-					</div>
+	<div id="myModal1" class="modal fade" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content" style="width: 500px">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-hidden="true">x</button>
+					<h3 id="myModalLabel">Host Confirmation</h3>
 				</div>
-				<div class="col-md-1"></div>    
-  			</div>
+				<div class="modal-body">
+					<form>
+						<label for="property_type">DO you want to become a Host?</label> <select
+							id="property_type" name="property_type" class="form-control"
+							ng-model="host_flag" required>
+							<option value=true>Yes</option>
+							<option value=false>No</option>
+						</select> <br>
+						<br> <label for="submit">Submit request to become a
+							host!</label><br>
+						<button id="submit" name="submit" class="btn btn-success"
+							ng-click="send_host_approval();">Submit</button>
+						<br>
+					</form>
+				</div>
+			</div>
 		</div>
 	</div>
-</div>
 
-
+	<div id="myModal2" class="modal fade" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content" style="width: 500px">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-hidden="true">x</button>
+					<h3 id="myModalLabel">Host Confirmation</h3>
+				</div>
+				<div class="modal-body">
+					<label for="property_type">Your request is still pending.We
+						will let you know once it is approved.</label>
+				</div>
+			</div>
+		</div>
+	</div>

@@ -1,0 +1,1173 @@
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T07:23:20.492Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T07:23:20.492Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T07:23:42.766Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T07:24:06.217Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T07:24:06.217Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-01T07:24:07.997Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T07:24:07.997Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-01T07:24:09.960Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T07:24:09.960Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-01T07:24:10.785Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T07:24:10.785Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-01T07:24:12.022Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T07:24:12.022Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-01T07:24:14.877Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T07:24:14.878Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-01T07:24:16.350Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T07:24:16.350Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-01T07:24:19.202Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T07:24:19.202Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-01T07:24:20.461Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T07:24:20.462Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-01T07:24:34.914Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T07:24:34.914Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-01T07:24:53.080Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T07:24:53.081Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-01T07:25:04.587Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T07:25:04.587Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T07:25:05.310Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T07:25:05.310Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-01T07:25:06.012Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T07:25:06.013Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T07:53:22.470Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T07:53:22.470Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T07:53:33.030Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T07:53:48.876Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T07:53:48.876Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-01T07:53:50.108Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T07:53:50.108Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-01T07:53:52.691Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T07:53:52.691Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-01T07:53:53.762Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T07:53:53.762Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-01T07:53:54.721Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T07:53:54.721Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T07:55:38.057Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T07:55:56.560Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T07:55:56.560Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T07:56:04.770Z"}
+{"username":"test@gmail.com","user_id":"583fd72622e15a014498c382","level":"info","message":"","timestamp":"2016-12-01T07:56:04.770Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T07:56:09.071Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T07:56:09.071Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T08:03:50.381Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T08:03:50.381Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T08:08:11.968Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T08:08:13.222Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T08:10:36.823Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T08:11:10.030Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T08:11:10.031Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T08:11:13.827Z"}
+{"username":"test@gmail.com","user_id":"583fd9d222e15a014498c383","level":"info","message":"","timestamp":"2016-12-01T08:11:13.827Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T08:11:19.724Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T08:11:19.724Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T08:14:32.994Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T08:14:49.442Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T08:14:49.442Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T08:14:56.837Z"}
+{"username":"test@gmail.com","user_id":"583fdb9622e15a014498c384","level":"info","message":"","timestamp":"2016-12-01T08:14:56.838Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T08:14:59.078Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-01T08:14:59.078Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T10:13:27.065Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T10:13:27.065Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T10:13:35.907Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T10:13:41.062Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-01T10:13:55.580Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T10:13:55.580Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-01T10:14:04.101Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T10:14:04.101Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-01T10:14:05.169Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T10:14:05.169Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-01T10:14:05.648Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T10:14:05.648Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-01T10:14:54.248Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T10:14:54.248Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-01T10:14:55.191Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T10:14:55.191Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-01T10:14:55.902Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T10:14:55.902Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T10:18:56.337Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T10:19:12.205Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T10:19:12.205Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T10:19:36.132Z"}
+{"username":"admin@gmail.com","user_id":"583ff8ea15b9041c78fec256","level":"info","message":"","timestamp":"2016-12-01T10:19:36.132Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T10:19:38.920Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T10:19:38.920Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T10:29:46.520Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T10:29:46.520Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T10:29:51.218Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-01T10:32:35.542Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T10:32:35.542Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-01T10:32:36.924Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T10:32:36.925Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-01T10:32:37.844Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T10:32:37.845Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-01T10:32:38.676Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T10:32:38.676Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T10:32:59.924Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T10:32:59.925Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-01T10:33:04.217Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T10:33:04.217Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-01T10:34:21.558Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T10:34:21.558Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-01T10:34:22.824Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T10:34:22.824Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T11:04:29.510Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T11:04:29.510Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T11:04:42.901Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T11:04:54.587Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T11:04:58.354Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T11:05:02.942Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T11:05:06.457Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T11:05:21.860Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T11:06:07.055Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T11:07:44.227Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T11:12:49.295Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T11:13:32.450Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T11:15:09.082Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T11:15:14.746Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:15:33.478Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:15:33.478Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:16:24.877Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:16:24.877Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:16:25.739Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:16:25.739Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:16:31.888Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:16:31.889Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:16:36.289Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:16:36.290Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:16:38.315Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:16:38.315Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:16:39.778Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:16:39.778Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:16:42.260Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:16:42.260Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:16:44.159Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:16:44.159Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:16:47.498Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:16:47.498Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:17:01.697Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:17:01.697Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:17:02.764Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:17:02.764Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:17:26.561Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:17:26.561Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:17:29.198Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:17:29.198Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:18:25.893Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:18:25.893Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:18:26.597Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:18:26.597Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:18:43.094Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:18:43.094Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:18:51.366Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:18:51.366Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:18:53.378Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:18:53.378Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:19:03.709Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:19:03.710Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:19:05.469Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:19:05.469Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:19:07.680Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:19:07.680Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:19:29.201Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:19:29.201Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:19:32.458Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:19:32.458Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:19:41.891Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:19:41.891Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:19:59.297Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:19:59.297Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:20:05.617Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:20:05.617Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:20:11.601Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:20:11.601Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:20:45.832Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:20:45.832Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:21:29.205Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:21:29.206Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:21:46.794Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:21:46.794Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:21:59.963Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:21:59.963Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:22:04.890Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:22:04.890Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:22:10.815Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:22:10.815Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:22:22.578Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:22:22.579Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:22:45.835Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:22:45.835Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:23:10.160Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:23:10.160Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:23:14.238Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:23:14.238Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:23:21.951Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:23:21.952Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:23:23.356Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:23:23.356Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:23:29.206Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:23:29.206Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:24:09.980Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:24:09.981Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:24:45.836Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:24:45.836Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:25:29.215Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:25:29.215Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:26:09.985Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:26:09.985Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:28:09.986Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:28:09.986Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:28:16.550Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:28:16.551Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:28:18.314Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:28:18.314Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:28:20.546Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:28:20.546Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:28:21.957Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:28:21.957Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:28:25.004Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:28:25.004Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:28:26.369Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:28:26.369Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:28:29.636Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:28:29.636Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:28:32.167Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:28:32.167Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:28:33.680Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:28:33.680Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:28:34.983Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:28:34.983Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:28:36.313Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:28:36.313Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:28:40.903Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:28:40.903Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T11:31:29.460Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:31:54.141Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:31:54.141Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:31:56.564Z"}
+{"username":"admin@airbnb.com","user_id":"584009b93ee3c53710436ae6","level":"info","message":"","timestamp":"2016-12-01T11:31:56.564Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T11:31:58.835Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T11:31:58.836Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T12:04:13.915Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T12:04:13.915Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T12:09:58.999Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T12:09:59.000Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T12:16:05.939Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T12:16:19.784Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T12:16:19.785Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T12:16:20.951Z"}
+{"username":"admin@airbnb.com","user_id":"58401434988fac0724b254af","level":"info","message":"","timestamp":"2016-12-01T12:16:20.951Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T12:16:24.696Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T12:16:24.696Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T12:17:10.043Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T12:17:26.459Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T12:17:26.459Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T12:17:30.842Z"}
+{"username":"admin@airbnb.com","user_id":"584005f13ee3c53710436ae5","level":"info","message":"","timestamp":"2016-12-01T12:17:30.843Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T12:17:33.406Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-01T12:17:33.406Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T12:45:48.662Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T12:45:48.662Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T12:53:51.930Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T12:53:51.930Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T12:54:52.334Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T12:54:52.335Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T12:55:36.880Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T12:55:36.881Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T12:57:27.197Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T12:57:27.197Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T12:59:59.559Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T12:59:59.559Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T13:03:09.020Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T13:03:09.020Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T13:10:10.400Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T13:10:10.400Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T13:12:45.462Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T13:12:45.462Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T13:17:51.452Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T13:17:51.453Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T13:57:07.535Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T13:57:07.535Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T13:59:24.934Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T13:59:24.934Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T14:02:11.300Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T14:02:11.301Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T14:02:53.145Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T14:02:53.145Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T14:03:33.954Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T14:03:33.955Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T14:11:01.916Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T14:11:01.917Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T14:12:25.506Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T14:12:25.506Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T14:13:41.360Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T14:13:41.360Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T14:18:04.723Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T14:18:04.723Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T14:27:52.475Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T14:27:52.475Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T14:30:32.503Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T14:30:32.503Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T19:31:48.886Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T19:31:48.886Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T19:32:00.224Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T19:32:00.225Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T19:32:26.424Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-01T19:32:42.458Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T19:32:42.458Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-01T19:32:45.121Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T19:32:45.121Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-01T19:33:46.172Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T19:33:46.174Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-01T19:34:35.504Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T19:34:35.504Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-01T19:34:39.500Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T19:34:39.501Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-01T19:34:40.846Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T19:34:40.846Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-01T19:36:39.261Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T19:36:57.174Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T19:36:57.174Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T19:36:59.595Z"}
+{"username":"admin@gmail.com","user_id":"58407b7d3221b53a60d1bc70","level":"info","message":"","timestamp":"2016-12-01T19:36:59.595Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T19:37:01.670Z"}
+{"username":"admin@gmail.com","user_id":"58407b7d3221b53a60d1bc70","level":"info","message":"","timestamp":"2016-12-01T19:37:01.670Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-01T19:37:04.294Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-01T19:37:04.294Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T20:59:30.535Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T20:59:30.535Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T20:59:52.532Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T20:59:52.532Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T21:01:01.210Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T21:01:01.210Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T21:01:15.074Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T21:01:15.074Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T21:02:06.513Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T21:02:06.513Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T21:02:20.033Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T21:02:20.033Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T21:03:56.749Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T21:03:56.749Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T21:07:05.613Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T21:07:05.613Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T21:07:59.080Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T21:07:59.081Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T21:09:11.091Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T21:09:11.092Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T21:14:48.923Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T21:14:48.923Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T21:20:11.330Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T21:20:11.330Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T22:02:16.072Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T22:02:16.072Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T22:12:07.503Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T22:12:07.503Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T22:12:11.826Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T22:12:11.827Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T22:13:32.019Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T22:13:32.019Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T22:14:37.257Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T22:14:37.258Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T22:20:18.946Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T22:20:18.947Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T22:28:17.058Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T22:28:17.058Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T22:30:40.936Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T22:30:40.937Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T22:34:58.714Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T22:34:58.715Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T22:36:15.958Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T22:36:15.960Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T22:36:52.565Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T22:36:52.567Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T22:37:14.719Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T22:37:14.722Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T22:56:42.588Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T22:56:42.588Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T23:03:31.879Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T23:03:31.879Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T23:04:25.372Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T23:04:25.372Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T23:09:23.996Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T23:09:23.996Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T23:10:53.700Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T23:10:53.701Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T23:12:01.266Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T23:12:01.267Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T23:12:22.083Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T23:12:22.083Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T23:14:46.626Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T23:14:46.626Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T23:15:05.976Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T23:15:05.976Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T23:17:59.217Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T23:17:59.217Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T23:18:57.303Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T23:18:57.304Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-01T23:25:48.790Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-01T23:25:48.796Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-02T00:37:07.984Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-02T00:37:07.984Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-02T00:42:04.271Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-02T00:42:04.272Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-02T00:44:17.363Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-02T00:44:17.363Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-02T03:01:35.939Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-02T03:01:35.939Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-02T03:06:42.512Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:06:58.689Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:06:58.689Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:07:15.137Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:07:15.137Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:07:16.202Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:07:16.202Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:07:19.592Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:07:19.592Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:07:24.350Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:07:24.350Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:07:26.054Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:07:26.054Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:09:13.986Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:09:13.986Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:09:18.333Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:09:18.333Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:09:21.637Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:09:21.637Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:09:22.400Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:09:22.400Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:09:24.731Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:09:24.731Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:09:25.832Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:09:25.832Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:09:26.354Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:09:26.354Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:09:31.624Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:09:31.624Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-02T03:09:42.355Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:09:57.303Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:09:57.303Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:10:01.084Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:10:01.084Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:10:02.294Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:10:02.294Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:10:03.249Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:10:03.249Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:10:07.250Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:10:07.250Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:10:10.950Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:10:10.951Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:10:12.044Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:10:12.045Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:10:13.540Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:10:13.540Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:10:16.551Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:10:16.551Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:10:17.325Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:10:17.325Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:10:17.958Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:10:17.958Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:10:19.718Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:10:19.718Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:10:20.536Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:10:20.536Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:12:15.206Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:12:15.206Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:15:07.371Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:15:07.371Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:16:25.331Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:16:25.331Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:17:53.888Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:17:53.888Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:17:57.544Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:17:57.544Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:19:26.675Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:19:26.675Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:19:30.100Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:19:30.100Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:19:59.360Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:19:59.360Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:20:16.742Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:20:16.742Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:20:20.854Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:20:20.854Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-02T03:20:51.806Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-02T03:20:51.806Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:20:55.422Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:20:55.422Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:21:06.049Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:21:06.049Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:21:07.301Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:21:07.301Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:21:17.692Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:21:17.692Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:21:56.556Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:21:56.556Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:22:33.589Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:22:33.590Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:22:36.105Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:22:36.105Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:22:38.085Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:22:38.085Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-02T03:43:17.190Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-02T03:43:17.190Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:43:23.369Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:43:23.370Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:43:25.772Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:43:25.772Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:43:41.641Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:43:41.641Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-02T03:53:27.899Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:53:43.918Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:53:43.918Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:53:44.653Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:53:44.654Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_property QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:53:47.859Z"}
+{"username":"admin@airbnb.com","user_id":"5840ef4354cdb41058bdb4e8","level":"info","message":"","timestamp":"2016-12-02T03:53:47.859Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:53:50.308Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:53:50.308Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:55:36.683Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:55:36.684Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-02T03:56:14.295Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:56:26.181Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:56:26.181Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_property QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:56:28.071Z"}
+{"username":"admin@airbnb.com","user_id":"5840ef4354cdb41058bdb4e8","level":"info","message":"","timestamp":"2016-12-02T03:56:28.071Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-02T03:56:29.838Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-02T03:56:29.839Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-03T00:41:48.374Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-03T00:41:48.375Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-03T00:42:10.030Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-03T00:42:10.030Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-03T00:45:23.033Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-03T00:45:40.655Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T00:45:40.655Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T00:45:43.730Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T00:45:43.731Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-03T00:45:51.156Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T00:45:51.156Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-03T00:45:52.995Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T00:45:52.995Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-03T00:45:55.091Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T00:45:55.091Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-03T00:45:57.379Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T00:45:57.379Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-03T02:11:49.606Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-03T02:11:49.606Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-03T05:58:50.867Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-03T05:59:02.903Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T05:59:02.903Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T05:59:03.790Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T05:59:03.790Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-03T05:59:18.539Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T05:59:18.539Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-03T05:59:22.357Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T05:59:22.357Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-03T05:59:27.608Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T05:59:27.608Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-03T05:59:30.485Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T05:59:30.485Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T05:59:31.488Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T05:59:31.489Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-03T05:59:33.876Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T05:59:33.876Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-03T10:32:11.927Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-03T10:32:11.927Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-03T10:32:33.820Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-03T10:32:33.821Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-03T10:49:42.898Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-03T10:49:42.898Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-03T10:54:55.209Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-03T10:54:55.209Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-03T11:00:41.317Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-03T11:00:41.318Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-03T11:10:33.922Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-03T11:10:33.922Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-03T11:34:41.428Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:34:58.288Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:34:58.288Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:34:59.180Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:34:59.180Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:35:01.363Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:35:01.364Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:35:04.482Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:35:04.483Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:38:07.550Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:38:07.550Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:38:10.627Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:38:10.627Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:38:51.089Z"}
+{"username":"admin@airbnb.com","user_id":"5842ada3bfbd3710b431d29d","level":"info","message":"","timestamp":"2016-12-03T11:38:51.090Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:38:52.941Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:38:52.941Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-03T11:42:26.948Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:42:46.432Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:42:46.432Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:42:48.228Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:42:48.228Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:42:49.391Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:42:49.391Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:42:50.509Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:42:50.509Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:42:51.429Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:42:51.430Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-03T11:42:59.130Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:43:11.211Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:43:11.211Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:43:12.973Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:43:12.973Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:43:24.457Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:43:24.457Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:43:25.584Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:43:25.584Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:43:27.996Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:43:27.996Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:43:29.194Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:43:29.194Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:43:54.877Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:43:54.877Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:43:55.795Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:43:55.795Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:43:57.336Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:43:57.336Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-03T11:44:02.638Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:44:14.421Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:44:14.421Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:44:15.439Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:44:15.439Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:44:17.488Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:44:17.488Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:44:19.688Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:44:19.688Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-03T11:45:45.168Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:46:00.113Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:46:00.114Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:46:01.939Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:46:01.939Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:46:03.085Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:46:03.086Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:46:05.008Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:46:05.008Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:46:09.028Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:46:09.028Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:48:58.030Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-03T11:48:58.030Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:50:16.123Z"}
+{"username":"test06@test.com","level":"info","message":"","timestamp":"2016-12-03T11:50:16.123Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:50:19.030Z"}
+{"username":"test06@test.com","level":"info","message":"","timestamp":"2016-12-03T11:50:19.030Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:50:59.179Z"}
+{"username":"test06@test.com","level":"info","message":"","timestamp":"2016-12-03T11:50:59.179Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:51:04.699Z"}
+{"username":"test06@test.com","level":"info","message":"","timestamp":"2016-12-03T11:51:04.699Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:51:05.760Z"}
+{"username":"test06@test.com","level":"info","message":"","timestamp":"2016-12-03T11:51:05.760Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:51:06.787Z"}
+{"username":"test06@test.com","level":"info","message":"","timestamp":"2016-12-03T11:51:06.788Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:51:09.416Z"}
+{"username":"test06@test.com","level":"info","message":"","timestamp":"2016-12-03T11:51:09.416Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:51:12.185Z"}
+{"username":"test06@test.com","level":"info","message":"","timestamp":"2016-12-03T11:51:12.185Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-03T11:51:36.817Z"}
+{"username":"test06@test.com","level":"info","message":"","timestamp":"2016-12-03T11:51:36.817Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-03T11:54:40.375Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-03T11:54:40.375Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T02:11:53.907Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T02:11:53.907Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T04:54:09.171Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T04:54:09.171Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T04:57:57.482Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T04:57:57.482Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T05:01:37.124Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T05:01:37.124Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-04T05:05:36.465Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T05:06:00.105Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-04T05:06:00.105Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-04T05:06:02.902Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-04T05:06:02.903Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T05:06:07.345Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-04T05:06:07.345Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T05:09:18.642Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-04T05:09:18.642Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T05:09:19.785Z"}
+{"username":"admin@airbnb.com","level":"info","message":"","timestamp":"2016-12-04T05:09:19.785Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T05:12:50.573Z"}
+{"username":"f@f.com","level":"info","message":"","timestamp":"2016-12-04T05:12:50.573Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T05:12:53.682Z"}
+{"username":"f@f.com","user_id":"5843a3b49403614fc4719f69","level":"info","message":"","timestamp":"2016-12-04T05:12:53.683Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T05:12:55.653Z"}
+{"username":"f@f.com","user_id":"5843a3b49403614fc4719f69","level":"info","message":"","timestamp":"2016-12-04T05:12:55.653Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T05:12:57.500Z"}
+{"username":"f@f.com","level":"info","message":"","timestamp":"2016-12-04T05:12:57.500Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-04T05:13:00.041Z"}
+{"username":"f@f.com","level":"info","message":"","timestamp":"2016-12-04T05:13:00.042Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_property QUEUE WITH msg_payload as:","timestamp":"2016-12-04T05:13:03.888Z"}
+{"username":"f@f.com","user_id":"5843a4199403614fc4719f6a","level":"info","message":"","timestamp":"2016-12-04T05:13:03.888Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-04T05:13:06.873Z"}
+{"username":"f@f.com","level":"info","message":"","timestamp":"2016-12-04T05:13:06.873Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T05:17:04.386Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T05:17:04.386Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T07:50:26.226Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T07:50:26.226Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-04T07:56:42.949Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T07:56:59.205Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-04T07:56:59.205Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-04T07:57:01.452Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-04T07:57:01.452Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-04T07:57:13.597Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-04T07:57:13.597Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-04T07:57:15.200Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-04T07:57:15.201Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-04T07:57:15.919Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-04T07:57:15.920Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T07:57:24.683Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-04T07:57:24.683Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T08:08:37.765Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T08:08:37.766Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T08:10:33.641Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T08:10:33.641Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-04T08:10:47.753Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-04T08:11:14.291Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-04T08:11:14.291Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T08:12:03.167Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T08:12:03.167Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-04T08:12:09.863Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-04T08:12:23.642Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-04T08:12:23.644Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T08:16:54.734Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T08:16:54.734Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-04T08:17:35.268Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T08:17:48.464Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-04T08:17:48.464Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T08:17:50.775Z"}
+{"username":"test@gmail.com","user_id":"5843cb06335313248cf9c695","level":"info","message":"","timestamp":"2016-12-04T08:17:50.775Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T08:17:53.143Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-04T08:17:53.143Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-04T08:58:49.617Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-04T08:59:06.842Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-04T08:59:06.842Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T09:03:18.537Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T09:03:18.537Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-04T09:03:31.995Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-04T09:03:44.912Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-04T09:03:44.912Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-04T09:05:56.942Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-04T09:05:56.942Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-04T09:11:35.701Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-04T09:11:35.701Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-04T09:14:59.526Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-04T09:15:12.681Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-04T09:15:12.681Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-04T09:15:17.757Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-04T09:15:17.757Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T09:32:54.444Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T09:32:54.444Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-04T09:32:59.269Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-04T09:33:12.887Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-04T09:33:12.887Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-04T09:34:18.986Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-04T09:34:18.986Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-04T09:34:47.804Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-04T09:34:47.804Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-04T09:34:49.157Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-04T09:34:49.157Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-04T09:35:11.918Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-04T09:35:11.919Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-04T09:35:30.405Z"}
+{"username":"test@gmail.com","level":"info","message":"","timestamp":"2016-12-04T09:35:30.405Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T09:48:41.036Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T09:48:41.036Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T09:52:53.034Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T09:52:53.034Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T09:55:17.488Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T09:55:17.489Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T21:16:02.111Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T21:16:02.112Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T21:17:29.558Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T21:17:29.558Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-04T21:17:57.225Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-04T21:18:14.124Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T21:18:14.124Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-04T21:18:15.438Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T21:18:15.438Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-04T21:18:16.710Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T21:18:16.711Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-04T21:18:18.101Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T21:18:18.101Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-04T21:18:19.259Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T21:18:19.259Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-04T21:34:26.748Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T22:20:42.109Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T22:20:42.109Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-04T22:20:45.989Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_clicksper_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:20:57.057Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:20:57.057Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_clicksper_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:21:02.011Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:21:02.011Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:21:08.607Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:21:08.607Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:21:12.032Z"}
+{"username":"admin@gmail.com","city":"San Jose","level":"info","message":"","timestamp":"2016-12-04T22:21:12.032Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:21:14.685Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:21:14.686Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_getbill_info QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:21:15.584Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:21:15.584Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:21:18.183Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:21:18.183Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:21:18.877Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:21:18.877Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:21:20.029Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:21:20.029Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:21:21.413Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:21:21.413Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:21:24.628Z"}
+{"username":"admin@gmail.com","city":"San Jose","level":"info","message":"","timestamp":"2016-12-04T22:21:24.628Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:21:35.759Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:21:35.759Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:21:37.900Z"}
+{"username":"admin@gmail.com","city":"Paris","level":"info","message":"","timestamp":"2016-12-04T22:21:37.900Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T22:33:02.306Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T22:33:02.306Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-04T22:34:03.683Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-04T22:34:04.448Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:34:17.143Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:34:17.143Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_getbill_info QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:34:18.678Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:34:18.678Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:34:19.618Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:34:19.618Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:34:21.626Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:34:21.626Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:34:22.698Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:34:22.698Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:34:23.369Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:34:23.369Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_clicksper_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:34:25.897Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:34:25.897Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_gethost_graph_info QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:34:27.666Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:34:27.666Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_host_analytics QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:34:28.940Z"}
+{"username":"admin@gmail.com","host":"nachiket@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:34:28.940Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_gethost_graph_info QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:34:31.846Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:34:31.846Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_host_analytics QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:34:34.751Z"}
+{"username":"admin@gmail.com","host":"akshay@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:34:34.751Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_gethost_graph_info QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:34:36.444Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:34:36.444Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_host_analytics QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:34:38.512Z"}
+{"username":"admin@gmail.com","host":"nachiket@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:34:38.512Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_gethost_graph_info QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:34:44.144Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:34:44.144Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_host_analytics QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:34:45.848Z"}
+{"username":"admin@gmail.com","host":"akshay@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:34:45.848Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_gethost_graph_info QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:34:49.183Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:34:49.183Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_host_analytics QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:34:50.848Z"}
+{"username":"admin@gmail.com","host":"mandar@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:34:50.848Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_gethost_graph_info QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:34:59.797Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:34:59.798Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_host_analytics QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:35:01.634Z"}
+{"username":"admin@gmail.com","host":"karan@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:35:01.634Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_gethost_graph_info QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:35:06.791Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:35:06.792Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_host_analytics QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:35:09.127Z"}
+{"username":"admin@gmail.com","host":"ram@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:35:09.127Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:35:15.827Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:35:15.827Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-04T22:37:55.681Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_clicksper_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:38:07.744Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:38:07.744Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_gethost_graph_info QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:38:29.507Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:38:29.508Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_host_analytics QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:38:33.240Z"}
+{"username":"admin@gmail.com","host":"karan@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:38:33.240Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_gethost_graph_info QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:40:47.147Z"}
+{"level":"info","message":"","timestamp":"2016-12-04T22:40:47.147Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_host_analytics QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:40:50.828Z"}
+{"host":"karan@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:40:50.828Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_clicksper_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:41:45.289Z"}
+{"level":"info","message":"","timestamp":"2016-12-04T22:41:45.290Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:41:52.753Z"}
+{"level":"info","message":"","timestamp":"2016-12-04T22:41:52.753Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_gethost_graph_info QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:43:16.525Z"}
+{"level":"info","message":"","timestamp":"2016-12-04T22:43:16.525Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_host_analytics QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:43:18.853Z"}
+{"host":"karan@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:43:18.853Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-04T22:50:33.173Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:51:49.949Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:51:49.949Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:52:00.665Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:52:00.665Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:52:01.969Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:52:01.969Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:58:50.745Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:58:50.745Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:58:57.165Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:58:57.165Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:59:33.864Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:59:33.865Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T22:59:37.129Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T22:59:37.129Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T23:01:00.840Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T23:01:00.840Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-04T23:01:09.228Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-04T23:01:09.842Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T23:01:27.690Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T23:01:27.690Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T23:02:26.761Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T23:02:26.761Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T23:04:21.947Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T23:04:21.947Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T23:05:34.244Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T23:05:34.244Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-04T23:06:25.819Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T23:06:36.598Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T23:06:36.598Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T23:06:39.769Z"}
+{"username":"admin@gmail.com","user_id":"58449c3e335d8c3148b4ff8a","level":"info","message":"","timestamp":"2016-12-04T23:06:39.769Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T23:06:42.442Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T23:06:42.442Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-04T23:11:08.352Z"}
+{"level":"info","message":"","timestamp":"2016-12-04T23:11:08.352Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_property QUEUE WITH msg_payload as:","timestamp":"2016-12-04T23:11:09.650Z"}
+{"user_id":"5844a23906f8c81f90030420","level":"info","message":"","timestamp":"2016-12-04T23:11:09.651Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-04T23:12:15.270Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T23:12:24.764Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T23:12:24.764Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T23:12:25.498Z"}
+{"username":"admin@gmail.com","user_id":"58449cf0335d8c3148b4ff8e","level":"info","message":"","timestamp":"2016-12-04T23:12:25.499Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-04T23:15:09.504Z"}
+{"username":"arunabh@gmail.com","level":"info","message":"","timestamp":"2016-12-04T23:15:09.504Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_property QUEUE WITH msg_payload as:","timestamp":"2016-12-04T23:15:10.810Z"}
+{"username":"arunabh@gmail.com","user_id":"5844a37b06f8c81f90030421","level":"info","message":"","timestamp":"2016-12-04T23:15:10.811Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_property QUEUE WITH msg_payload as:","timestamp":"2016-12-04T23:15:30.611Z"}
+{"user_id":"5844a37b06f8c81f90030421","level":"info","message":"","timestamp":"2016-12-04T23:15:30.611Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-04T23:15:45.156Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_getbill_info QUEUE WITH msg_payload as:","timestamp":"2016-12-04T23:15:53.864Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T23:15:53.864Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-04T23:15:55.256Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T23:15:55.257Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T23:21:56.108Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T23:21:56.108Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-04T23:24:12.301Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_clicksper_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-04T23:24:24.889Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T23:24:24.889Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_clicksper_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-04T23:24:47.476Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T23:24:47.477Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T23:30:05.282Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T23:30:05.282Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T23:35:20.428Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T23:35:20.429Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T23:38:06.362Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T23:38:06.362Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T23:42:18.612Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T23:42:18.612Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T23:46:20.640Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T23:46:20.641Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T23:51:40.132Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T23:51:40.132Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T23:53:24.964Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T23:53:24.964Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-04T23:55:29.727Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-04T23:55:29.728Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T23:56:24.819Z"}
+{"username":"nitin@gmail.com","level":"info","message":"","timestamp":"2016-12-04T23:56:24.819Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T23:56:25.966Z"}
+{"username":"nitin@gmail.com","user_id":"58449cbc335d8c3148b4ff8d","level":"info","message":"","timestamp":"2016-12-04T23:56:25.966Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T23:59:57.184Z"}
+{"username":"jay@gmail.com","level":"info","message":"","timestamp":"2016-12-04T23:59:57.184Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_user QUEUE WITH msg_payload as:","timestamp":"2016-12-04T23:59:58.023Z"}
+{"username":"jay@gmail.com","user_id":"58449c55335d8c3148b4ff8b","level":"info","message":"","timestamp":"2016-12-04T23:59:58.024Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:00:00.075Z"}
+{"username":"jay@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:00:00.075Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_clicksper_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:02:07.988Z"}
+{"username":"jay@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:02:07.988Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_gethost_graph_info QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:02:17.093Z"}
+{"username":"jay@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:02:17.094Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_host_analytics QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:02:19.326Z"}
+{"username":"jay@gmail.com","host":"jay@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:02:19.326Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_clicksper_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:02:21.800Z"}
+{"username":"jay@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:02:21.801Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_user QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:03:05.083Z"}
+{"username":"gaurang@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:03:05.083Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_user QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:03:06.527Z"}
+{"username":"gaurang@gmail.com","user_id":"58449c7d335d8c3148b4ff8c","level":"info","message":"","timestamp":"2016-12-05T00:03:06.527Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:06:58.135Z"}
+{"username":"gaurang@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:06:58.135Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_property QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:07:38.791Z"}
+{"user_id":"5844af38185f853728cca84b","level":"info","message":"","timestamp":"2016-12-05T00:07:38.791Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-05T00:08:16.999Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-05T00:08:22.314Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:08:32.951Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:08:32.951Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_property QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:08:34.846Z"}
+{"username":"admin@gmail.com","user_id":"5844af92185f853728cca84c","level":"info","message":"","timestamp":"2016-12-05T00:08:34.847Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_property QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:08:35.220Z"}
+{"username":"admin@gmail.com","user_id":"5844ae72185f853728cca84a","level":"info","message":"","timestamp":"2016-12-05T00:08:35.220Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:08:37.270Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:08:37.270Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:10:56.230Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:10:56.230Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:12:15.831Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:12:15.831Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:12:27.504Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:12:27.504Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:12:28.201Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:12:28.201Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:13:31.175Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:13:31.175Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:14:08.810Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:14:08.811Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-05T00:15:42.570Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-05T00:15:42.571Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-05T00:15:44.765Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-05T00:15:45.132Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:16:01.696Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:16:01.696Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:17:27.856Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:17:27.856Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-05T00:25:09.384Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-05T00:25:09.385Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-05T00:26:11.882Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-05T00:26:11.882Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-05T00:27:03.289Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-05T00:27:03.289Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-05T00:28:53.734Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-05T00:28:53.734Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-05T00:32:18.678Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-05T00:32:18.679Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-05T00:38:48.064Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-05T00:38:48.064Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-05T00:40:11.940Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-05T00:40:11.941Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-05T00:55:08.469Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON Admin_Top_Ten_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:55:22.582Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:55:22.582Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_clicksper_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:55:53.502Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:55:53.502Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:55:57.564Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:55:57.564Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:56:40.708Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:56:40.708Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_clicksper_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:56:53.991Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:56:53.992Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:56:59.073Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:56:59.073Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_clicksper_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:57:02.703Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:57:02.703Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_clicksper_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:59:51.311Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T00:59:51.311Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_clicksper_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:00:39.359Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:00:39.359Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:00:48.702Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:00:48.702Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:00:52.209Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:00:52.209Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:00:56.922Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:00:56.923Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:01:34.010Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:01:34.011Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-05T01:03:06.543Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-05T01:03:06.543Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:03:12.527Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:03:12.527Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-05T01:06:52.871Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-05T01:06:52.871Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-05T01:06:59.324Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-05T01:06:59.925Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:07:12.413Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:07:12.413Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-05T01:13:34.714Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:13:46.344Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:13:46.346Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-05T01:14:28.604Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-05T01:14:28.604Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:14:33.871Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:14:33.872Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:15:20.078Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:15:20.079Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_top_ten_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:18:35.085Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:18:35.085Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_clicksper_Properties QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:19:45.406Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:19:45.406Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_gethost_graph_info QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:20:30.200Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:20:30.200Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_host_analytics QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:20:54.192Z"}
+{"username":"admin@gmail.com","host":"nachiket@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:20:54.193Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_gethost_graph_info QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:21:02.061Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:21:02.061Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_host_analytics QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:21:03.827Z"}
+{"username":"admin@gmail.com","host":"arunabh@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:21:03.827Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_gethost_graph_info QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:21:05.879Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:21:05.879Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_host_analytics QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:21:07.226Z"}
+{"username":"admin@gmail.com","host":"nachiket@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:21:07.226Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_getbill_info QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:24:20.960Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:24:20.960Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:25:39.070Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:25:39.070Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:26:17.586Z"}
+{"username":"admin@gmail.com","city":"San Jose","level":"info","message":"","timestamp":"2016-12-05T01:26:17.586Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:26:19.328Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:26:19.329Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:26:20.645Z"}
+{"username":"admin@gmail.com","city":"Texas","level":"info","message":"","timestamp":"2016-12-05T01:26:20.646Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:26:22.051Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:26:22.051Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-05T01:29:22.226Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:29:31.668Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:29:31.668Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:29:36.287Z"}
+{"username":"admin@gmail.com","city":"San Jose","level":"info","message":"","timestamp":"2016-12-05T01:29:36.287Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:29:38.046Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:29:38.046Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:29:39.965Z"}
+{"username":"admin@gmail.com","city":"San Fransisco","level":"info","message":"","timestamp":"2016-12-05T01:29:39.965Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:29:41.369Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:29:41.369Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:29:42.669Z"}
+{"username":"admin@gmail.com","city":"San Fransisco","level":"info","message":"","timestamp":"2016-12-05T01:29:42.669Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:29:43.971Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:29:43.971Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:29:45.517Z"}
+{"username":"admin@gmail.com","city":"San Fransisco","level":"info","message":"","timestamp":"2016-12-05T01:29:45.517Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:29:46.610Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:29:46.611Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:29:48.117Z"}
+{"username":"admin@gmail.com","city":"San Fransisco","level":"info","message":"","timestamp":"2016-12-05T01:29:48.117Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:29:49.226Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:29:49.226Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_hosts QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:29:51.307Z"}
+{"username":"admin@gmail.com","city":"Colorado","level":"info","message":"","timestamp":"2016-12-05T01:29:51.307Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:30:16.688Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:30:16.688Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_gethost_graph_info QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:30:21.325Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:30:21.325Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_host_analytics QUEUE WITH msg_payload as:","timestamp":"2016-12-05T01:30:25.982Z"}
+{"username":"admin@gmail.com","host":"nachiket@gmail.com","level":"info","message":"","timestamp":"2016-12-05T01:30:25.982Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-05T02:14:26.199Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-05T02:48:20.041Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_getbill_info QUEUE WITH msg_payload as:","timestamp":"2016-12-05T02:48:29.844Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T02:48:29.844Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-05T02:48:31.707Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T02:48:31.707Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_approve_property QUEUE WITH msg_payload as:","timestamp":"2016-12-05T02:50:53.882Z"}
+{"username":"admin@gmail.com","user_id":"5844d56de7493713d474f57d","level":"info","message":"","timestamp":"2016-12-05T02:50:53.882Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_property QUEUE WITH msg_payload as:","timestamp":"2016-12-05T02:50:58.157Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T02:50:58.158Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_dashboard_info QUEUE WITH msg_payload as:","timestamp":"2016-12-05T02:52:01.540Z"}
+{"level":"info","message":"","timestamp":"2016-12-05T02:52:01.540Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_list_city_names QUEUE WITH msg_payload as:","timestamp":"2016-12-05T02:54:27.889Z"}
+{"level":"info","message":"","timestamp":"2016-12-05T02:54:27.890Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-05T02:54:29.634Z"}
+{"level":"info","message":"","timestamp":"2016-12-05T02:54:29.634Z"}
+{"level":"info","message":"SUCCESSFULLY RENDERED THE SIGNIN MODULE","timestamp":"2016-12-05T02:57:07.914Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_citywise_revenue QUEUE WITH msg_payload as:","timestamp":"2016-12-05T02:57:20.229Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T02:57:20.230Z"}
+{"level":"info","message":"ADDING A POST REQUEST ON admin_gethost_graph_info QUEUE WITH msg_payload as:","timestamp":"2016-12-05T03:11:45.540Z"}
+{"username":"admin@gmail.com","level":"info","message":"","timestamp":"2016-12-05T03:11:45.540Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-05T03:45:31.242Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-05T03:45:31.242Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-05T04:28:36.712Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-05T04:28:36.712Z"}
+{"level":"info","message":"ADMIN LOG SESSION STARTS","timestamp":"2016-12-05T04:33:34.872Z"}
+{"level":"warn","message":"THIS IS A SAMPLE WARNING LOG MESSAGE","timestamp":"2016-12-05T04:33:34.872Z"}

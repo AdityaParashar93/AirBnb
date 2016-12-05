@@ -57,7 +57,7 @@ exports.edit_profile = function(req, res)
         "description" : description,
         "username" : req.session.username
     };
-    mq_client.make_request('handle_edit_profile', msg_payload, function(err, results){
+   /* mq_client.make_request('handle_edit_profile', msg_payload, function(err, results){
         console.log(results);
         if(err){
             logger.warn("AN ERROR OCCURED IN adminApproveUserTasks");
@@ -66,10 +66,10 @@ exports.edit_profile = function(req, res)
         else {
             res.send(results);
         }
-    });
+    });*/
 
 
-    /*MongoClient.connect(mongoURL, function (err, db) {
+    mongo.getConnection(mongoURL, function (err, db) {
         if (err) {
             console.log('Unable to connect to the mongoDB server. Error:', err);
         } else {
@@ -115,6 +115,11 @@ exports.edit_profile = function(req, res)
                             }}
                     );
 
+                    collection.update(
+                        {username: req.session.username},
+                        {$push: { "reviews" : {$each : [description]} }}
+                    );
+
 
 
                     response={"statusCode" : 200};
@@ -122,5 +127,5 @@ exports.edit_profile = function(req, res)
                 }
             });
         }
-    });*/
+    });
 }

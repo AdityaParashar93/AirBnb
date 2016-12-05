@@ -1,0 +1,29 @@
+<div ng-controller="admin_approve_property">
+	<div>
+
+		<div class="table table-title">
+			<h2>These Are All The Bills</h2>
+		</div>
+		<table class="table table-fill">
+			<tr>
+				<th>CUSTOMER NAME</th>
+				<th>PROPERTY OWNER</th>
+				<th>CITY</th>
+				<th>DATE FROM</th>
+				<th>DATE TO</th>
+				<th>STAY DURATION</th>
+				<th>TOTAL COST</th>
+			</tr>
+ 			<tr ng-repeat="user in results">
+				<td>{{user.custName}}</td>
+				<td>{{user.property_owner}}</td>
+				<td>{{user.city}}</td>
+				<td>{{user.dateFrom}}</td>
+				<td>{{user.dateTo}}</td>
+				<td>{{user.stayDuration}}</td>
+				<td>{{user.total_cost}}</td>
+			</tr> 
+		</table>
+
+	</div>
+</div>

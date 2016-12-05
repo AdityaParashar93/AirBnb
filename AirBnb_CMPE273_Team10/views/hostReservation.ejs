@@ -1,0 +1,185 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <title>Trip Listings </title>
+
+ 
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+          <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+          <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+          <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+          <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.js"></script>
+          <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-resource.min.js"></script>
+        
+          <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+         <!-- <link rel='stylesheet' href='/stylesheets/Profile.css' /> -->
+
+          <meta http-equiv="Content-Type" content="text/html">
+        
+          <link rel="shortcut icon" href="http://media.gizmodo.co.uk/wp-content/uploads/2014/07/airbnb-logo-230x129.jpg">
+
+         
+          <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/common.css">
+
+          <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/home.css">
+
+          <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/themes.css">
+
+          <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/edit_profile.css">
+          <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.1/angular-cookies.min.js"></script>
+
+          <script src="http://localhost:3000/angularjs/listings.js"/>
+          <script src="js/ng-file-upload.min.js"></script>
+  </head>
+
+
+  <body class="ng-scope" ng-app="UserProfile" ng-controller="hostReservationController">
+  <div  id="header" class=" navbar navbar-default  ">
+    <div  class="navbar-header">
+      <a class="navbar-brand" style="position:relative;padding:0"  href="#"><img id="a" src="http://media.gizmodo.co.uk/wp-content/uploads/2014/07/airbnb-logo-230x129.jpg" height=50 width=90> </a>
+    </div >
+    <ul class="nav navbar-nav navbar-right">
+      <li><a id="list-your-space"  class="become" href="" style="border-left:none !important;">
+          <!--This should lead to become a host page remaining-->
+          <span id="list-your-space" class="btn btn-special list-your-space-btn">
+            Become a Host
+            </span>
+          </a>
+      </li>
+      <li> <a class="help-toggle link-reset" href=""><!--This should lead to help page remaining-->
+        <span class="help-pos">Help</span>
+         <i class="help-icon"></i>
+      </a></li>
+      <li><a class="link-reset trip-drop" href=""> <!--Trip should lead to booking trip pages remaining-->
+      <span class="trip-pos"> Trips</span>
+      <i class="trips-icon">
+          <i class="alert-count fade">0</i>
+        </i>
+      </a></li>
+      <li><a href="" rel="nofollow" class="no-crawl link-reset inbox-icon">
+      <span class="msg-icon1">Messages</span>
+      <i class="msg-icon">
+              <i class="alert-count text-center fade">0</i>
+
+               <!-- <span class="text-hide hide">
+            Inbox
+          </span>-->
+        </i>
+      </a></li>
+      <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{username}} <b class="caret"></b></a>
+      <ul class="dropdown-menu">
+          <li><a href="/profile">Profile</a></li>
+          <li><a href="/logout">Logout</a></li>
+      </ul>
+    </li>
+
+  </ul>
+  </div>
+   
+      <main id="site-content" role="main" >
+      <div class="subnav hide-print">
+    <div class="page-container-responsive">
+      <ul class="subnav-list">
+        <li>
+           <a href="/Profile" aria-selected="false" class="subnav-item">Dashboard</a>
+        </li>
+        <li>
+          <a ng-click="#" aria-selected="true" class="subnav-item">Your Listings</a>
+        </li>
+        <li>
+           <a href="/trip" aria-selected="false" class="subnav-item">Your Trips</a>
+        </li>
+        <li>
+          <a href="/EditProfile" aria-selected="false" class="subnav-item">Profile</a>
+        </li>
+        <li>
+          <a href="/Account" aria-selected="false" class="subnav-item">Account</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+      <div class="page-container-responsive space-top-4 space-4">
+      <div class="row">
+        <div class="col-md-3">
+          <ul class="sidenav-list">
+
+
+    <li>
+      <a class="sidenav-item active" aria-selected="false" href="/hostListings">Your Listings</a>
+    </li>
+    <li>
+      <a class="sidenav-item" aria-selected="true" href="">Your Reservations</a>
+    </li>
+
+
+
+  </ul>      </div>
+
+
+        <div class="col-md-9">
+              <div class="panel" >
+                  <div class="panel-header">
+                    Your Reservations
+                  </div>
+                  <div class="panel-body">
+
+                   <table class="table table-hover table-condensed" ng-repeat="list in listings" style="border-bottom: 3px solid #000;">
+                        <tr>
+                          <th>Property Title</th>
+                          <td> &nbsp: &nbsp</td><td>{{list.property_name}}</td>
+                        </tr>
+                        <tr class="warning">
+                          <th>Booked from</th>
+                          <td> &nbsp: &nbsp</td><td>{{list.dateFrom}}</td>
+                        </tr>
+                        <tr class="warning">
+                        <th>Booked To </th><td> &nbsp: &nbsp</td><td>{{list.dateTo}}</td>
+                        
+                        </tr>
+                        <tr>
+                        <th> Address </th><td> &nbsp: &nbsp</td><td>{{list.address}}</td>
+                        
+                        </tr>
+                         <tr>
+                        <th> Customer Name </th><td> &nbsp: &nbsp</td><td>{{list.custName}}</td>
+                        
+                        </tr>
+                        <tr>
+                        <th>Number of guests </th><td> &nbsp: &nbsp</td><td>{{list.number_of_guests}}</td>
+                        
+                        </tr>
+                        <tr>
+                        <th> Stay Duration </th><td> &nbsp: &nbsp</td><td>{{list.stayDuration}}</td>
+                        
+                        </tr>
+                        
+                   </table>   
+                </div>
+        
+               </div>
+       </div>
+
+
+      </div>
+    </div>
+               
+     </main>
+
+
+<!-- <script src="http://makent.trioangle.com/js/common.js"> </script>--><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+
+  
+
+    </body>
+    </html>
+

@@ -33,3 +33,31 @@ exports.land = function(req, res) {
         }
     });
 };
+
+
+exports.store_card_details = function(req,res)
+{
+    var cardNo = req.param("cardNo");
+    var Month = req.param("Month");
+    var Year = req.param("Year");
+    var CCV = req.param("CCV");
+
+    var login = mongo.collection('login');
+    login.update(
+        { username: req.session.username},
+        { $set:
+            {
+                "credit_card_details.0.CardNo": cardNo,
+                "credit_card_details.0.Month": Month,
+                "credit_card_details.0.Year": Year,
+                "credit_card_details.0.CCV": CCV
+            }
+        },
+        {upsert:true}
+    )
+    json_responses = {
+        "statusCode" : 200
+    };
+    res.send(json_responses);
+
+}

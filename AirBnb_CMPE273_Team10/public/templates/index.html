@@ -1,223 +1,306 @@
 <style>
-    background-color: transparent;
+background-color: transparent ;
     .navbar-default {
-    border-color: #FFFFFF;
-    box-shadow: 10px 10px 5px #FFFFFF;
-    background-image: linear-gradient(to bottom,#fff 0,#ffffff 100%);
+	border-color: #FFFFFF;
+	box-shadow: 10px 10px 5px #FFFFFF;
+	background-image: linear-gradient(to bottom, #fff 0, #ffffff 100%);
 }
+
 .wp-caption {
-position: relative;
-padding: 0;
-margin: 0;
+	position: relative;
+	padding: 0;
+	margin: 0;
 }
+
 .wp-caption img {
-display: block;
-max-width: 100%;
-height: auto;
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
+
 .wp-caption:after {
-content: "";
-position: absolute;
-display: block;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.6) 100%) repeat 0 0;
-z-index: 1;
+	content: "";
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0)
+		0px, rgba(0, 0, 0, 0.6) 100%) repeat 0 0;
+	z-index: 1;
 }
+
 .wp-caption-text {
-display: block;
-position: absolute;
-width: 100%;
-color: #fff;
-left: 0;
-bottom: 0;
-padding: 1em;
-font-weight: 700;
-z-index: 2;
--webkit-box-sizing: border-box;
-box-sizing: border-box;
+	display: block;
+	position: absolute;
+	width: 100%;
+	color: #fff;
+	left: 0;
+	bottom: 0;
+	padding: 1em;
+	font-weight: 700;
+	z-index: 2;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
+
 Start:normalize
 *, *:before, *:after {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 input:focus {
-    outline: none
+	outline: none
 }
-//  End:normalize
+
+//
+End:normalize
 
 .input-underline-wrapper {
-    display: inline-block;
-    width: 100%;
+	display: inline-block;
+	width: 100%;
 }
 
 input {
-    width: calc(100% - 2px);
-    margin-left: 1px;
-    padding-bottom: 2px;
+	width: calc(100% - 2px);
+	margin-left: 1px;
+	padding-bottom: 2px;
 }
 
 input[type=text] {
-    border: 0;
-    cursor: text;
+	border: 0;
+	cursor: text;
 }
 
 .underline {
-    background-color: black;
-    transition: color 0.1s, background 0.1s, border 0.1s, text-shadow 0.1s;
-    z-index: 0;
-    height: 5px;
-    margin-top: -4px;
-    width: 100%;
+	background-color: black;
+	transition: color 0.1s, background 0.1s, border 0.1s, text-shadow 0.1s;
+	z-index: 0;
+	height: 5px;
+	margin-top: -4px;
+	width: 100%;
 }
 
 input:focus ~ .underline {
-    background-color: #FFFFFF;
+	background-color: #FFFFFF;
 }
 </style>
 
-<div class="body" >
-  <div class="row">
-  <div class="col-md-1">
-  </div>
-  <div  class="col-md-10" style="padding-bottom:40px;">
-  <br>
-    <p style="font-size:40px"><span style="font:sans-serif;color:rgb(250,150,150);font-size:bold"><b>Live there.<b></span> Book Unique homes and experience <br>a city like a local</p>
-    <br><br>
-    <form autocomplete="off" ng-submit="searchProperties()">
-    <div class="row" style="padding-bottom:6px;">
-      <div class="col-md-3" ><label>Where</label><br><span class="input-underline-wrapper">
-        <input required placeholder="Destination,city,address" ng-model="city" style="height:50px" style="border-color:white;border-box:transparent;" type="text" class="form form-control">
-        <div class="underline"></div>
-      </span></div>
-      <div class="col-md-3"><label>From</label><br><input  ng-model="fromDate" style="height:50px" type="date" class="form form-control"></div>
-      <div class="col-md-2"><label>To</label><br><input  ng-model="toDate" style="height:50px" type="date" class="form form-control"></div>
-      <div  class="col-md-2"><label>Guests</label><br>
-        <select ng-model="guest" style="height:50px" placeholder="guest" class="form form-control">
-            <option selected value="1">1 guest</option>
-            <option value="2">2 guest</option>
-            <option value="3">3 guest</option>
-            <option value="4">4 guest</option>
-            <option value="5">5 guest</option>
-        </select>
-    </div>
-    <div class="col-md-2"><br><input   style="height:50px;background-color:#ff5a5f;color:white" type="submit" class="form form-control"></div>
-    
-    </div>
-    </form>
-    
-  </div>
-</div>
-<div class="row">
-<div class="col-md-1">
-</div>
-<div class="col-md-10">
-<div class="row">
-    <div class="col-md-6">
-      <figure class="wp-caption">
-        <img src="./images/City/1.jpeg"  class="img-responsive" style="width: 620px; height: 320px">
-        <figcaption class="wp-caption-text">New York</figcaption>
-      </figure>
-    </div>
-    <div class="col-md-6">
-    <div class="row">
-    <div class="col-md-6">
-      <figure class="wp-caption">
-      <img src="./images/City/2.jpg" class="img-responsive" style="width: 360px; height: 150px">
-      <figcaption class="wp-caption-text">Washington</figcaption>
-    </figure>
-    </div>
-    <div class="col-md-6">
-      <figure class="wp-caption">
-      <img src="./images/City/3.jpg" class="img-responsive" style="width: 360px; height: 150px">
-      <figcaption class="wp-caption-text">Miami</figcaption>
-    </figure>
-    </div>
-  </div><br>
-  <div class="row">
-  <div class="col-md-6">
-    <figure class="wp-caption">
-    <img src="./images/City/4.jpg" class="img-responsive" style="width: 360px; height: 150px">
-    <figcaption class="wp-caption-text">New York</figcaption>
-  </figure>
-  </div>
-  <div class="col-md-6">
-    <figure class="wp-caption">
-    <img src="./images/City/5.jpg" class="img-responsive" style="width: 360px; height: 150px">
-    <figcaption class="wp-caption-text">New York</figcaption>
-  </figure>
-  </div>
-</div>
-</div>
-</div><br>
-<div class="row">
-    <div class="col-md-6">
-    <div class="row">
-    <div class="col-md-6">
-      <figure class="wp-caption">
-      <img src="./images/City/6.jpg" class="img-responsive" style="width: 360px; height: 150px">
-      <figcaption class="wp-caption-text">San Francisco</figcaption>
-    </figure>
-    </div>
-    <div class="col-md-6">
-      <figure class="wp-caption">
-      <img src="./images/City/10.png" class="img-responsive" style="width: 360px; height: 150px">
-      <figcaption class="wp-caption-text">San Jose</figcaption>
-    </figure>
-    </div>
-  </div><br>
-  <div class="row">
-  <div class="col-md-6">
-    <figure class="wp-caption">
-    <img src="./images/City/9.jpg" class="img-responsive" style="width: 360px; height: 150px">
-    <figcaption class="wp-caption-text">New York</figcaption>
-  </figure>
-  </div>
-  <div class="col-md-6">
-    <figure class="wp-caption">
-    <img src="./images/City/8.jpg" class="img-responsive" style="width: 360px; height: 150px">
-    <figcaption class="wp-caption-text">New York</figcaption>
-  </figure>
-  </div>
-</div>
-</div>
-<div class="col-md-6">
-  <figure class="wp-caption">
-  <img src="./images/City/7.jpeg" class="img-responsive" style="width: 620px; height: 320px">
-  <figcaption class="wp-caption-text">Las Vegas</figcaption>
-</figure>
-</div>
-</div><br>
-</div>
-<div class="col-md-1">
-</div>
-</div>
-<!-- Container (Contact Section) -->
+<div class="body">
+	<div class="row">
+		<div class="col-md-12">
+			<style>
+.fullscreen-bg {
+	position: fluid;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: -100;
+}
 
-  <div class="col-md-1"></div>
-  <div class="col-md-10">
-  <div id="contact" class="container-fluid bg-grey">
-		<h2 class="text-center" id="help">CONTACT US</h2>
-		<div class="row">
-			<div class="col-sm-6">
-				<p>Contact us and we'll get back to you within 24 hours.</p>
-				<p>
-					<span class="glyphicon glyphicon-map-marker"></span> SAN JOSE, US
-				</p>
-				<p>
-					<span class="glyphicon glyphicon-phone"></span> +00 12341234123
-				</p>
-				<p>
-					<span class="glyphicon glyphicon-envelope"></span> team10@sjsu.edu
-				</p>
+.fullscreen-bg__video {
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+</style>
+			<div class="fullscreen-bg">
+				<!--<div class="col-md-6">
+                    <video loop muted autoplay poster="./images/city/1.jpeg" class="fullscreen-bg__video">
+                        <source src="./media/Welcome to Airbnb.mp4" type="video/mp4">
+                    </video>
+                </div>-->
+				<div class="col-md-12">
+					<video loop muted autoplay poster="./images/city/1.jpeg"
+						class="fullscreen-bg__video" width="320" height="240">
+						<source src="./media/Welcome to Airbnb.mp4" type="video/mp4">
+					</video>
+				</div>
 			</div>
 		</div>
 	</div>
-<div id="map" style="width:100%;height:400px;background:yellow"></div>
- <script>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10" style="padding-bottom: 40px;">
+			<br>
+			<p style="font-size: 40px">
+				<span
+					style="font: sans-serif; color: rgb(250, 150, 150); font-size: bold"><b>Live
+						there.<b></span> Book Unique homes and experience <br>a city
+				like a local
+			</p>
+			<br>
+			<br>
+			<form autocomplete="off" ng-submit="searchProperties()">
+				<div class="row" style="padding-bottom: 6px;">
+					<div class="col-md-3">
+						<label>Where</label><br>
+						<span class="input-underline-wrapper"> <input required
+							placeholder="Destination,city,address" ng-model="city"
+							style="height: 50px"
+							style="border-color:white;border-box:transparent;" type="text"
+							class="form form-control">
+							<div class="underline"></div>
+						</span>
+					</div>
+					<div class="col-md-3">
+						<label>From</label><br>
+						<input ng-model="fromDate" style="height: 50px" type="date"
+							class="form form-control">
+					</div>
+					<div class="col-md-2">
+						<label>To</label><br>
+						<input ng-model="toDate" style="height: 50px" type="date"
+							class="form form-control">
+					</div>
+					<div class="col-md-2">
+						<label>Guests</label><br> <select ng-model="guest"
+							style="height: 50px" placeholder="guest"
+							class="form form-control">
+							<option selected value="1">1 guest</option>
+							<option value="2">2 guest</option>
+							<option value="3">3 guest</option>
+							<option value="4">4 guest</option>
+							<option value="5">5 guest</option>
+						</select>
+					</div>
+					<div class="col-md-2">
+						<br>
+						<input
+							style="height: 50px; background-color: #ff5a5f; color: white"
+							type="submit" class="form form-control">
+					</div>
+
+				</div>
+			</form>
+
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<div class="row">
+				<div class="col-md-6">
+					<figure class="wp-caption">
+						<img src="./images/City/1.jpeg" class="img-responsive"
+							style="width: 620px; height: 320px">
+						<figcaption class="wp-caption-text">New York</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-6">
+							<figure class="wp-caption">
+								<img src="./images/City/2.jpg" class="img-responsive"
+									style="width: 360px; height: 150px">
+								<figcaption class="wp-caption-text">Washington</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-6">
+							<figure class="wp-caption">
+								<img src="./images/City/3.jpg" class="img-responsive"
+									style="width: 360px; height: 150px">
+								<figcaption class="wp-caption-text">Miami</figcaption>
+							</figure>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-md-6">
+							<figure class="wp-caption">
+								<img src="./images/City/4.jpg" class="img-responsive"
+									style="width: 360px; height: 150px">
+								<figcaption class="wp-caption-text">New York</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-6">
+							<figure class="wp-caption">
+								<img src="./images/City/5.jpg" class="img-responsive"
+									style="width: 360px; height: 150px">
+								<figcaption class="wp-caption-text">New York</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-6">
+							<figure class="wp-caption">
+								<img src="./images/City/6.jpg" class="img-responsive"
+									style="width: 360px; height: 150px">
+								<figcaption class="wp-caption-text">San Francisco</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-6">
+							<figure class="wp-caption">
+								<img src="./images/City/10.png" class="img-responsive"
+									style="width: 360px; height: 150px">
+								<figcaption class="wp-caption-text">San Jose</figcaption>
+							</figure>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-md-6">
+							<figure class="wp-caption">
+								<img src="./images/City/9.jpg" class="img-responsive"
+									style="width: 360px; height: 150px">
+								<figcaption class="wp-caption-text">New York</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-6">
+							<figure class="wp-caption">
+								<img src="./images/City/8.jpg" class="img-responsive"
+									style="width: 360px; height: 150px">
+								<figcaption class="wp-caption-text">New York</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<figure class="wp-caption">
+						<img src="./images/City/7.jpeg" class="img-responsive"
+							style="width: 620px; height: 320px">
+						<figcaption class="wp-caption-text">Las Vegas</figcaption>
+					</figure>
+				</div>
+			</div>
+			<br>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+	<!-- Container (Contact Section) -->
+
+	<div class="col-md-1"></div>
+	<div class="col-md-10">
+		<div id="contact" class="container-fluid bg-grey">
+			<h2 class="text-center" id="help">CONTACT US</h2>
+			<div class="row">
+				<div class="col-sm-6">
+					<p>Contact us and we'll get back to you within 24 hours.</p>
+					<p>
+						<span class="glyphicon glyphicon-map-marker"></span> SAN JOSE, US
+					</p>
+					<p>
+						<span class="glyphicon glyphicon-phone"></span> +00 12341234123
+					</p>
+					<p>
+						<span class="glyphicon glyphicon-envelope"></span> team10@sjsu.edu
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="map" style="width: 100%; height: 400px; background: yellow"></div>
+		<script>
       function initMap() {
         var uluru = {lat: 37.3362005, lng: -121.8864221};
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -229,10 +312,10 @@ input:focus ~ .underline {
           map: map
         });
       }
-    </script>  
-   
-<script async defer
-   src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+    </script>
+
+		<script async defer
+			src="https://maps.googleapis.com/maps/api/js?callback=initMap">
 </script>
-</div>
+	</div>
 </div>

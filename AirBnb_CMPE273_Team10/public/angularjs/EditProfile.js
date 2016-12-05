@@ -13,12 +13,21 @@ var editprofile = angular.module('EditUserProfile', ['ui.router']);
             },
         }
     })
-    $urlRouterProvider.otherwise('/');
+ //   $urlRouterProvider.otherwise('/');
 });
 
 
 
-editprofile.controller('edituserprofile', function($scope, $http,$state,$window) {
+editprofile.controller('edituserprofile', function($scope, $http,$window) {
+
+
+
+
+
+    $scope.Landing = function()
+    {
+        window.location.assign("/")
+    }
 
     $scope.Init = function()
     {
@@ -30,10 +39,16 @@ editprofile.controller('edituserprofile', function($scope, $http,$state,$window)
 
             if (data.statusCode == 200) {
                 console.log("Success");
+                $scope.fname = data.Result[0].fname;
+
+                if(data.Result[0].approve_flag === "NO")
+                    $scope.isHost = false;
+                else
+                    $scope.isHost = true;
+
             } else {
                 console.log("Failure");
             }
-
         });
     }
 

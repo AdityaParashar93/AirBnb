@@ -1,0 +1,26 @@
+{"level":"info","message":"Adding a request on bidding_list_queue QUEUE WITH msg_payload as:","timestamp":"2016-12-02T04:08:48.776Z"}
+{"bidderName":"test06@test.com","property_title":"BidChecker","amount":1002,"stayDuration":4,"listtime":"2016-12-02T03:49:23.261Z","bidtime":"2016-12-02T04:08:48.775Z","level":"info","message":"","timestamp":"2016-12-02T04:08:48.776Z"}
+{"level":"info","message":"Adding a request on bidding_list_queue QUEUE WITH msg_payload as:","timestamp":"2016-12-02T04:13:24.328Z"}
+{"bidderName":"test06@test.com","property_title":"BidChecker","amount":1001.5,"stayDuration":4,"listtime":"2016-12-02T03:49:23.261Z","bidtime":"2016-12-02T04:13:24.327Z","level":"info","message":"","timestamp":"2016-12-02T04:13:24.328Z"}
+{"level":"info","message":"Adding a request on bidding_list_queue QUEUE WITH msg_payload as:","timestamp":"2016-12-02T04:13:31.827Z"}
+{"bidderName":"test06@test.com","property_title":"BidChecker","amount":1010,"stayDuration":4,"listtime":"2016-12-02T03:49:23.261Z","bidtime":"2016-12-02T04:13:31.827Z","level":"info","message":"","timestamp":"2016-12-02T04:13:31.827Z"}
+{"level":"info","message":"Adding a request on bidding_list_queue QUEUE WITH msg_payload as:","timestamp":"2016-12-02T04:13:45.558Z"}
+{"bidderName":"test06@test.com","property_title":"BidChecker","amount":1009,"stayDuration":4,"listtime":"2016-12-02T03:49:23.261Z","bidtime":"2016-12-02T04:13:45.558Z","level":"info","message":"","timestamp":"2016-12-02T04:13:45.558Z"}
+{"level":"info","message":"Adding a request on bidding_list_queue QUEUE WITH msg_payload as:","timestamp":"2016-12-03T00:43:05.780Z"}
+{"property_title":"BidChecker","amount":1011,"stayDuration":4,"listtime":"2016-12-02T03:49:23.261Z","bidtime":"2016-12-03T00:43:05.779Z","level":"info","message":"","timestamp":"2016-12-03T00:43:05.780Z"}
+{"level":"info","message":"Adding a request on bidding_list_queue QUEUE WITH msg_payload as:","timestamp":"2016-12-03T04:17:07.069Z"}
+{"bidderName":"arunabh05@test.com","property_title":"BidChecker","amount":10000,"stayDuration":4,"listtime":"2016-12-02T03:49:23.261Z","bidtime":"2016-12-03T04:17:07.068Z","level":"info","message":"","timestamp":"2016-12-03T04:17:07.069Z"}
+{"level":"info","message":"Adding a request on bidding_list_queue QUEUE WITH msg_payload as:","timestamp":"2016-12-03T04:17:18.365Z"}
+{"bidderName":"arunabh05@test.com","property_title":"BidChecker","amount":10002,"stayDuration":4,"listtime":"2016-12-02T03:49:23.261Z","bidtime":"2016-12-03T04:17:18.365Z","level":"info","message":"","timestamp":"2016-12-03T04:17:18.365Z"}
+{"level":"info","message":"Adding a request on bidding_list_queue QUEUE WITH msg_payload as:","timestamp":"2016-12-03T04:17:25.635Z"}
+{"bidderName":"arunabh05@test.com","property_title":"BidChecker","amount":1010,"stayDuration":4,"listtime":"2016-12-02T03:49:23.261Z","bidtime":"2016-12-03T04:17:25.634Z","level":"info","message":"","timestamp":"2016-12-03T04:17:25.635Z"}
+{"level":"info","message":"Adding a request on bidding_list_queue QUEUE WITH msg_payload as:","timestamp":"2016-12-03T05:57:48.375Z"}
+{"bidderName":"arunabh05@test.com","property_title":"BidChecker","amount":10002,"stayDuration":4,"listtime":"2016-12-02T03:49:23.261Z","bidtime":"2016-12-03T05:57:48.375Z","level":"info","message":"","timestamp":"2016-12-03T05:57:48.375Z"}
+{"level":"info","message":"Adding a request on bidding_list_queue QUEUE WITH msg_payload as:","timestamp":"2016-12-04T03:19:38.470Z"}
+{"bidderName":"d@d.com","property_title":"Best Place in City for Tourist","amount":2344,"stayDuration":4,"listtime":"2016-12-03T11:42:14.587Z","bidtime":"2016-12-04T03:19:38.469Z","level":"info","message":"","timestamp":"2016-12-04T03:19:38.471Z"}
+{"level":"info","message":"Adding a request on bidding_list_queue QUEUE WITH msg_payload as:","timestamp":"2016-12-04T03:19:47.659Z"}
+{"bidderName":"d@d.com","property_title":"Best Place in City for Tourist","amount":2332,"stayDuration":4,"listtime":"2016-12-03T11:42:14.587Z","bidtime":"2016-12-04T03:19:47.658Z","level":"info","message":"","timestamp":"2016-12-04T03:19:47.659Z"}
+{"level":"info","message":"Adding a request on bidding_list_queue QUEUE WITH msg_payload as:","timestamp":"2016-12-04T04:33:07.383Z"}
+{"bidderName":"arunabh05@test.com","property_title":"Nature Calling","amount":3333,"stayDuration":4,"listtime":"2016-12-04T03:23:23.086Z","bidtime":"2016-12-04T04:33:07.383Z","level":"info","message":"","timestamp":"2016-12-04T04:33:07.384Z"}
+{"level":"info","message":"Adding a request on bidding_list_queue QUEUE WITH msg_payload as:","timestamp":"2016-12-05T00:41:33.190Z"}
+{"bidderName":"arunabh@gmail.com","property_title":"Tree House","amount":777,"stayDuration":4,"listtime":"2016-12-05T00:01:54.622Z","bidtime":"2016-12-05T00:41:33.190Z","level":"info","message":"","timestamp":"2016-12-05T00:41:33.191Z"}

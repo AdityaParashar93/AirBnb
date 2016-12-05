@@ -17,6 +17,21 @@ app.config(function($routeProvider) {
 		controller	: "dashboardController"
 	})
 	
+	.when("/bill", {
+		templateUrl : "templates/admin/bills.html",
+		controller	: "billController"
+	})
+	
+	.when("/hostGraphs", {
+		templateUrl : "templates/admin/hostGraphs.html",
+		controller	: "hostGraphsController"
+	})
+	
+	.when("/clicksPerProperty", {
+		templateUrl : "templates/admin/clicksPerProperty.html",
+		controller	: "clicksPerPropertyController"
+	})
+	
 	.when("/tasks", {
 		templateUrl : "templates/admin/tasks.html",
 		controller	: "adminApproveUserTasksController"
@@ -40,6 +55,11 @@ app.config(function($routeProvider) {
 	.when("/citylist/:city", {
 		templateUrl : "templates/admin/citylist.html",
 		controller : "adminListCityHostsController"
+	})
+	
+	.when("/hostanalytics/:host", {
+		templateUrl : "templates/admin/hostanalytics.html",
+		controller : "adminHostAnalyticsController"
 	})
 	
 	.when("/topTenPropertiesAsRevenue", {
@@ -113,6 +133,39 @@ app.controller("dashboardController", function($scope, $http){
 	});
 	
 });
+
+app.controller("billController", function($scope, $http) {
+	console.log("I AM INSIDE CONTROLELR: billController");
+
+	$http({
+		method : "get",
+		url : '/adminGetBillInfo'
+	}).success(function(data) {
+		console.log("SUCCESSFULLY OBTAINED BILL INFORMATION");
+		console.log(data);
+		$scope.results = data.users;
+	}).error(function(error) {
+
+	});
+
+});
+
+app.controller("hostGraphsController", function($scope, $http) {
+	console.log("I AM INSIDE CONTROLELR: hostGraphsController");
+
+	$http({
+		method : "get",
+		url : '/adminGetHostGraphs'
+	}).success(function(data) {
+		console.log("SUCCESSFULLY OBTAINED HOSTS FOR GRAPH INFORMATION");
+		console.log(data);
+		$scope.results = data.users;
+	}).error(function(error) {
+
+	});
+
+});
+
 
 app.controller("adminApproveUserTasksController", function($scope, $http) {
 	console.log("I AM INSIDE CONTROLELR: adminApproveUserTasksController. I LIST ADMIN HOST APPROVAL TASK ON THE PAGE");
@@ -207,27 +260,27 @@ app.controller("adminApproveUsertopTenHostsController", function($scope, $http) 
              	                    {
              	                        "label" : data.users[4].username ,
              	                        "value" : data.users[4].revenue
-             	                    }/* ,
-             	                    {
-             	                        "label" : data.users[0].username ,
-             	                        "value" : data.users[0].revenue
              	                    } ,
              	                    {
-             	                        "label" : data.users[1].username ,
-             	                        "value" : data.users[1].revenue
+             	                        "label" : data.users[5].username ,
+             	                        "value" : data.users[5].revenue
              	                    } ,
              	                    {
-             	                        "label" : data.users[2].username ,
-             	                        "value" : data.users[2].revenue
+             	                        "label" : data.users[6].username ,
+             	                        "value" : data.users[6].revenue
              	                    } ,
              	                    {
-             	                        "label" : data.users[3].username ,
-             	                        "value" : data.users[3].revenue
+             	                        "label" : data.users[7].username ,
+             	                        "value" : data.users[7].revenue
              	                    } ,
              	                    {
-             	                        "label" : data.users[4].username ,
-             	                        "value" : data.users[4].revenue
-             	                    }*/
+             	                        "label" : data.users[8].username ,
+             	                        "value" : data.users[8].revenue
+             	                    } ,
+             	                    {
+             	                        "label" : data.users[9].username ,
+             	                        "value" : data.users[9].revenue
+             	                    }
              	                ]
              	            }
              	        ]
@@ -342,7 +395,7 @@ app.controller('topTenPropertiesAsRevenueController', function($scope, $http) {
 		console.log(data);
 		$scope.results = data.users;
 		
-		console.log(data.users[0].host_id);
+		console.log(data.users[0].property_title);
 		
 		$scope.graph_formatting = {
 					chart: {
@@ -376,45 +429,45 @@ app.controller('topTenPropertiesAsRevenueController', function($scope, $http) {
              	                key: "TOP TEN PROPERTIES BY REVENUE?YEAR",
              	                values: [
              	                    {
-             	                        "label" : data.users[0].host_id ,
+             	                        "label" : data.users[0].property_title ,
              	                        "value" : data.users[0].revenue
              	                    } ,
              	                    {
-             	                        "label" : data.users[1].host_id ,
+             	                        "label" : data.users[1].property_title ,
              	                        "value" : data.users[1].revenue
              	                    } ,
              	                    {
-             	                        "label" : data.users[2].host_id ,
+             	                        "label" : data.users[2].property_title ,
              	                        "value" : data.users[2].revenue
              	                    } ,
              	                    {
-             	                        "label" : data.users[3].host_id ,
+             	                        "label" : data.users[3].property_title ,
              	                        "value" : data.users[3].revenue
              	                    } ,
              	                    {
-             	                        "label" : data.users[4].host_id ,
+             	                        "label" : data.users[4].property_title ,
              	                        "value" : data.users[4].revenue
-             	                    }/* ,
-             	                    {
-             	                        "label" : data.users[0].host_id ,
-             	                        "value" : data.users[0].revenue
              	                    } ,
              	                    {
-             	                        "label" : data.users[1].host_id ,
-             	                        "value" : data.users[1].revenue
+             	                        "label" : data.users[5].property_title ,
+             	                        "value" : data.users[5].revenue
              	                    } ,
              	                    {
-             	                        "label" : data.users[2].host_id ,
-             	                        "value" : data.users[2].revenue
+             	                        "label" : data.users[6].property_title ,
+             	                        "value" : data.users[6].revenue
              	                    } ,
              	                    {
-             	                        "label" : data.users[3].host_id ,
-             	                        "value" : data.users[3].revenue
+             	                        "label" : data.users[7].property_title ,
+             	                        "value" : data.users[7].revenue
              	                    } ,
              	                    {
-             	                        "label" : data.users[4].host_id ,
-             	                        "value" : data.users[4].revenue
-             	                    }*/
+             	                        "label" : data.users[8].property_title ,
+             	                        "value" : data.users[8].revenue
+             	                    } ,
+             	                    {
+             	                        "label" : data.users[9].property_title ,
+             	                        "value" : data.users[9].revenue
+             	                    }
              	                ]
              	            }
              	        ]
@@ -433,9 +486,12 @@ app.controller('citywiseRevenueController', function($scope, $http) {
 		method : "get",
 		url : '/adminCitywiseRevenue'
 	}).success(function(data) {
-		console.log("SUCCESSFULLY OBTAINED TOP TEN PROPERTY HOST NAMES");
+		console.log("SUCCESSFULLY OBTAINED TOP TEN CITY NAMES");
 		console.log(data);
 		$scope.results = data.users;
+		
+		console.log(data.users[0].city);
+		console.log(data.users[0].revenue);
 		
 		var colors = ["red", "green", "blue", "orange", "pink"];
 		
@@ -464,36 +520,266 @@ app.controller('citywiseRevenueController', function($scope, $http) {
 		
         $scope.graph_data = [
                              {
-                                 key: "California",
-                                 y: 1
+                                 key: data.users[0].city,
+                                 y: data.users[0].revenue
                              },
                              {
-                                 key: "Bhayankar Nagar",
-                                 y: 2
+                                 key: data.users[1].city,
+                                 y: data.users[1].revenue
                              },
                              {
-                                 key: "New York",
-                                 y: 3
+                                 key: data.users[2].city,
+                                 y: data.users[2].revenue
                              },
                              {
-                                 key: "Pune",
-                                 y: 4
+                                 key: data.users[3].city,
+                                 y: data.users[3].revenue
                              },
                              {
-                                 key: "Nanded",
-                                 y: 5
-                             },
-                             {
-                                 key: "Mumbai",
-                                 y: 6
-                             },
-                             {
-                                 key: "Katraj",
-                                 y: 7
+                                 key: data.users[4].city,
+                                 y: data.users[4].revenue
                              }
                          ];
 	}).error(function(error) {
 
 	});
 	
+});
+
+app.controller('clicksPerPropertyController', function($scope, $http) {
+	
+	console.log("I AM INSIDE CONTROLELR: clicksPerPropertyController. I CREATE GRAPHS");
+	
+	$http({
+		method : "get",
+		url : '/adminClicksPerProperty'
+	}).success(function(data) {
+		console.log("SUCCESSFULLY OBTAINED TOP TEN PROPERTY BY CLICKS");
+		console.log(data);
+		$scope.results = data.users;
+		
+		console.log(data.users[0].property_title);
+		
+		$scope.graph_formatting_click = {
+					chart: {
+						type: 'discreteBarChart',
+		                height: 450,
+		                margin : {
+		                    top: 20,
+		                    right: 20,
+		                    bottom: 50,
+		                    left: 55
+		                },
+		                x: function(d){return d.label;},
+		                y: function(d){return d.value + (1e-10);},
+		                showValues: true,
+		                valueFormat: function(d){
+		                    return d3.format(',.4f')(d);
+		                },
+		                duration: 500,
+		                xAxis: {
+		                    axisLabel: 'PROPERTY NAME'
+		                },
+		                yAxis: {
+		                    axisLabel: 'CLICKS',
+		                    axisLabelDistance: -10
+		                }
+		            }
+		};
+		
+        $scope.graph_data_click = [
+             	            {
+             	                key: "TOP TEN CLICKS PER PROPERTY",
+             	                values: [
+             	                    {
+             	                        "label" : data.users[0].property_title ,
+             	                        "value" : data.users[0].clicks
+             	                    } ,
+             	                    {
+             	                        "label" : data.users[1].property_title ,
+             	                        "value" : data.users[1].clicks
+             	                    } ,
+             	                    {
+             	                        "label" : data.users[2].property_title ,
+             	                        "value" : data.users[2].clicks
+             	                    } ,
+             	                    {
+             	                        "label" : data.users[3].property_title ,
+             	                        "value" : data.users[3].clicks
+             	                    } ,
+             	                    {
+             	                        "label" : data.users[4].property_title ,
+             	                        "value" : data.users[4].clicks
+             	                    } ,
+             	                    {
+             	                        "label" : data.users[0].property_title ,
+             	                        "value" : data.users[0].clicks
+             	                    } ,
+             	                    {
+             	                        "label" : data.users[1].property_title ,
+             	                        "value" : data.users[1].clicks
+             	                    } ,
+             	                    {
+             	                        "label" : data.users[2].property_title ,
+             	                        "value" : data.users[2].clicks
+             	                    } ,
+             	                    {
+             	                        "label" : data.users[3].property_title ,
+             	                        "value" : data.users[3].clicks
+             	                    } ,
+             	                    {
+             	                        "label" : data.users[4].property_title ,
+             	                        "value" : data.users[4].clicks
+             	                    }
+             	                ]
+             	            }
+             	        ]
+	}).error(function(error) {
+
+	});
+	
+});
+
+
+app.controller("adminHostAnalyticsController", function($scope, $http, $routeParams) {
+	console.log("I AM INSIDE CONTROLELR: adminHostAnalyticsController. I LIST HOSTS ANALYTICS");
+	console.log($routeParams.host);
+	$scope.host = $routeParams.host;
+	
+	var host_credentials = {
+			"host" : $scope.host
+		};
+	
+	console.log(host_credentials);
+
+	$http({
+		method : "POST",
+		url : '/adminHostAnalytics',
+		data : host_credentials
+	}).success(function(data) {
+		console.log("SUCCESSFULLY BROUGHT HOSTS INFORMATION FOR GRAPH");
+		console.log(data);
+
+		$scope.results = data.users;
+		console.log("guruji talim");
+		$scope.host_name = data.users[0].username;
+		var length = data.users.length - 1;
+		$scope.least_seen_area = data.users[length].page_id;
+		
+		$scope.graph_formatting_clickperpage = {
+				chart: {
+					type: 'discreteBarChart',
+	                height: 450,
+	                margin : {
+	                    top: 20,
+	                    right: 20,
+	                    bottom: 50,
+	                    left: 55
+	                },
+	                x: function(d){return d.label;},
+	                y: function(d){return d.value + (1e-10);},
+	                showValues: true,
+	                valueFormat: function(d){
+	                    return d3.format(',.4f')(d);
+	                },
+	                duration: 500,
+	                xAxis: {
+	                    axisLabel: data.users[0].username
+	                },
+	                yAxis: {
+	                    axisLabel: 'NUMBER OF CLICKS',
+	                    axisLabelDistance: -10
+	                }
+	            }
+		};
+	
+		$scope.graph_data_clickperpage = [
+         	            {
+         	                key: "TOP TEN CLICKS BY THIS HOST",
+         	                values: [
+         	                    {
+         	                        "label" : data.users[0].page_id ,
+         	                        "value" : data.users[0].clicks_on_this_page
+         	                    } ,
+         	                    {
+         	                        "label" : data.users[1].page_id ,
+         	                        "value" : data.users[1].clicks_on_this_page
+         	                    } ,
+         	                    {
+         	                        "label" : data.users[2].page_id ,
+         	                        "value" : data.users[2].clicks_on_this_page
+         	                    } ,
+         	                    {
+         	                        "label" : data.users[3].page_id ,
+         	                        "value" : data.users[3].clicks_on_this_page
+         	                    } ,
+         	                    {
+         	                        "label" : data.users[4].page_id ,
+         	                        "value" : data.users[4].clicks_on_this_page
+         	                    }
+         	                ]
+         	            }
+         	        ];
+		
+		$scope.graph_formatting_timespent = {
+				chart: {
+					type: 'discreteBarChart',
+	                height: 450,
+	                margin : {
+	                    top: 20,
+	                    right: 20,
+	                    bottom: 50,
+	                    left: 55
+	                },
+	                x: function(d){return d.label;},
+	                y: function(d){return d.value + (1e-10);},
+	                showValues: true,
+	                valueFormat: function(d){
+	                    return d3.format(',.4f')(d);
+	                },
+	                duration: 500,
+	                xAxis: {
+	                    axisLabel: data.users[0].username
+	                },
+	                yAxis: {
+	                    axisLabel: 'TIME SPENT ON THE PAGE',
+	                    axisLabelDistance: -10
+	                }
+	            }
+		};
+	
+		$scope.graph_data_timespent = [
+         	            {
+         	                key: "TOP TEN CLICKS BY THIS HOST",
+         	                values: [
+         	                    {
+         	                        "label" : data.users[0].page_id ,
+         	                        "value" : data.users[0].timeSpentOnPage
+         	                    } ,
+         	                    {
+         	                        "label" : data.users[1].page_id ,
+         	                        "value" : data.users[1].timeSpentOnPage
+         	                    } ,
+         	                    {
+         	                        "label" : data.users[2].page_id ,
+         	                        "value" : data.users[2].timeSpentOnPage
+         	                    } ,
+         	                    {
+         	                        "label" : data.users[3].page_id ,
+         	                        "value" : data.users[3].timeSpentOnPage
+         	                    } ,
+         	                    {
+         	                        "label" : data.users[4].page_id ,
+         	                        "value" : data.users[4].timeSpentOnPage
+         	                    }
+         	                ]
+         	            }
+         	        ];
+    
+		
+
+	}).error(function(error) {
+
+	});
+
 });

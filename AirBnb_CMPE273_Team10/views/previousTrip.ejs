@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trip Listings </title>
+
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+          <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+          <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+          <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+          <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.js"></script>
+          <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-resource.min.js"></script>
+        
+          <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+         <!-- <link rel='stylesheet' href='/stylesheets/Profile.css' /> -->
+
+          <meta http-equiv="Content-Type" content="text/html">
+        
+          <link rel="shortcut icon" href="http://media.gizmodo.co.uk/wp-content/uploads/2014/07/airbnb-logo-230x129.jpg">
+
+         
+          <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/common.css">
+
+          <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/home.css">
+
+          <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/themes.css">
+
+          <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/edit_profile.css">
+          <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.1/angular-cookies.min.js"></script>
+
+          <script src="http://localhost:3000/angularjs/listings.js"/>
+          <script src="js/ng-file-upload.min.js"></script>
+</head>
+
+
+<body class="ng-scope" ng-app="UserProfile" ng-controller="previousTrip">
+<div  id="header" class=" navbar navbar-default  ">
+  <div  class="navbar-header">
+    <a class="navbar-brand" style="position:relative;padding:0"  href="#"><img id="a" src="http://media.gizmodo.co.uk/wp-content/uploads/2014/07/airbnb-logo-230x129.jpg" height=50 width=90> </a>
+  </div >
+  <ul class="nav navbar-nav navbar-right">
+    <li><a id="list-your-space"  class="become" href="" style="border-left:none !important;">
+        <!--This should lead to become a host page remaining-->
+        <span id="list-your-space" class="btn btn-special list-your-space-btn">
+          Become a Host
+          </span>
+        </a>
+    </li>
+    <li> <a class="help-toggle link-reset" href=""><!--This should lead to help page remaining-->
+      <span class="help-pos">Help</span>
+       <i class="help-icon"></i>
+    </a></li>
+    <li><a class="link-reset trip-drop" href=""> <!--Trip should lead to booking trip pages remaining-->
+    <span class="trip-pos"> Trips</span>
+    <i class="trips-icon">
+        <i class="alert-count fade">0</i>
+      </i>
+    </a></li>
+    <li><a href="" rel="nofollow" class="no-crawl link-reset inbox-icon">
+    <span class="msg-icon1">Messages</span>
+    <i class="msg-icon">
+            <i class="alert-count text-center fade">0</i>
+
+             <!-- <span class="text-hide hide">
+          Inbox
+        </span>-->
+      </i>
+    </a></li>
+    <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{username}} <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+  </li>
+
+</ul>
+</div>
+ 
+    <main id="site-content" role="main" >
+    <div class="subnav hide-print">
+  <div class="page-container-responsive">
+    <ul class="subnav-list">
+      <li>
+         <a href="/Profile" aria-selected="false" class="subnav-item">Dashboard</a>
+      </li>
+      <li>
+        <a href="/hostListings" aria-selected="false" class="subnav-item">Your Listings</a>
+      </li>
+      <li>
+         <a ng-click="#" aria-selected="true" class="subnav-item">Your Trips</a>
+      </li>
+      <li>
+        <a href="/EditProfile" aria-selected="false" class="subnav-item">Profile</a>
+      </li>
+      <li>
+        <a href="/Account" aria-selected="false" class="subnav-item">Account</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <div class="page-container-responsive space-top-4 space-4">
+    <div class="row">
+      <div class="col-md-3">
+        <ul class="sidenav-list">
+
+
+  <li>
+    <a class="sidenav-item active" aria-selected="true" href="/trip">Your Trips</a>
+  </li>
+  <li>
+    <a class="sidenav-item" aria-selected="false" href="#">Previous Trips</a>
+  </li>
+
+
+
+</ul>      </div>
+
+
+      <div class="col-md-9">
+            <div class="panel" >
+                <div class="panel-header">
+                  Your Trips
+                </div>
+                <div class="panel-body">
+
+                 <table class="table table-hover table-condensed" ng-repeat="list in listings" style="border-bottom: 3px solid #000;">
+                 <tr>
+                        <th>Address Line 1</th>
+                        <td> &nbsp: &nbsp</td><td>{{list.listing_address1}}</td>
+                      </tr>
+                       <tr>
+                      <th>Address Line 2</th><td> &nbsp: &nbsp</td><td>{{list.listing_address2}}</td>
+                      </tr>
+                      <tr>
+                      <th>City </th><td> &nbsp: &nbsp</td><td ng-model="city">{{list.listing_city}}</td>
+                      
+                      </tr>
+                      <tr>
+                      <th>State </th><td> &nbsp: &nbsp</td><td>{{list.listing_state}}</td>
+                      
+                      </tr>
+                      <tr>
+                      <th> Zip Code</th><td> &nbsp: &nbsp</td><td>{{list.listing_zip_code}}</td>
+                      
+                      </tr>
+                       <tr>
+                          <th> From Date</th><td> &nbsp: &nbsp</td><td>{{list.from_date}}</td>
+                          
+                          </tr>
+                           <tr>
+                          <th> To Date</th><td> &nbsp: &nbsp</td><td>{{list.to_date}}</td>
+                          
+                          </tr>
+                      <tr>
+                      <th>Host Cell Number </th><td> &nbsp: &nbsp</td><td>{{list.host_phone_number}}</td>
+                       
+                      </tr>
+                        <tr class="success">
+                      <th>House info </th><td> &nbsp: &nbsp</td>
+                                  <td> 
+                                     <tr class="warning">
+                                  
+                                    <th >&nbsp &nbsp  &nbsp Property Title</th>
+                                    <td> &nbsp: &nbsp</td>
+                                    <td ng-model="property_title">{{list.house_info[0].property_title}}</td>   
+                                </tr> 
+                                 <tr class="warning">
+                                  
+                                    <th>&nbsp &nbsp  &nbsp Property Description</th>
+                                    <td> &nbsp: &nbsp</td>
+                                    <td>{{list.house_info[0].property_description}}</td>   
+                                </tr> 
+                                    <tr class="warning">
+                                  
+                                    <th>&nbsp &nbsp  &nbsp Room Type</th>
+                                    <td> &nbsp: &nbsp</td>
+                                    <td>{{list.house_info[0].room_type}}</td>   
+                                </tr>  
+                                <tr class="warning">
+                                  
+                                    <th>&nbsp &nbsp &nbsp Number of Beds</th>
+                                    <td> &nbsp: &nbsp</td>
+                                    <td>{{list.house_info[0].number_of_beds}}</td>   
+                                </tr> 
+                                <tr class="warning">
+                                  
+                                    <th>&nbsp &nbsp &nbsp Number of Guests</th>
+                                    <td> &nbsp: &nbsp</td>
+                                    <td>{{list.house_info[0].number_of_guests}}</td>   
+                                </tr> 
+                                <tr class="warning">
+                                  
+                                    <th>&nbsp &nbsp &nbsp Shared Amenities</th>
+                                    <td> &nbsp: &nbsp</td>
+                                
+                                      <td> 
+                                      <span ng-repeat="x in list.house_info[0].shared_amenities">
+                                        {{x}} </br></span>
+                                      </td>
+                                </tr>   
+                                <tr class="warning">
+                                  
+                                    <th>&nbsp &nbsp &nbsp Shared Spaces</th>
+                                    <td> &nbsp: &nbsp</td>
+                                <td> 
+                                      <span ng-repeat="x in list.house_info[0].shared_spaces">
+                                        {{x}} </br></span>
+                                      </td>
+                                </tr>  
+                                <tr class="warning">
+                                  
+                                    <th>&nbsp &nbsp &nbsp Price</th>
+                                    <td> &nbsp: &nbsp</td>
+                                    <td>{{list.house_info[0].price}}</td>   
+                                </tr>
+                                  <tr class="warning">
+                                    <th>&nbsp &nbsp &nbsp Bid Status</th>
+                                    <td> &nbsp: &nbsp</td>
+                                    <td>{{list.house_info[0].bid_status}}</td>
+                                </tr>    
+                                  </td>
+
+                          </tr>
+                           <tr class="success" style="" >
+                          <th>Billing info </th><td> &nbsp: &nbsp</td>
+                                  <td> 
+                                    <tr class="warning">
+                                        <th>&nbsp &nbsp &nbsp Transaction ID</th>
+                                        <td> &nbsp: &nbsp</td>
+                                        <td>{{list.billing_info[0].transaction_id}}</td> 
+
+                                    </tr>    
+                                  </td>
+
+                          </tr>
+						  <tr class="success" style="" >
+                          <div class="row"><th>Rate and Review </th><td> &nbsp: &nbsp</td>
+                                  <td>
+                                  	<tr class="warning">
+                                        <th>&nbsp &nbsp &nbsp Select Rating  </th>
+                                        <td> &nbsp: &nbsp</td>
+                                        <td><select id="Ratings" name="rating" ng-model="property_rating" required >
+      							<option value="1">1</option>
+      							<option value="2">2</option>
+      							<option value="3">3</option>
+      							<option value="4">4</option>
+      							<option value="5">5</option>
+    						</select>
+                                        </td> 										
+                                    </tr>                    
+                                    <tr class="warning">
+                                        <th>&nbsp &nbsp &nbsp Tell Your Experience  </th>
+                                        <td> &nbsp: &nbsp</td>
+                                        <td><input type="text" id="property_review" name="propert_review" ng-model="property_review" required></input>
+                                        </td> 										
+                                    </tr>                     
+                                    <tr class="warning">
+                                        <th>&nbsp &nbsp &nbsp Submit Review  </th>
+                                        <td> &nbsp: &nbsp</td>
+                                        <td><button id="submit" name="submit" class="btn btn-success" ng-click="submit_review(list.house_info[0].property_title,property_rating,property_review);">Submit</button>
+                                        </td> 										
+                                    </tr>
+                                    </div>                                        
+                                  </td>
+                             </tr>
+                 </table>   
+              </div>
+      
+             </div>
+     </div>
+
+ 
+      </div>
+    </div>
+               
+     </main>
+
+
+<!-- <script src="http://makent.trioangle.com/js/common.js"> </script>--><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+
+  
+
+    </body>
+    </html>

@@ -1,32 +1,34 @@
 {
-  "name": "AirBnb_CMPE273_Team10",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "start": "node app.js"
-  },
-  "dependencies": {
-    "amqp": "*",
-    "bcrypt-nodejs": "*",
-    "chai": "^3.5.0",
-    "connect-mongo": "^1.3.2",
-    "ejs": "*",
-    "express": "^3.2.6",
-    "express-session": "*",
-    "http": "*",
-    "mocha": "*",
-    "mongo": "*",
-    "mongodb": "*",
-    "mysql": "*",
-    "ng-file-upload": "*",
-    "objectid": "*",
-    "passport": "*",
-    "passport-local": "*",
-    "path": "*",
-    "request": "*",
-    "require": "*",
-    "url": "*",
-    "winston": "*",
-    "wkhtmltopdf": "^0.3.3"
-  }
+	"name": "AirBnb_CMPE273_Team10",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node app.js"
+	},
+	"dependencies": {
+		"amqp": "*",
+		"bcrypt-nodejs": "*",
+		"chai": "^3.5.0",
+		"connect-mongo": "^1.3.2",
+		"connect-redis": "^3.1.0",
+		"ejs": "*",
+		"express": "^3.2.6",
+		"express-session": "*",
+		"http": "*",
+		"mocha": "*",
+		"mongo": "*",
+		"mongodb": "*",
+		"mysql": "*",
+		"ng-file-upload": "*",
+		"objectid": "*",
+		"passport": "*",
+		"passport-local": "*",
+		"path": "*",
+		"redis": "^2.6.3",
+		"request": "*",
+		"require": "*",
+		"url": "*",
+		"winston": "*",
+		"wkhtmltopdf": "^0.3.3"
+	}
 }

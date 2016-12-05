@@ -1,0 +1,252 @@
+<div class="row" ng-init="getBiddersList(property)">
+	<div class="col-md-12">
+		<img ng-src="{{property.property_images}}" height="500" width="100%">
+	</div>
+</div>
+
+<div class="row">
+	<br>
+	<div class="col-md-1"></div>
+	<div class="col-md-10">
+		<div class="alert alert-success" ng-hide="bookSuccess">
+			<strong>Congratulation !! Your booking has been confirmed</strong>
+		</div>
+	</div>
+	<div class="col-md-1"></div>
+</div>
+
+<div class="row">
+	<div class="col-md-1"></div>
+	<div class="col-md-7">
+		<h2>
+			<b>{{property.property_title}}</b>
+		</h2>
+		<h4>{{property.city}},{{property.country}},{{property.ratings}}</h4>
+		<hr>
+		<span class="glyphicon glyphicon-home" style="padding-left: 10px">&nbsp;{{property.room_type}}</span>&nbsp;&nbsp;&nbsp;&nbsp;<span
+			style="padding-left: 10px" class="glyphicon glyphicon-user">&nbsp;{{property.number_of_guests}}</span>
+		&nbsp;&nbsp;&nbsp;&nbsp;<span style="padding-left: 10px"
+			class="glyphicon glyphicon-bed">&nbsp;{{property.number_of_beds}}</span>
+		<hr>
+		<h3>About this listing</h3>
+		<h4>{{property.property_description}}</h4>
+		<hr>
+		<h4>The Amenities :</h4>
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-6">
+				<h4 ng-repeat="amenities in property.shared_amenities">{{amenities}}</h4>
+			</div>
+			<div class="col-md-4">
+				<h4>Accomodates : {{property.number_of_guests}}</h4>
+				<h4>Bedrooms : {{property.number_of_beds}}</h4>
+				<h4>Bathrooms : {{property.number_of_bathrooms}}</h4>
+			</div>
+		</div>
+		<hr>
+		<h4>The Space :</h4>
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-6">
+				<h4 ng-repeat="spaces in property.shared_spaces">{{spaces}}</h4>
+			</div>
+			<div class="col-md-4">
+				<h4>Property Type : {{property.property_type}}</h4>
+				<h4>Room Type : {{property.room_type}}</h4>
+				<h4>Owner : {{property.property_owner}}</h4>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-2">
+				<h4>Prices :</h4>
+			</div>
+			<div class="col-md-6">
+				<h4>${{property.price}}</h4>
+			</div>
+		</div>
+		<hr>
+		<div class="row" ng-repeat="x in property.review">
+			<div class="col-md-2">
+				<h4>Reviews :</h4>
+			</div>
+			<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-6">
+				<p>User    : {{x.user}}</p>
+				<p>Review  : {{x.review}}</p>
+				<p>Rating  : {{x.rating}}</p>
+			</div>
+			</div>
+		</div>
+
+	</div>
+	<hr>
+
+	<div class="col-md-3">
+		<form>
+			<input style="height: 40px" type="text" placeholder="Guests"
+				class="form form-control" ng-model="bookGuests" /> <input
+				style="height: 40px" type="date" placeholder="to date yyyy/mm/dd"
+				value="2016-12-10" class="form form-control" ng-model="bookFromDate" />
+			<input style="height: 40px;" type="date"
+				placeholder="from date yyyy/mm/dd" value="2016-12-10"
+				class="form form-control" ng-model="bookToDate" /> <input
+				type="submit" style="background-color: #ff5a5f; color: white"
+				value="Book" class="form form-control"
+				ng-click="bookProperty(property)">
+			<div ng-if="property.bid_status == 'Yes'">
+				<br>
+				<h4 stlye="color:green">Bidding option available</h4>
+				<h5>This property is also available for bidding for miniumum
+					{{property.bidStay}} days.</h5>
+				<input style="height: 40px" placeholder="Bid Amount" type="number"
+					min="{{property.price}}" class="form form-control"
+					ng-model="bid_amount" /> <input type="submit"
+					style="background-color: #ff5a5f; color: white" value="Bid"
+					class="form form-control"
+					ng-click="bidProperty(property,bid_amount)">
+				<hr>
+				<div class="alert alert-success" ng-hide="bid_added">
+					<strong>Congratulation !! Your bidding has been confirmed</strong>
+				</div>
+				<div class="alert alert-danger" ng-hide="bid_error">
+					<strong>Sorry ! Booking period is over for this property</strong>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<h4>Bidding Winners</h4>
+						<hr>
+						<table class="table table-striped">
+							<tr>
+								<th>Bidder Name</th>
+								<th>Amount</th>
+							<tr>
+							<tr ng-repeat="winner in cityWinner">
+								<td>{{winner.bidderName}}</td>
+								<td>${{winner.amount}}</td>
+							<tr>
+						</table>
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h4>Current Highest</h4>
+						<hr>
+						<table class="table table-striped">
+							<tr>
+								<th>Bidder Name</th>
+								<th>Amount</th>
+							<tr>
+							<tr ng-repeat="bidder in currentBidder">
+								<td>{{bidder.bidderName}}</td>
+								<td>${{bidder.amount}}</td>
+							<tr>
+						</table>
+
+					</div>
+				</div>
+
+			</div>
+
+		</form>
+
+	</div>
+
+</div>
+<div id="creditCard" class="modal fade" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true">
+
+	<div class="modal-dialog">
+		<div class="modal-content" style="width: 500px">
+			<div>
+				<div class="modal-header">
+					<div class="panel-heading">
+						<h3 class="panel-title">Payment Details</h3>
+					</div>
+					<div class="panel-body">
+						<form role="form">
+							<div class="form-group">
+								<label for="cardNumber"> CARD NUMBER</label>
+								<div class="input-group">
+									<input type="text" name="number" class="form-control"
+										ng-model="CardNo" minlength="16" maxlength="16" required
+										placeholder="Valid Card Number" /> <span
+										class="input-group-addon"><span
+										class="glyphicon glyphicon-lock"></span></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-5 col-md-5 pull-left">
+									<div class="form-group">
+										<label for="expityMonth"> EXPIRY DATE </label>
+										<div class="col-xs-6 col-lg-6 pl-ziro">
+											<input type="text" name="number" max="12" min="1"
+												ng-model="Month" required class="form-control"
+												placeholder="Month" />
+										</div>
+										<div class="col-xs-6 col-lg-6 pl-ziro">
+											<input type="text" name="password" max="2030" min="2016"
+												ng-model="Year" required class="form-control"
+												placeholder="Year" />
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-5 col-md-5 pull-right">
+									<div class="form-group">
+										<label for="cvCode"> CV CODE </label> <input type="text"
+											name="password" ng-model="CCV" maxlength="3" minlength="3"
+											required class="form-control" placeholder="CCV" />
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<br /> <input type="submit" data-dismiss="modal"
+					class="btn btn-success btn-lg btn-block"
+					ng-click="validateCard(property)" value="Checkout" />
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div id="login" class="modal fade" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content" style="width: 500px">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-hidden="true">x</button>
+				<h3 id="myModalLabel">Log In</h3>
+			</div>
+			<div class="modal-body">
+				<form>
+					<input type="email" ng-model="inputUsername" required name="email"
+						id="email" placeholder="Email Address" class="form form-control"
+						style="height: 40px"><br> <br> <input
+						type="password" type="password" required ng-model="inputPassword"
+						name="password" id="password" placeholder="Password"
+						class="form form-control" style="height: 40px"><br> <br>
+					<input data-dismiss="modal"
+						style="height: 40px; background-color: rgb(255, 100, 100); color: white; font-weight: bold"
+						ng-click="signin()" type="submit" value="Log in"
+						class="form form-control">
+				</form>
+				<br> <b><a stlye="float:rightx">Forgot Password ?</a><b>
+						<div class="modal-footer row">
+
+							<br>
+							<div class="alert alert-danger" ng-hide="invalid_login">
+								<strong>Invalid Email address or Password</strong>
+							</div>
+						</div>
+			</div>
+		</div>
+	</div>
+</div>
+

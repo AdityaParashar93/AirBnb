@@ -116,14 +116,21 @@
 								<li><a class="submenu" href="#approvePropertyTask"><i class="icon-file-alt"></i><span class="hidden-tablet"> APPROVE PROPERTY</span></a></li>
 							</ul>	
 						</li>
-						<li><a id="Bill" href="#"><i class="icon-edit"></i><span class="hidden-tablet"> Bill</span></a></li>
+						<li><a id="Bill" href="#bill"><i class="icon-edit"></i><span class="hidden-tablet"> Bill</span></a></li>
 						<li><a id="Display" href="#display"><i class="icon-eye-open"></i><span class="hidden-tablet"> Display</span></a></li>
 						<li>
-							<a class="dropmenu" href="#"><i class="icon-dashboard"></i><span class="hidden-tablet"> Analytics</span><span class="label label-important"> 3 </span></a>
+							<a class="dropmenu" href="#"><i class="icon-dashboard"></i><span class="hidden-tablet"> ADMIN Analytics</span><span class="label label-important"> 3 </span></a>
 							<ul>
 								<li><a class="submenu" href="#topTenPropertiesAsRevenue"><i class="icon-file-alt"></i><span class="hidden-tablet"> Top 10 Properties</span></a></li>
 								<li><a class="submenu" href="#citywiseRevenue"><i class="icon-file-alt"></i><span class="hidden-tablet"> City Wise Revenue</span></a></li>
 								<li><a class="submenu" href="#topTenHosts"><i class="icon-file-alt"></i><span class="hidden-tablet"> Top 10 Hosts</span></a></li>
+							</ul>	
+						</li>
+						<li>
+							<a class="dropmenu" href="#"><i class="icon-dashboard"></i><span class="hidden-tablet"> HOST Analytics</span><span class="label label-important"> 2 </span></a>
+							<ul>
+								<li><a class="submenu" href="#clicksPerProperty"><i class="icon-file-alt"></i><span class="hidden-tablet"> Clicks Per Properties</span></a></li>
+								<li><a class="submenu" href="#hostGraphs"><i class="icon-file-alt"></i><span class="hidden-tablet"> HOST GRAPHS</span></a></li>
 							</ul>	
 						</li>
 					</ul>
@@ -184,12 +191,13 @@ var app = angular.module('airbnb_admin');
 //login
 app.controller('airbnb_admin', function($scope, $http) {
 
-	console.log("I AM INSIDE airbnb_admin CONTROLLER lol");
+	console.log("I AM INSIDE airbnb_admin CONTROLLER ON PAGE: airbnb_admin");
 	$scope.invalid_login = true;
-	
+	var clicks_on_this_page = 0;
 	$(document).click(function(event) {
 		var target = event.target || event.srcElement;
 		var id = target.id;
+		clicks_on_this_page = clicks_on_this_page + 1;
 		if(id == ""){
 			id = "empty";
 		}
@@ -200,7 +208,9 @@ app.controller('airbnb_admin', function($scope, $http) {
 	    timeSpentOnPage = TimeMe.getTimeOnCurrentPageInSeconds();
 		var page_analytics = {
 				"clicklog" : clicklog,
-				"timeSpentOnPage" : timeSpentOnPage
+				"timeSpentOnPage" : timeSpentOnPage,
+				"page_id" : "airbnb_admin_successlogin_page",
+				"clicks_on_this_page" : clicks_on_this_page
 		};
 		
 		console.log(page_analytics);
@@ -212,7 +222,7 @@ app.controller('airbnb_admin', function($scope, $http) {
 		}).success(function(data) {
 
 			if (data.statusCode === 200) {
-				console.log("MY EVENT HAS BEEN LOGGED");
+				console.log("MY EVENT HAS BEEN LOGGED ON : airbnb_admin_successlogin_page");
 				// console.log(data);
 			} else {
 				console.log("SOMETHING WENT WRONG");

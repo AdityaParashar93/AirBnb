@@ -82,6 +82,20 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider,$route
 
             },	
 		}
+	}).state('property_landing', {	
+		url : '/property_landing',
+
+		views: {
+            'header': {
+                templateUrl : 'templates/header2.html',
+                controller : 'airbnb'
+            },
+            'content': {
+
+                templateUrl : 'templates/property_landing.html',
+                controller : 'airbnb'
+            },	
+		}
 	}).state('check_becomehost', {	
 		url : '/check_becomehost',
 		views: {
@@ -99,8 +113,11 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider,$route
 //login
 app.controller('airbnb', function($scope, $http, $state, $window,$document,$timeout ,$stateParams,$route ,Upload, $cookies, $cookieStore) {
 	$scope.test_login=false;
-	$scope.stateParams = $cookieStore.get('properties');
-		$scope.login = true;
+	$scope.property = $cookieStore.get('property');
+	$scope.login = true;
+	$scope.bookSuccess = true;
+	$scope.bid_added = true;
+	$scope.bid_error = true;
 
 	console.log("I AM IN AIRBNB CONTROLLER");
 	$scope.validate_property=true;
@@ -128,7 +145,7 @@ app.controller('airbnb', function($scope, $http, $state, $window,$document,$time
 	
 	$scope.invalid_login = true;
 	console.log(":State Params:"+$scope.stateParams);
-	$scope.imageUpload = function(element){
+	/*$scope.imageUpload = function(element){
         var reader = new FileReader();
         reader.onload = $scope.imageIsLoaded;
         reader.readAsDataURL(element.files[0]);
@@ -138,7 +155,7 @@ app.controller('airbnb', function($scope, $http, $state, $window,$document,$time
         $scope.$apply(function() {
             $scope.stepsModel.push(e.target.result);
         });
-    };
+    };*/
 	$scope.amenities = [
 		                  {text: "Essentials"},
 		                  {text: "Towels, bed sheets, soap, and toilet paper"},
@@ -222,10 +239,23 @@ app.controller('airbnb', function($scope, $http, $state, $window,$document,$time
 				console.log("Flag found false");
 				$('#myModal1').modal({show:true});
 			}
+			var lat = parseFloat(document.getElementById('Latitude').value);
+			var lng = parseFloat(document.getElementById('Longitude').value);
+			
+
+			console.log(typeof(lat));
+			//var location = {"lat":lat,"lng":lng};
+			var location = {lat:parseFloat((lat).toFixed(3)),lng:parseFloat((lng).toFixed(3))};
+			
+			console.log(typeof(location.lat));
+	
+			console.log(location);
+			//console.log(location2);
+
 				$scope.validate_property=false;
 				$scope.validate_property1=true;
 				$scope.validate_property2=true;
-				var temp={from:new Date(),to:new Date()};
+				var temp={from:$scope.availableFrom,to:$scope.availableTo};
 			
 			$scope.property_input.availability=[];
 			$scope.property_input.availability.push(temp);
@@ -256,7 +286,7 @@ app.controller('airbnb', function($scope, $http, $state, $window,$document,$time
 				$scope.property_input.number_of_bathrooms=$scope.number_of_bathrooms;
 				$scope.property_input.shared_amenities=$scope.selected_amenities;
 				$scope.property_input.shared_spaces=$scope.selected_shares;
-				$scope.property_input.property_images=$scope.stepsModel;
+				$scope.property_input.property_images=$scope.property_image;
 				$scope.property_input.property_title=$scope.property_title;
 				$scope.property_input.property_description=$scope.property_description;
 				$scope.property_input.property_price=$scope.price;
@@ -276,7 +306,7 @@ app.controller('airbnb', function($scope, $http, $state, $window,$document,$time
 						$scope.response_message="Hey your propeerty has been added to our db";
 						$scope.validate_property2=false;
 						$scope.validate_property1=true;
-						$state.go('host_dashboard');
+						//$state.go('host_dashboard');
 					}else if(data.json_responses.statusCode == 405){
 						$scope.response_message="Please Log in to submit the form ";
 						$scope.validate_property1=false;
@@ -305,6 +335,26 @@ app.controller('airbnb', function($scope, $http, $state, $window,$document,$time
 		}
 	};
 	
+	$scope.propertyPage = function(property){
+		$scope.storeClicks(property);
+		console.log(property);
+		$cookieStore.put('property',property);
+		$scope.property = property;
+		$state.go('property_landing');
+	};
+	
+	$scope.validateCard = function(property){
+		if($scope.CardNo!==null && $scope.Month!==null && $scope.Year!==null && $scope.CVV!==null){
+			console.log($scope.CardNo);
+			console.log($scope.Month);
+			console.log($scope.Year);
+			console.log($scope.CCV);
+			$window.localStorage.setItem("cc","true");
+			$scope.bookProperty(property);
+			
+		}
+	};
+	
 	 $scope.submit = function() {
 	      if ($scope.files.$valid && $scope.files) {
 	        $scope.upload($scope.files);
@@ -324,8 +374,191 @@ app.controller('airbnb', function($scope, $http, $state, $window,$document,$time
 	      }
 	    };
 
+$scope.bidProperty = function(property,bid_amount){
+	    	if($window.localStorage.getItem("username")){
+	    		console.log(property.price);
+	    		console.log(bid_amount);
+	    		if(bid_amount > property.price){
+	    	    	var now = new Date();
+	    			var list_time = new Date(property.list_time);
+	    			console.log(now);
+	    			console.log(list_time);
+	    			var diffDays =  Math.abs((now.getTime() - list_time.getTime()) / (1000 * 3600 * 24)); 
+	    			console.log(diffDays);
+	    			if(diffDays < 4)
+	    			{
+	    			console.log(bid_amount);
+	    			$http({
+	    				method : "POST",
+	    				url : '/bidProperty',
+	    				data : {
+	    					"property" : property,
+	    					"amount" : bid_amount,
+	    					"bookToDate" : $scope.bookToDate,
+	    					"bookFromDate": $scope.bookFromDate,
+	    					"bookGuests" : $scope.bookGuests
+	    				}
+	    			}).success(function(data) {
+	    				$scope.amount = 1;
+
+	    				if (data.statusCode === 401) {
+	    					console.log("error loading cart");
+	    					$scope.bid_added = true;
+	    					$scope.bid_error = false;
+	    				} else {
+	    					$scope.quantity = 1;
+	    					console.log("bidding donee");
+	    					$scope.unknown_error = true;
+	    					$scope.bid_added = false;
+	    				}
+	    			}).error(function(error) {
+	    				$scope.unknown_error = true;
+	    			});
+	    			}else{
+	    				$scope.bidding_over = false;
+	    			}
+	    		}else{
+	    			console.log("not so easy");
+	    			$scope.bid_err1 = false;
+	    		}
+	    	}else{
+	    		$('#login').modal({show:true});
+	    	}
+	    };
+	    
+	    
+	    
+	    
+		$scope.getBiddersList = function(property){
+			
+			var property_title = property.property_title;
+			console.log(property_title);
+			var bidList;
+			var winList;
+				$http({
+					method : "GET",
+					url : '/getHighestBidders',
+					data : { }
+				}).success(function(data) {
+					console.log("here get bid");
+					// checking the response data for statusCode
+					if (data.statusCode === 401) {
+						console.log("getting it");
+						$scope.unknown_error = false;
+					} else {
+						// Making a get call to the '/redirectToHomepage' API
+						bidList = data.bidList;
+						winList = data.winList;
+						console.log("winList");
+						
+						console.log(winList);
+						var currentBidder = [];
+						var cityWinner = [];
+						for(var i=0;i<winList.length;i++){
+							if(property_title === winList[i].property_title){
+								
+								cityWinner.push(winList[i]);
+							
+							}
+						}
+						
+						for(var i=0;i<bidList.length;i++){
+							if(property_title === bidList[i].property_title){
+								currentBidder.push(bidList[i]);
+							}
+						}
+						
+						console.log(cityWinner);
+						console.log("currentBidder");
+						
+						console.log(currentBidder);
+						$scope.winList = winList;
+						$scope.cityWinner = cityWinner;
+						$scope.bidList = bidList;
+						$scope.currentBidder = currentBidder;
+						// $scope.items = items;
+						$scope.unknown_error = true;
+					}
+				}).error(function(error) {
+					$scope.unknown_error = true;
+				});
+		};
+		$scope.bookProperty = function(property){
+		
+		if($window.localStorage.getItem("username")){
+			console.log($window.localStorage.getItem("cc"));
+			if($window.localStorage.getItem("cc")=== "true"){
+				console.log(property);
+				console.log("Specific property info:: ");
+				console.log(property.availability[0].from);
+				console.log($scope.bookFromDate);
+				console.log("");
+				console.log(property.availability[0].to);
+				console.log($scope.bookToDate);
+				
+				if(new Date(property.availability[0].from) <= new Date($scope.bookFromDate) && new Date(property.availability[0].to) >= new Date($scope.bookToDate)){
+					console.log("booking done");
+					
+								var json = {
+							property : property,	
+							bookToDate : $scope.bookToDate,
+							bookFromDate : $scope.bookFromDate,
+							bookGuests : $scope.bookGuests
+								};
+						
+						$http({
+							method : "POST",
+							url : '/bookProperty',
+							data : json
+						}).success(function(data) {
+							if (data.statusCode === 200) {
+								console.log("book Property");
+								$scope.bookSuccess = false;
+							} else {
+								console.log("sorry ");
+							}
+						});
+					
+				
+				}
+				else{
+					console.log("sorry");
+				}
+			}else{
+				$('#creditCard').modal({show:true});
+			}
+		}else{
+			$('#login').modal({show:true});
+		}
+	};
+
+	$scope.storeClicks = function(property){
+		
+		var json = {
+			property : property	
+		};
+		
+		$http({
+			method : "POST",
+			url : '/propertyClicks',
+			data : json
+		}).success(function(data) {
+			if (data.statusCode === 200) {
+				console.log("stored clicks");
+			} else {
+				console.log("not stored");
+			}
+		});
+	};
 	
 	
+	$http({
+		method : "GET",
+		url : '/getProperties',
+	}).success(function(data) {
+		console.log("hello");
+		$scope.stateParams = data.properties;
+	});
 	
 	$scope.searchProperties = function(){
 		$cookieStore.put('city',$scope.city);
@@ -341,16 +574,8 @@ app.controller('airbnb', function($scope, $http, $state, $window,$document,$time
 			}
 		}).success(function(data) {
 			$scope.properties = data.properties;
-			console.log(data.properties);
-			console.log("::Property::"+$scope.properties);
-			//$window.localStorage.setItem("state", "propertyList");
-			$cookieStore.put('properties',data.properties);
-			console.log("::>>"+data.properties[0].city);
-			$scope.stateParams = $cookieStore.get('properties');
-			
-			console.log(":::::::::::::::::::::::::"+$scope.stateParams);
 			$state.go('propertyList',{properties:data.properties});
-		//	$state.reload();
+			
 		}).error(function(error){
 			console.log(error);
 		});
@@ -472,6 +697,9 @@ app.controller('airbnb', function($scope, $http, $state, $window,$document,$time
 				console.log("render the successful login page here");
 				$scope.username = data.username;
 				//$window.localStorage.setItem("state", "home");
+				$window.localStorage.setItem("cc",data.cc_num);
+				console.log(data.cc_num);
+		
 				$window.localStorage.setItem("username", data.username);
 				//if(!$scope.test_login){
 					$state.go('home');

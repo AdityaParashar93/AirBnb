@@ -13,15 +13,16 @@ profile.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
             },
         }
     })
-    $urlRouterProvider.otherwise('/');
+   // $urlRouterProvider.otherwise('/');
 });
 
 
-profile.controller('userprofile', function($scope, $http,$state,$window) {
+profile.controller('userprofile', function($scope, $http,$window) {
 
     $scope.Init = function()
     {
-
+        $scope.test="Get there very fast indeed";
+        console.log("In userprofile controller");
         $http({
             method : "POST",
             url : '/view_profile',
@@ -33,6 +34,8 @@ profile.controller('userprofile', function($scope, $http,$state,$window) {
                 $scope.lname = data.Result[0].lname;
                 $scope.username = data.Result[0].username;
 
+                $scope.profile_img = data.Result[0].imgPath;
+
                 if(data.Result[0].approve_flag === "NO")
                     $scope.isHost = false;
                 else
@@ -43,6 +46,12 @@ profile.controller('userprofile', function($scope, $http,$state,$window) {
             }
 
         });
+    }
+
+
+    $scope.Landing = function()
+    {
+        window.location.assign("/")
     }
 
     $scope.getBillInfo = function()
@@ -57,6 +66,7 @@ profile.controller('userprofile', function($scope, $http,$state,$window) {
                 $scope.city = data.Result[0].city;
                 $scope.address = data.Result[0].address;
                 $scope.propertyname = data.Result[0].propertyname;
+
 
 
                 $scope.bills = data.Result;
@@ -130,10 +140,28 @@ profile.controller('userprofile', function($scope, $http,$state,$window) {
                 "property" : property
             }
         }).success(function(data) {
-            if(statuscode === 200)
-            window.location.assign("/Receipt");
+            if(data.statusCode == 200)
+                window.location.assign("/Receipt");
         });
 
+    }
+
+
+    $scope.UpdateURL = function()
+    {
+        console.log("In UpdateURL");
+        var imgURL = $scope.ImagePath;
+
+        $http({
+            method : "POST",
+            url : '/update_ImgPath',
+            data : {
+                "imgURL" : imgURL
+            }
+        }).success(function(data) {
+            if(data.statusCode == 200)
+                window.location.assign("/Profile");
+        });
     }
 
 });

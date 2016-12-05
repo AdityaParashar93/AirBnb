@@ -3,16 +3,16 @@
 <head>
     <title>Edit User Profile</title>
 
-    <script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-    <script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
-    <link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
 
     <link rel='stylesheet' href='/stylesheets/Profile.css' />
@@ -128,7 +128,7 @@
                             <a href="" class="link-reset user-profile-link">
                                 <div class="media-photo media-round user-profile-image" style="background:rgba(0, 0, 0, 0) url(https://cdn4.iconfinder.com/data/icons/eldorado-user/40/user-128.png?sz=50) no-repeat scroll 0 0 / cover">
                                 </div>
-                                Jay
+                                {{fname}}
                             </a>
                         </div>
                     </div>
@@ -136,7 +136,7 @@
                 </div>
                 <div class="nav-menu-wrapper">
                     <div class="va-container va-container-v va-container-h">
-                        <div class="va-middle nav-menu panel-body">
+                        <div class="va-middle nav-menu panel-body" >
                             <ul class="menu-group list-unstyled row-space-3">
                                 <li>
                                     <a rel="nofollow" class="link-reset menu-item" href="">
@@ -149,7 +149,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a rel="nofollow" class="link-reset menu-item" href="">
+                                    <a rel="nofollow" class="link-reset menu-item" href="" ng-click="become_a_host()">
                                         Become a Host
                                     </a>
                                 </li>
@@ -170,11 +170,6 @@
                                 </li>
                                 <li class="">
                                     <a class="link-reset menu-item" rel="nofollow" href="">
-                                        Become a Host
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a class="link-reset menu-item" rel="nofollow" href="">
                                         Inbox
                                         <i class="alert-count unread-count--sm fade text-center">
                                             0
@@ -182,12 +177,12 @@
                                     </a>
                                 </li>
                                 <li class="">
-                                    <a class="link-reset menu-item" rel="nofollow" href="">
+                                    <a class="link-reset menu-item" rel="nofollow" href="/hostListings">
                                         Your Listings
                                     </a>
                                 </li>
                                 <li class="">
-                                    <a class="link-reset menu-item" rel="nofollow" href="">
+                                    <a class="link-reset menu-item" rel="nofollow" href="/trip">
                                         Your Trips
                                     </a>
                                 </li>
@@ -329,10 +324,10 @@
     </header>
 
 
-    <header class="regular-header clearfix hide-sm" id="old-header" role="banner">
+    <header class="regular-header clearfix hide-sm" id="old-header" role="banner" ng-controller="edituserprofile">
 
         <div  class="navbar-header">
-            <a class="navbar-brand" style="position:relative;padding:0"  href="#"><img id="a" src="http://media.gizmodo.co.uk/wp-content/uploads/2014/07/airbnb-logo-230x129.jpg" height=50 width=90> </a>
+            <a class="navbar-brand" style="position:relative;padding:0"  href="#" ng-click="Landing()"><img id="a" src="http://media.gizmodo.co.uk/wp-content/uploads/2014/07/airbnb-logo-230x129.jpg" height=50 width=90> </a>
         </div >
     <span class="screen-reader-only">
       AIRBNB
@@ -441,30 +436,9 @@
 
             </ul>
         </div>
-        <div class="pull-right" ng-controller="edituserprofile">
+        <div class="pull-right" ng-controller="edituserprofile" ng-click="become_a_host()">
             <ul class="nav pull-left help-menu list-unstyled">
-             <li class="list-your-space pull-left">
-                    <a id="list-your-space" class="become" href="" style="border-left:none !important;">
-        <span id="list-your-space" class="btn btn-special list-your-space-btn">
-          Become a Host
-          </span>
-                    </a>
-                    <div class="panel  drop-down-menu-host js-become-a-host-dropdown hide">
-                        <div class="link-reset panel-body hover-item hide js-become-a-host-lys" href="/become-a-host?from_nav=1&amp;link=2">
-                            <div class="hover-item__content">
-                                List Your Space
-                            </div>
-                        </div>
-                        <div class="link-reset js-become-a-host-tooltip panel-body hover-item" href="/rooms/new?from_nav=1&amp;link=3">
-                            <div class="tooltip-content">You could earn €595 sharing your home in Amsterdam in a week. Become a host.</div>
-                        </div>
-                        <div class="link-reset panel-body hover-item js-become-a-host-why-host hide" href="/host?from_nav=1">
-                            <div class="hover-item__content">
-                                How Hosting Works
-                            </div>
-                        </div>
-                    </div>
-                </li>
+
 
             </ul>
             <!-- Live Demo Refresh -->
@@ -509,33 +483,7 @@
                         </div>
                     </div>
                 </li>
-                <li id="inbox-item" class="inbox-item pull-left dropdown-trigger js-inbox-comp">
-                    <a href="" rel="nofollow" class="no-crawl link-reset inbox-icon">
-                        <span class="msg-icon1">Messages</span>
-                        <i class="msg-icon">
-                            <i class="alert-count text-center fade">0</i>
 
-                            <!-- <span class="text-hide hide">
-                         Inbox
-                       </span>-->
-                        </i>
-                    </a>
-                    <div class="tooltip tooltip-top-right dropdown-menu list-unstyled header-dropdown
-                notifications-dropdown hide">
-                    </div>
-                    <div class="panel drop-down-menu-msg hide js-become-a-host-dropdown">
-                        <div class="trip-width">
-                            <div class="panel-header no-border section-header-home"><strong><span>Messages</span></strong><a href="" class="link-reset view-trips pull-right"><strong><span>View Inbox</span></strong></a></div>
-
-                            <div class="panel-header no-border section-header-home pull-left" style="width:100%;"><strong><span>Notifications</span></strong><a href="" class="link-reset view-trips pull-right"><strong><span>View Dashboard</span></strong></a></div>
-                            <div class="pull-left" style="width:100%;padding:15px 20px;">
-
-                                <p style="margin:0px;padding-top:10px !important;"> There are 3 notifications waiting for you in your <a style="color:#333;text-decoration:underline;" href=""> dashboard </a>.</p>
-
-                            </div>
-                        </div>
-                    </div>
-                </li>
                 <li id="header-help-menu" class="help-menu-container pull-left dropdown-trigger">
                     <a class="help-toggle link-reset" href="">
                         <span class="help-pos">Help</span>
@@ -549,7 +497,7 @@
                 <li class="user-item pull-left medium-right-margin dropdown-trigger">
                     <a class="link-reset header-avatar-trigger" id="header-avatar-trigger" href="">
             <span class="value_name">
-        Jay
+        {{fname}}
       </span>
                         <div class="media-photo media-round user-profile-image" style="background: rgba(0, 0, 0, 0) url(https://cdn4.iconfinder.com/data/icons/eldorado-user/40/user-128.png?sz=50) no-repeat scroll 0 0 / cover"></div>
                         <!--<i class="icon icon-caret-down icon-light-gray h5"></i>-->
@@ -568,12 +516,12 @@
                             </a>
                         </li>
                         <li class="reservations" style="display: none;">
-                            <a href="" rel="nofollow" class="no-crawl link-reset menu-item item-reservation">
+                            <a href="/hostReservations" rel="nofollow" class="no-crawl link-reset menu-item item-reservation">
                                 Your Reservations
                             </a>
                         </li>
                         <li style="display: none;">
-                            <a href="" rel="nofollow" class="no-crawl link-reset menu-item item-trips">
+                            <a href="/trip" rel="nofollow" class="no-crawl link-reset menu-item item-trips">
                                 Your Trips
                             </a>
                         </li>
@@ -948,30 +896,28 @@
     </div>
 </div>
 
-<main id="site-content" role="main" ng-controller="edituserprofile">
+<main id="site-content" role="main" ng-controller="edituserprofile" ng-init="Init()">
 
     <div class="subnav hide-print">
         <div class="page-container-responsive">
             <ul class="subnav-list">
-                <li>
-                    <a href="#" ng-click="Profile()" aria-selected="false" class="subnav-item">Dashboard</a>
-                </li>
-                <li>
-                    <a href="" aria-selected="false" class="subnav-item">Your Listings</a>
-                </li>
-                <li>
-                    <a href="" aria-selected="false" class="subnav-item">Your Trips</a>
-                </li>
-                <li>
-                    <a href="#" ng-click="EditProfile()" aria-selected="true" class="subnav-item">Profile</a>
-                </li>
-                <li>
-                    <a href="#" ng-click="Account()" aria-selected="false" class="subnav-item">Account</a>
-                </li>
+                 <li>
+         <a href="/Profile" aria-selected="false" class="subnav-item">Dashboard</a>
+      </li>
+      <li>
+        <a href="/hostListings" aria-selected="false" class="subnav-item">Your Listings</a>
+      </li>
+      <li>
+         <a href="/trip" aria-selected="false" class="subnav-item">Your Trips</a>
+      </li>
+      <li>
+        <a href="#" aria-selected="true" class="subnav-item">Profile</a>
+      </li>
+      <li>
+        <a href="/Account" aria-selected="false" class="subnav-item">Account</a>
+      </li>
 
-
-                <li>
-                    <!--<a href="#" ng-click="Host_Dashboard()" aria-selected="false" class="subnav-item" ng-show="isHost">Host dashboard</a>-->
+                <li ng-show="isHost">
                     <div class="collapse navbar-collapse js-navbar-collapse">
                         <ul class="nav navbar-nav">
                             <li class="dropdown dropdown-large">
@@ -990,8 +936,7 @@
 
                             </li>
                         </ul>
-
-                    </div><!-- /.nav-collapse -->
+                    </div>
                 </li>
 
             </ul>
@@ -1011,20 +956,12 @@
                             <a href="" aria-selected="true" class="sidenav-item">Edit Profile</a>
                         </li>
                         <li>
-                            <a href="" aria-selected="false" class="sidenav-item">Photos</a>
-                        </li>
-                        <li>
-                            <a href="" aria-selected="false" class="sidenav-item">Trust and Verification</a>
-                        </li>
-                        <li>
                             <a href="" aria-selected="false" class="sidenav-item">Reviews</a>
                         </li>
-                        <li>
-                            <a href="" aria-selected="false" class="hide sidenav-item">References</a>
-                        </li>
+
                     </ul>
                 </div>
-                <a href="" class="btn btn-block row-space-top-4">View Profile</a>
+                <a href="" class="btn btn-block row-space-top-4" ng-click="Profile()">View Profile</a>
             </div>
             <div class="col-md-9">
 
@@ -1043,7 +980,7 @@
                                     </label>
                                     <div class="col-sm-9">
 
-                                        <input id="user_first_name" size="30" class="focus" name="first_name" type="text" value="Jay" ng-model="first_name">
+                                        <input id="user_first_name" size="30" class="focus" name="first_name" type="text" value="" ng-model="first_name">
                                         <span class="text-danger"></span>
                                     </div>
                                 </div>
@@ -1054,7 +991,7 @@
                                     </label>
                                     <div class="col-sm-9">
 
-                                        <input id="user_last_name" size="30" class="focus" name="last_name" type="text" value="Nirgudkar" ng-model="last_name">
+                                        <input id="user_last_name" size="30" class="focus" name="last_name" type="text" value="" ng-model="last_name">
                                         <span class="text-danger"></span>
                                         <div class="text-muted row-space-top-1">This is only shared once you have a confirmed booking with another AIRBNB user.</div>
                                     </div>
@@ -1205,7 +1142,7 @@
 </main>
 
 
-<div id="footer" class="pull-left container-brand-dark footer-surround footer-container" style="width:100%; background-image:url(http://makent.trioangle.com/images/logos/footer_cover_image.png)">
+<div id="footer" class="pull-left container-brand-dark footer-surround footer-container" style="width:100% ; height: 50%;  background-image:url(http://makent.trioangle.com/images/logos/footer_cover_image.png)" >
     <footer class="page-container-responsive ng-scope" ng-controller="footer">
         <div class="row row-condensed">
 
@@ -1215,13 +1152,13 @@
                         <label id="language-selector-label" class="screen-reader-only">
                             Choose language
                         </label>
-                        <select class="language-selector" aria-labelledby="language-selector-label" id="language_footer" name="language"><option value="id">Bahasa Indonesia</option><option value="ms">Bahasa Melayu</option><option value="ca">Català</option><option value="da">Dansk</option><option value="de">Deutsch</option><option value="en" selected="selected">English</option><option value="es">Español</option><option value="el">Eλληνικά</option><option value="fr">Français</option><option value="it">Italiano</option><option value="hu">Magyar</option><option value="nl">Nederlands</option><option value="pl">Polski</option><option value="pt">Português</option><option value="fi">Suomi</option><option value="tr">Türkçe</option><option value="ru">Русский</option><option value="th">ภาษาไทย</option><option value="zh">中文 (简体)</option></select>
+                        <!--<select class="language-selector" aria-labelledby="language-selector-label" id="language_footer" name="language"><option value="id">Bahasa Indonesia</option><option value="ms">Bahasa Melayu</option><option value="ca">Català</option><option value="da">Dansk</option><option value="de">Deutsch</option><option value="en" selected="selected">English</option><option value="es">Español</option><option value="el">Eλληνικά</option><option value="fr">Français</option><option value="it">Italiano</option><option value="hu">Magyar</option><option value="nl">Nederlands</option><option value="pl">Polski</option><option value="pt">Português</option><option value="fi">Suomi</option><option value="tr">Türkçe</option><option value="ru">Русский</option><option value="th">ภาษาไทย</option><option value="zh">中文 (简体)</option></select>-->
                     </div>
 
 
                     <div class="select select-large select-block row-space-2">
                         <label id="currency-selector-label" class="screen-reader-only">Choose currency</label>
-                        <select class="currency-selector" aria-labelledby="currency-selector-label" id="currency_footer" name="currency"><option value="USD" selected="selected">USD</option><option value="GBP">GBP</option><option value="EUR">EUR</option><option value="AUD">AUD</option><option value="SGD">SGD</option><option value="SEK">SEK</option><option value="DKK">DKK</option><option value="MXN">MXN</option><option value="BRL">BRL</option><option value="MYR">MYR</option><option value="PHP">PHP</option><option value="CHF">CHF</option><option value="INR">INR</option><option value="ARS">ARS</option><option value="CAD">CAD</option><option value="CNY">CNY</option><option value="CZK">CZK</option><option value="HKD">HKD</option><option value="HUF">HUF</option><option value="IDR">IDR</option><option value="ILS">ILS</option><option value="JPY">JPY</option><option value="KRW">KRW</option><option value="NOK">NOK</option><option value="NZD">NZD</option><option value="PLN">PLN</option><option value="RUB">RUB</option><option value="THB">THB</option><option value="TRY">TRY</option><option value="TWD">TWD</option><option value="VND">VND</option><option value="ZAR">ZAR</option></select>
+                       <!-- <select class="currency-selector" aria-labelledby="currency-selector-label" id="currency_footer" name="currency"><option value="USD" selected="selected">USD</option><option value="GBP">GBP</option><option value="EUR">EUR</option><option value="AUD">AUD</option><option value="SGD">SGD</option><option value="SEK">SEK</option><option value="DKK">DKK</option><option value="MXN">MXN</option><option value="BRL">BRL</option><option value="MYR">MYR</option><option value="PHP">PHP</option><option value="CHF">CHF</option><option value="INR">INR</option><option value="ARS">ARS</option><option value="CAD">CAD</option><option value="CNY">CNY</option><option value="CZK">CZK</option><option value="HKD">HKD</option><option value="HUF">HUF</option><option value="IDR">IDR</option><option value="ILS">ILS</option><option value="JPY">JPY</option><option value="KRW">KRW</option><option value="NOK">NOK</option><option value="NZD">NZD</option><option value="PLN">PLN</option><option value="RUB">RUB</option><option value="THB">THB</option><option value="TRY">TRY</option><option value="TWD">TWD</option><option value="VND">VND</option><option value="ZAR">ZAR</option></select>-->
                     </div>
 
                     <div class="cx-number"></div>
@@ -1240,90 +1177,9 @@
                     <li><a href="" class="link-contrast">About Us</a></li>
                 </ul>
             </div>
-
-            <div class="col-md-2 hide-sm">
-                <h2 class="h5">Discover</h2>
-                <ul class="list-layout">
-                    <li><a href="" class="link-contrast">Travel Credit</a></li>
-                    <li><a href="" class="link-contrast">Trust &amp; Safety</a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-2 hide-sm">
-                <h2 class="h5">Hosting</h2>
-                <ul class="list-layout">
-                    <li><a href="" class="link-contrast">Why Host</a></li>
-                    <li><a href="" class="link-contrast">Hospitality</a></li>
-                </ul>
-            </div>
         </div>
 
-        <div class="col-sm-12 space-4 space-top-4 show-sm">
-            <ul class="list-layout list-inline text-center h5">
-                <li><a href="" class="link-contrast">Terms of Service</a></li>
-                <li><a href="" class="link-contrast">Privacy Policy</a></li>
-                <li><a href="" class="link-contrast">Host Guarantee</a></li>
-                <li><a href="" class="link-contrast">Guest Refund</a></li>
-                <li><a href="" class="link-contrast">Copyright Policy</a></li>
-                <li><a href="" class="link-contrast">Consent Disagree</a></li>
-                <li><a href="" class="link-contrast">About Us</a></li>
-            </ul>
-        </div>
 
-        <hr class="footer-divider space-top-8 space-4 hide-sm">
-
-        <div class="text-center">
-            <h2 class="h5 space-4 hide-sm">Join Us On</h2>
-            <ul class="list-layout list-inline">
-                <link itemprop="url" href="">
-                <meta itemprop="logo" content="">
-                <li>
-                    <a href="https://facebook.com/TrioangleTechnologies" class="link-contrast footer-icon-container" target="_blank">
-                        <span class="screen-reader-only">Facebook</span>
-                        <i class="icon footer-icon icon-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://plus.google.com/109660062973212147808" class="link-contrast footer-icon-container" target="_blank">
-                        <span class="screen-reader-only">Google_plus</span>
-                        <i class="icon footer-icon icon-google-plus"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/trioangle" class="link-contrast footer-icon-container" target="_blank">
-                        <span class="screen-reader-only">Twitter</span>
-                        <i class="icon footer-icon icon-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://linkedin.com/in/trioangle-technologies-667a47120" class="link-contrast footer-icon-container" target="_blank">
-                        <span class="screen-reader-only">Linkedin</span>
-                        <i class="icon footer-icon icon-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://in.pinterest.com/trioangle1/" class="link-contrast footer-icon-container" target="_blank">
-                        <span class="screen-reader-only">Pinterest</span>
-                        <i class="icon footer-icon icon-pinterest"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/channel/UC2EWcEd5dpvGmBh-H4TQ0wg" class="link-contrast footer-icon-container" target="_blank">
-                        <span class="screen-reader-only">Youtube</span>
-                        <i class="icon footer-icon icon-youtube"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/trioangletech" class="link-contrast footer-icon-container" target="_blank">
-                        <span class="screen-reader-only">Instagram</span>
-                        <i class="icon footer-icon icon-instagram"></i>
-                    </a>
-                </li>
-            </ul>
-            <div class="space-top-2 text-muted">
-                © AIRBNB, Inc.
-            </div>
-        </div>
     </footer>
 </div>
 <div id="gmap-preload" class="hide"></div>

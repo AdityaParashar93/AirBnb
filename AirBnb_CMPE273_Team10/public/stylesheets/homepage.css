@@ -21,9 +21,9 @@ h4 {
 }
 
 .bgimg {
-    background-image: url('/images/bg.jpg');
-    height: 400px; 
-     width: 1100px; 
+	background-image: url('/images/bg.jpg');
+	height: 400px;
+	width: 1100px;
 }
 
 .jumbotron {
@@ -157,7 +157,7 @@ h4 {
 
 .navbar-default .navbar-toggle {
 	border-color: transparent;
-	color: #00ff00!important;
+	color: #00ff00 !important;
 }
 
 footer .glyphicon {
@@ -179,24 +179,31 @@ footer .glyphicon {
 }
 
 @
-keyframes slide { 
-	0% {
+keyframes slide { 0% {
 	opacity: 0;
 	transform: translateY(70%);
-	}
+}
 
-	100%{
+100%{
 opacity
+
+
 :
+
  
+
 1;
 transform
-:
- 
-translateY
-(0%);
 
-    
+
+:
+
+ 
+
+translateY
+
+
+(0%);
 }
 }
 @
@@ -208,16 +215,24 @@ translateY
 100%
 {
 opacity
+
+
 :
+
  
+
 1;
 -webkit-transform
-:
- 
-translateY
-(0%);
 
-    
+
+:
+
+ 
+
+translateY
+
+
+(0%);
 }
 }
 @media screen and (max-width: 768px) {

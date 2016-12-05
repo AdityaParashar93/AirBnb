@@ -15,7 +15,7 @@ module.exports = function(passport) {
 		var dt = new Date();
 		var myPlaintextPassword = password;
 
-		mongo.connect(loginDatabase, function() {
+		mongo.getConnection(loginDatabase, function() {
 
 			console.log('CONNECTED TO MONGO IN passportJS');
 			var collection_login = mongo.collection('login');
@@ -54,7 +54,7 @@ module.exports = function(passport) {
 		var dt = new Date();
 		var myPlaintextPassword = password;
 
-		mongo.connect(loginDatabase, function() {
+		mongo.getConnection(loginDatabase, function() {
 
 			console.log('CONNECTED TO MONGO IN passportJS');
 			var collection_login = mongo.collection('login_admin');
